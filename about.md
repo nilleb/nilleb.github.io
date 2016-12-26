@@ -4,12 +4,15 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Ivo Bellin Salarin,
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+Machine learning engineer at LumApps.
+Previously, developer at Esker (until 02/2011) then developer and release manager at Cegid (until 12/2016). 
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+Linux lover, with good technical skills for everything that’s related to computer science. Can work on any kind of operating systems, given it has a kind of UI.
+
+Python, C#, Java, C/C++ developer, oriented towards the agile development of reusable tools which can help me completing current work.
+
+Contributing to every piece of free software which passes nearby, in the way I can best.
+
+Living in Lyon, France.

@@ -17,4 +17,4 @@ Contributing to every piece of free software which passes nearby, in the way I c
 
 Living in Lyon, France.
 
-![me](http://2.gravatar.com/avatar/31333d451714a14be949e2c5de93b5e5)
+![alt text](http://2.gravatar.com/avatar/31333d451714a14be949e2c5de93b5e5 "me")

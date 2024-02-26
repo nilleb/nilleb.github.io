@@ -1,6 +1,6 @@
 ---
 title: "i'm back, once more."
-date: "2008-08-05"
+date: 2008-08-05
 categories: 
   - "thoughts"
 ---

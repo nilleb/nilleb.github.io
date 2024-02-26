@@ -1,6 +1,6 @@
 ---
 title: "lo spirito del cagacazzo è forte, in me"
-date: "2008-03-11"
+date: 2008-03-11
 categories: 
   - "everydays"
   - "politics"

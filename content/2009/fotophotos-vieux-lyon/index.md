@@ -1,6 +1,6 @@
 ---
 title: "foto/photos: vieux lyon"
-date: "2009-06-14"
+date: 2009-06-14
 categories: 
   - "photography"
 ---

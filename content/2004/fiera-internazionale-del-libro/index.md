@@ -1,6 +1,6 @@
 ---
 title: "Fiera Internazionale del Libro"
-date: "2004-05-14"
+date: 2004-05-14
 categories: 
   - "thoughts"
 ---

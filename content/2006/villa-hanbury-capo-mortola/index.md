@@ -1,6 +1,6 @@
 ---
 title: "Villa Hanbury, capo Mortola"
-date: "2006-01-16"
+date: 2006-01-16
 categories: 
   - "photography"
   - "thoughts"

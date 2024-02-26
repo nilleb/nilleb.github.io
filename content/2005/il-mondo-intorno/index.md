@@ -1,6 +1,6 @@
 ---
 title: "Il mondo intorno"
-date: "2005-11-16"
+date: 2005-11-16
 categories: 
   - "thoughts"
 ---

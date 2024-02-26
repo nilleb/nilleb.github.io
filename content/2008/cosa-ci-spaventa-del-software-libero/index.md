@@ -1,6 +1,6 @@
 ---
 title: "cosa ci spaventa, del software libero?"
-date: "2008-06-13"
+date: 2008-06-13
 categories: 
   - "thoughts"
 ---

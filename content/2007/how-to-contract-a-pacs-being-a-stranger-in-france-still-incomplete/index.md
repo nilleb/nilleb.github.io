@@ -1,6 +1,6 @@
 ---
 title: "How to contract a PACS being a stranger in France [still incomplete]"
-date: "2007-11-16"
+date: 2007-11-16
 categories: 
   - "thoughts"
 ---

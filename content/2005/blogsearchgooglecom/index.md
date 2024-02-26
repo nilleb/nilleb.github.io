@@ -1,6 +1,6 @@
 ---
 title: "blogsearch.google.com"
-date: "2005-09-14"
+date: 2005-09-14
 categories: 
   - "thoughts"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "4724"
-date: "2007-11-20"
+date: 2007-11-20
 categories: 
   - "thoughts"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "leggerezza"
-date: "2008-01-18"
+date: 2008-01-18
 categories: 
   - "thoughts"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Private: Feel the music #2"
-date: "2005-07-16"
+date: 2005-07-16
 categories: 
   - "music"
 ---

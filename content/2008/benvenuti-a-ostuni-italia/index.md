@@ -1,6 +1,6 @@
 ---
 title: "benvenuti a Ostuni, Italia..."
-date: "2008-04-22"
+date: 2008-04-22
 categories: 
   - "information"
   - "italia"

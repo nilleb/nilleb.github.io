@@ -1,6 +1,6 @@
 ---
 title: "Castino, CN"
-date: "2006-05-13"
+date: 2006-05-13
 categories: 
   - "music"
   - "thoughts"

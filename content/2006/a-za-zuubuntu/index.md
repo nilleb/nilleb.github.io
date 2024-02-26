@@ -1,6 +1,6 @@
 ---
 title: "[a-zA-Z]*[Uu]buntu"
-date: "2006-10-26"
+date: 2006-10-26
 categories: 
   - "thoughts"
 ---

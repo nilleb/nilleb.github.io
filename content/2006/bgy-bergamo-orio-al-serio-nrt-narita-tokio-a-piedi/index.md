@@ -1,6 +1,6 @@
 ---
 title: "(BGY) Orio al Serio, Bergamo - (NRT) Narita, Tokio."
-date: "2006-01-07"
+date: 2006-01-07
 categories: 
   - "thoughts"
 ---

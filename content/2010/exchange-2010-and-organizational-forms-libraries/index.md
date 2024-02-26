@@ -1,6 +1,6 @@
 ---
 title: "Exchange 2010 and Organizational Forms Libraries"
-date: "2010-02-26"
+date: 2010-02-26
 tags: 
   - "2010"
   - "exchange"

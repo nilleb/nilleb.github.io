@@ -1,6 +1,6 @@
 ---
 title: "autumn in Turin"
-date: "2006-10-31"
+date: 2006-10-31
 categories: 
   - "thoughts"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "revue de presse: 22/04/2008 15:45"
-date: "2008-04-22"
+date: 2008-04-22
 categories: 
   - "thoughts"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "what's miro?"
-date: "2007-11-14"
+date: 2007-11-14
 categories: 
   - "thoughts"
 ---

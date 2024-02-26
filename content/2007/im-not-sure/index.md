@@ -1,6 +1,6 @@
 ---
 title: "I'm not sure.."
-date: "2007-11-18"
+date: 2007-11-18
 categories: 
   - "thoughts"
 ---

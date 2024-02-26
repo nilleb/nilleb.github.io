@@ -1,6 +1,6 @@
 ---
 title: "menage fait, ubuntu mise à jour"
-date: "2007-11-17"
+date: 2007-11-17
 categories: 
   - "thoughts"
 ---

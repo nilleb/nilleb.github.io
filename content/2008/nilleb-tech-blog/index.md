@@ -1,6 +1,6 @@
 ---
 title: "nilleb tech blog"
-date: "2008-07-15"
+date: 2008-07-15
 categories: 
   - "thoughts"
 tags: 

@@ -1,6 +1,6 @@
 ---
 title: "last.fm"
-date: "2008-01-17"
+date: 2008-01-17
 categories: 
   - "thoughts"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "I&#8217;m back"
-date: "2004-08-19"
+date: 2004-08-19
 categories: 
   - "thoughts"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Slow down"
-date: "2010-12-27"
+date: 2010-12-27
 categories: 
   - "thoughts"
 ---

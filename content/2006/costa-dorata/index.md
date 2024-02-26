@@ -1,6 +1,6 @@
 ---
 title: "Costa dorata"
-date: "2006-04-15"
+date: 2006-04-15
 categories: 
   - "thoughts"
 ---

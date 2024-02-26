@@ -1,6 +1,6 @@
 ---
 title: "festa della repubblica"
-date: "2008-06-02"
+date: 2008-06-02
 categories: 
   - "thoughts"
 tags: 

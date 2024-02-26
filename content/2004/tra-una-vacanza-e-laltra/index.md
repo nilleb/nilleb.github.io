@@ -1,6 +1,6 @@
 ---
 title: "Tra una vacanza e l&#8217;altra"
-date: "2004-08-08"
+date: 2004-08-08
 categories: 
   - "thoughts"
 ---

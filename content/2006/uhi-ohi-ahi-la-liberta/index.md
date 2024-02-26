@@ -1,6 +1,6 @@
 ---
 title: "uhi ohi ahi, la libertà.."
-date: "2006-03-23"
+date: 2006-03-23
 categories: 
   - "thoughts"
 ---

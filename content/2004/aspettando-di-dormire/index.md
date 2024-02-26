@@ -1,6 +1,6 @@
 ---
 title: "Aspettando di dormire"
-date: "2004-09-27"
+date: 2004-09-27
 categories: 
   - "thoughts"
 ---

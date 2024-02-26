@@ -1,6 +1,6 @@
 ---
 title: "La legge NON è uguale per tutti"
-date: "2005-12-27"
+date: 2005-12-27
 categories: 
   - "thoughts"
 tags: 

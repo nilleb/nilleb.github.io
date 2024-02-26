@@ -1,6 +1,6 @@
 ---
 title: "Back to life"
-date: "2005-04-22"
+date: 2005-04-22
 categories: 
   - "thoughts"
 ---

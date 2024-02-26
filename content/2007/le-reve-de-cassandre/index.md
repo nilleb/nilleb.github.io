@@ -1,6 +1,6 @@
 ---
 title: "Le rêve de Cassandre"
-date: "2007-11-10"
+date: 2007-11-10
 categories: 
   - "thoughts"
 ---

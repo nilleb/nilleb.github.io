@@ -1,6 +1,6 @@
 ---
 title: "legge del week end"
-date: "2008-05-26"
+date: 2008-05-26
 categories: 
   - "thoughts"
 tags: 

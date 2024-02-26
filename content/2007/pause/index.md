@@ -1,6 +1,6 @@
 ---
 title: "pause"
-date: "2007-12-10"
+date: 2007-12-10
 categories: 
   - "thoughts"
 ---

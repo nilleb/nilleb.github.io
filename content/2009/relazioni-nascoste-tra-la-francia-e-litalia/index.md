@@ -1,6 +1,6 @@
 ---
 title: "Relazioni nascoste tra la Francia e l'italia"
-date: "2009-07-01"
+date: 2009-07-01
 categories: 
   - "thoughts"
 ---

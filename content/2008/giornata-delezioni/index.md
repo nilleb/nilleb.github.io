@@ -1,6 +1,6 @@
 ---
 title: "giornata d'elezioni"
-date: "2008-04-14"
+date: 2008-04-14
 categories: 
   - "politics"
 tags: 

@@ -1,6 +1,6 @@
 ---
 title: "\"color management\" per Firefox 3"
-date: "2008-06-05"
+date: 2008-06-05
 categories: 
   - "thoughts"
 tags: 

@@ -1,6 +1,6 @@
 ---
 title: "Tutto è possibile, con MastelCard"
-date: "2008-01-24"
+date: 2008-01-24
 categories: 
   - "thoughts"
 ---

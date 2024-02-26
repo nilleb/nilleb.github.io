@@ -1,6 +1,6 @@
 ---
 title: "Rivarolo, my town"
-date: "2006-03-19"
+date: 2006-03-19
 categories: 
   - "thoughts"
 tags: 

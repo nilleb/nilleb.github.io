@@ -1,6 +1,6 @@
 ---
 title: "Thierry, Raymond e gli altri..."
-date: "2007-12-02"
+date: 2007-12-02
 categories: 
   - "thoughts"
 ---

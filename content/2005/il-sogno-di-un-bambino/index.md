@@ -1,6 +1,6 @@
 ---
 title: "Il sogno di un bambino"
-date: "2005-10-06"
+date: 2005-10-06
 categories: 
   - "thoughts"
 ---

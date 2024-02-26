@@ -1,6 +1,6 @@
 ---
 title: "la bonaccia ed il foen"
-date: "2006-05-30"
+date: 2006-05-30
 categories: 
   - "feelings"
   - "thoughts"

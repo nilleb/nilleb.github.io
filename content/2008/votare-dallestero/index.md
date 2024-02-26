@@ -1,6 +1,6 @@
 ---
 title: "Votare dall'estero"
-date: "2008-02-05"
+date: 2008-02-05
 categories: 
   - "thoughts"
 ---

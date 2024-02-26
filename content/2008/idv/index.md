@@ -1,6 +1,6 @@
 ---
 title: "IDV"
-date: "2008-02-18"
+date: 2008-02-18
 categories: 
   - "thoughts"
 ---

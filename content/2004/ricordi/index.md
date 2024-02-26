@@ -1,6 +1,6 @@
 ---
 title: "Ricordi"
-date: "2004-10-24"
+date: 2004-10-24
 categories: 
   - "thoughts"
 ---

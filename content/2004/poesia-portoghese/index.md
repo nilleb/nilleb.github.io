@@ -1,6 +1,6 @@
 ---
 title: "Poesia Portoghese"
-date: "2004-06-18"
+date: 2004-06-18
 categories: 
   - "thoughts"
 ---

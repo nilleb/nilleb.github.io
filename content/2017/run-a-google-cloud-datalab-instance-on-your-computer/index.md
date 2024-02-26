@@ -1,6 +1,6 @@
 ---
 title: "Run a Google Cloud Datalab instance on your computer"
-date: "2017-08-11"
+date: 2017-08-11
 ---
 
 On the official Google Cloud Datalab [quickstart](https://cloud.google.com/datalab/docs/quickstarts), Google gives you the detailed steps about how to start a GCP instance running the Jupyter notebook, where you'll experiment all the functionalities of the Datalab.

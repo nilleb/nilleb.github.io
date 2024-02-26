@@ -1,6 +1,6 @@
 ---
 title: "Computer Science: sleep(), python and the gray sky"
-date: "2007-10-24"
+date: 2007-10-24
 categories: 
   - "thoughts"
 ---

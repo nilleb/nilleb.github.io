@@ -1,6 +1,6 @@
 ---
 title: "Soluzioni al traffico"
-date: "2006-02-02"
+date: 2006-02-02
 categories: 
   - "thoughts"
 tags: 

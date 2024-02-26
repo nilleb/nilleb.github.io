@@ -1,6 +1,6 @@
 ---
 title: "ça fait longtemps"
-date: "2008-09-19"
+date: 2008-09-19
 categories: 
   - "thoughts"
 ---

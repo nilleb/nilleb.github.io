@@ -1,6 +1,6 @@
 ---
 title: "coincidenze, pensando ad un amico"
-date: "2009-09-02"
+date: 2009-09-02
 categories: 
   - "thoughts"
 ---

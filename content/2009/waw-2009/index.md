@@ -1,6 +1,6 @@
 ---
 title: "waw, 2009!"
-date: "2009-01-07"
+date: 2009-01-07
 categories: 
   - "thoughts"
 ---

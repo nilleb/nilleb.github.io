@@ -1,6 +1,6 @@
 ---
 title: "Getting worse"
-date: "2004-08-08"
+date: 2004-08-08
 categories: 
   - "thoughts"
 ---

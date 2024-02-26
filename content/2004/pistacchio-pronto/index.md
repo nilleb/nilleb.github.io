@@ -1,6 +1,6 @@
 ---
 title: "Pistacchio pronto!"
-date: "2004-05-06"
+date: 2004-05-06
 categories: 
   - "thoughts"
 ---

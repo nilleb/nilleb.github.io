@@ -1,6 +1,6 @@
 ---
 title: "Esperimento (per informatici)"
-date: "2005-07-17"
+date: 2005-07-17
 categories: 
   - "thoughts"
 ---

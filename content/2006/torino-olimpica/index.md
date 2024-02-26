@@ -1,6 +1,6 @@
 ---
 title: "Torino Olimpica"
-date: "2006-02-09"
+date: 2006-02-09
 categories: 
   - "thoughts"
 ---

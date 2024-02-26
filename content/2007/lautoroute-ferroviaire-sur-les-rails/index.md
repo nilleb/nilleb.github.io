@@ -1,6 +1,6 @@
 ---
 title: "L&#8217;autoroute ferroviaire sur les rails"
-date: "2007-03-29"
+date: 2007-03-29
 categories: 
   - "thoughts"
 ---

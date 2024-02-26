@@ -1,6 +1,6 @@
 ---
 title: "iBook e layout italiano"
-date: "2006-01-23"
+date: 2006-01-23
 categories: 
   - "computer-science"
 tags: 

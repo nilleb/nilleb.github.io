@@ -1,6 +1,6 @@
 ---
 title: "my new python pendrive"
-date: "2008-01-23"
+date: 2008-01-23
 categories: 
   - "thoughts"
 ---

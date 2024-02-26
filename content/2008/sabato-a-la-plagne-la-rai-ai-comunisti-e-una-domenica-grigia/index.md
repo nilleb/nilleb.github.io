@@ -1,6 +1,6 @@
 ---
 title: "Sabato a La Plagne, la RAI ai comunisti, e una Domenica grigia"
-date: "2008-01-27"
+date: 2008-01-27
 categories: 
   - "thoughts"
 ---

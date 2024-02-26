@@ -1,6 +1,6 @@
 ---
 title: "EUCD.info"
-date: "2005-12-06"
+date: 2005-12-06
 categories: 
   - "computer-science"
 tags: 

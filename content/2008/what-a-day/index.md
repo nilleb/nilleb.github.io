@@ -1,6 +1,6 @@
 ---
 title: "what a day"
-date: "2008-05-02"
+date: 2008-05-02
 categories: 
   - "thoughts"
 ---

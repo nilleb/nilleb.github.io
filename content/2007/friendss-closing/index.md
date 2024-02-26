@@ -1,6 +1,6 @@
 ---
 title: "friends&#8217;s closing"
-date: "2007-08-28"
+date: 2007-08-28
 categories: 
   - "thoughts"
 ---

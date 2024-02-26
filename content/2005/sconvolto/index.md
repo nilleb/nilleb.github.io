@@ -1,6 +1,6 @@
 ---
 title: "Sconvolto."
-date: "2005-07-07"
+date: 2005-07-07
 categories: 
   - "feelings"
 ---

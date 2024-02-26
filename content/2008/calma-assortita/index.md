@@ -1,6 +1,6 @@
 ---
 title: "Calma assortita"
-date: "2008-01-15"
+date: 2008-01-15
 categories: 
   - "thoughts"
 ---

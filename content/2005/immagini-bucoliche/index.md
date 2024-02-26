@@ -1,6 +1,6 @@
 ---
 title: "Immagini bucoliche"
-date: "2005-05-06"
+date: 2005-05-06
 categories: 
   - "thoughts"
 ---

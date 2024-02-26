@@ -1,6 +1,6 @@
 ---
 title: "Ireland!"
-date: "2008-04-17"
+date: 2008-04-17
 categories: 
   - "thoughts"
 ---

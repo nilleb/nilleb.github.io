@@ -1,6 +1,6 @@
 ---
 title: "Myanmar"
-date: "2007-09-27"
+date: 2007-09-27
 categories: 
   - "thoughts"
 ---

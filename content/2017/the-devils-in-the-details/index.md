@@ -1,6 +1,6 @@
 ---
 title: "The devil's in the details"
-date: "2017-08-08"
+date: 2017-08-08
 ---
 
 You know, I always start a new BigQuery query copying and pasting an existing one, and modifying it.

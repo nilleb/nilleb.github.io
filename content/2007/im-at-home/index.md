@@ -1,6 +1,6 @@
 ---
 title: "I&#8217;m at home"
-date: "2007-08-19"
+date: 2007-08-19
 categories: 
   - "thoughts"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "post by email: ça marche aussi?"
-date: "2007-11-08"
+date: 2007-11-08
 categories: 
   - "thoughts"
 ---

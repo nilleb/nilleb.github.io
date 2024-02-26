@@ -1,6 +1,6 @@
 ---
 title: "the span of freedom"
-date: "2008-03-24"
+date: 2008-03-24
 categories: 
   - "thoughts"
 ---

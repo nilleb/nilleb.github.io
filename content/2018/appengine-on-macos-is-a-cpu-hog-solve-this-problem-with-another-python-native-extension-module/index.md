@@ -1,6 +1,6 @@
 ---
 title: "AppEngine on MacOS is a CPU Hog: Solve This Problem with Another Python Native Extension Module"
-date: "2018-04-10"
+date: 2018-04-10
 tags: 
   - "appengine"
   - "golang"

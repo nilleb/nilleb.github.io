@@ -1,6 +1,6 @@
 ---
 title: "what's new about olympic games?"
-date: "2008-04-07"
+date: 2008-04-07
 categories: 
   - "thoughts"
 ---

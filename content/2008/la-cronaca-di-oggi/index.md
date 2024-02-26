@@ -1,6 +1,6 @@
 ---
 title: "la cronaca di oggi..."
-date: "2008-06-10"
+date: 2008-06-10
 categories: 
   - "thoughts"
 tags: 

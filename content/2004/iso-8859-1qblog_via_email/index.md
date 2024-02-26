@@ -1,6 +1,6 @@
 ---
 title: "=?ISO-8859-1?Q?Blog_via_email!?="
-date: "2004-07-04"
+date: 2004-07-04
 categories: 
   - "thoughts"
 ---

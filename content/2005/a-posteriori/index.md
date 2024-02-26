@@ -1,6 +1,6 @@
 ---
 title: "A posteriori&#8230;"
-date: "2005-07-04"
+date: 2005-07-04
 categories: 
   - "feelings"
   - "music"

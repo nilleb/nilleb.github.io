@@ -1,6 +1,6 @@
 ---
 title: "openlebanon.org"
-date: "2006-08-08"
+date: 2006-08-08
 categories: 
   - "thoughts"
 ---

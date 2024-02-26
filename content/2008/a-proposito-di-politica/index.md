@@ -1,6 +1,6 @@
 ---
 title: "a proposito di politica..."
-date: "2008-03-20"
+date: 2008-03-20
 categories: 
   - "thoughts"
 ---

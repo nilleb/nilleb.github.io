@@ -1,6 +1,6 @@
 ---
 title: "Quotidiani e RSS Feed"
-date: "2005-10-30"
+date: 2005-10-30
 categories: 
   - "social-computing"
   - "thoughts"

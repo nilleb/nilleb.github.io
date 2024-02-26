@@ -1,6 +1,6 @@
 ---
 title: "ho sonno, non saremo mai in tempo"
-date: "2008-06-25"
+date: 2008-06-25
 categories: 
   - "thoughts"
 tags: 

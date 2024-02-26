@@ -1,6 +1,6 @@
 ---
 title: "notizie in ordine sparso"
-date: "2008-02-21"
+date: 2008-02-21
 categories: 
   - "thoughts"
 ---

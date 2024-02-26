@@ -1,6 +1,6 @@
 ---
 title: "Inseguendo un filo"
-date: "2005-08-10"
+date: 2005-08-10
 categories: 
   - "feelings"
 ---

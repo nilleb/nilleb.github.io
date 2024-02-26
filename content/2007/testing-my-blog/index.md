@@ -1,6 +1,6 @@
 ---
 title: "testing my blog"
-date: "2007-11-14"
+date: 2007-11-14
 categories: 
   - "thoughts"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "updates from snips [...]"
-date: "2008-02-27"
+date: 2008-02-27
 categories: 
   - "thoughts"
 tags: 

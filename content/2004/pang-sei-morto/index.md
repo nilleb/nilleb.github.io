@@ -1,6 +1,6 @@
 ---
 title: "PANG! Sei morto! :-)"
-date: "2004-09-27"
+date: 2004-09-27
 categories: 
   - "thoughts"
 ---

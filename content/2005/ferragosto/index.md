@@ -1,6 +1,6 @@
 ---
 title: "Ferragosto"
-date: "2005-08-19"
+date: 2005-08-19
 categories: 
   - "photography"
 tags: 

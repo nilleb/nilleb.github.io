@@ -1,6 +1,6 @@
 ---
 title: "Hello world!"
-date: "2006-01-04"
+date: 2006-01-04
 categories: 
   - "thoughts"
 ---

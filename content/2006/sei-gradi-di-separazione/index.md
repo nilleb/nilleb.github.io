@@ -1,6 +1,6 @@
 ---
 title: "Sei gradi di separazione"
-date: "2006-02-07"
+date: 2006-02-07
 categories: 
   - "thoughts"
 ---

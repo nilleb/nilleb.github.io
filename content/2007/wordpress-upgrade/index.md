@@ -1,6 +1,6 @@
 ---
 title: "wordpress upgrade!"
-date: "2007-07-18"
+date: 2007-07-18
 categories: 
   - "thoughts"
 ---

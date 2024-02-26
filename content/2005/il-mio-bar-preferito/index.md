@@ -1,6 +1,6 @@
 ---
 title: "Il mio bar preferito"
-date: "2005-09-27"
+date: 2005-09-27
 categories: 
   - "feelings"
   - "photography"

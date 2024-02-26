@@ -1,6 +1,6 @@
 ---
 title: "28 dicembre, 22.03"
-date: "2007-12-28"
+date: 2007-12-28
 categories: 
   - "thoughts"
 ---

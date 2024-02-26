@@ -1,6 +1,6 @@
 ---
 title: "Breve aggiornamento sul Tutto."
-date: "2004-07-18"
+date: 2004-07-18
 categories: 
   - "thoughts"
 ---

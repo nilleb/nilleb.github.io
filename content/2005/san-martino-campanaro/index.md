@@ -1,6 +1,6 @@
 ---
 title: "San Martino, campanaro"
-date: "2005-11-04"
+date: 2005-11-04
 categories: 
   - "thoughts"
 ---

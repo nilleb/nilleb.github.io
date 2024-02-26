@@ -1,6 +1,6 @@
 ---
 title: "Credete ai miracoli (informatici)?"
-date: "2006-05-13"
+date: 2006-05-13
 categories: 
   - "thoughts"
 ---

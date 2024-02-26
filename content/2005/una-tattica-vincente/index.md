@@ -1,6 +1,6 @@
 ---
 title: "Una tattica vincente"
-date: "2005-09-14"
+date: 2005-09-14
 categories: 
   - "thoughts"
 tags: 

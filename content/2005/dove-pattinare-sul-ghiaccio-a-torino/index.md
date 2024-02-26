@@ -1,6 +1,6 @@
 ---
 title: "Dove pattinare sul ghiaccio a Torino?"
-date: "2005-12-28"
+date: 2005-12-28
 categories: 
   - "thoughts"
 ---

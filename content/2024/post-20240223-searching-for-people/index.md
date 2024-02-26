@@ -1,6 +1,6 @@
 ---
 title: "Searching for people is not the same as searching for articles and concepts"
-date: "2024-02-23"
+date: 2024-02-23
 tags: 
   - "search"
   - "people"

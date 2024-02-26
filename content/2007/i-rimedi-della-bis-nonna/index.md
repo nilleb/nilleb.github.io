@@ -1,6 +1,6 @@
 ---
 title: "i rimedi della bis-nonna"
-date: "2007-12-22"
+date: 2007-12-22
 categories: 
   - "thoughts"
 ---

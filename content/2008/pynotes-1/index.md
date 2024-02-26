@@ -1,6 +1,6 @@
 ---
 title: "pynotes #1"
-date: "2008-04-16"
+date: 2008-04-16
 categories: 
   - "computer-science"
   - "computers"

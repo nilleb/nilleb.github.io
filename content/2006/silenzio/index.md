@@ -1,6 +1,6 @@
 ---
 title: "Silenzio."
-date: "2006-05-23"
+date: 2006-05-23
 categories: 
   - "feelings"
   - "thoughts"

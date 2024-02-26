@@ -1,6 +1,6 @@
 ---
 title: "Che fantasiosa realtà!"
-date: "2006-06-25"
+date: 2006-06-25
 categories: 
   - "thoughts"
 ---

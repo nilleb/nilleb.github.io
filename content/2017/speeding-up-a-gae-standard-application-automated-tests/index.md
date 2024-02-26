@@ -1,6 +1,6 @@
 ---
 title: "Speeding up a GAE-standard application automated tests"
-date: "2017-05-29"
+date: 2017-05-29
 tags: 
   - "development"
   - "python"

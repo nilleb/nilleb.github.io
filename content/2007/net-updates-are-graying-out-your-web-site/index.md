@@ -1,6 +1,6 @@
 ---
 title: ".net updates are graying out your web site?"
-date: "2007-12-11"
+date: 2007-12-11
 categories: 
   - "thoughts"
 ---

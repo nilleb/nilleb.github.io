@@ -1,6 +1,6 @@
 ---
 title: "Tra una foto e l&#8217;altra"
-date: "2004-07-18"
+date: 2004-07-18
 categories: 
   - "thoughts"
 ---

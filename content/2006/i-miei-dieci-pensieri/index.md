@@ -1,6 +1,6 @@
 ---
 title: "I miei dieci pensieri."
-date: "2006-04-09"
+date: 2006-04-09
 categories: 
   - "thoughts"
 ---

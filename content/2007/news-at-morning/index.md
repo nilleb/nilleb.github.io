@@ -1,6 +1,6 @@
 ---
 title: "news at morning"
-date: "2007-12-12"
+date: 2007-12-12
 categories: 
   - "thoughts"
 ---

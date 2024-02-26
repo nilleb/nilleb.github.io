@@ -1,6 +1,6 @@
 ---
 title: "etools"
-date: "2008-03-19"
+date: 2008-03-19
 categories: 
   - "computer-science"
 tags: 

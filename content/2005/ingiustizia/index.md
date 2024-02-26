@@ -1,6 +1,6 @@
 ---
 title: "Ingiustizia"
-date: "2005-12-18"
+date: 2005-12-18
 categories: 
   - "photography"
   - "thoughts"

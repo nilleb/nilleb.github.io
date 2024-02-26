@@ -1,6 +1,6 @@
 ---
 title: "Sempre in viaggio"
-date: "2005-06-17"
+date: 2005-06-17
 categories: 
   - "feelings"
 ---

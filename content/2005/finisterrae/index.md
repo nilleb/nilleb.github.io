@@ -1,6 +1,6 @@
 ---
 title: "Finisterrae"
-date: "2005-08-22"
+date: 2005-08-22
 tags: 
   - "travelling"
 ---

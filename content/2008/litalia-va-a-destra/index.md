@@ -1,6 +1,6 @@
 ---
 title: "l'italia va a destra"
-date: "2008-04-30"
+date: 2008-04-30
 categories: 
   - "everydays"
   - "italia"

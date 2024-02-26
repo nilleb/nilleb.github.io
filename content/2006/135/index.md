@@ -1,6 +1,6 @@
 ---
 title: "fin-di-giornata"
-date: "2006-11-30"
+date: 2006-11-30
 categories: 
   - "feelings"
   - "france"

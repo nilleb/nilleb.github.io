@@ -1,6 +1,6 @@
 ---
 title: "-politica-"
-date: "2008-01-30"
+date: 2008-01-30
 categories: 
   - "thoughts"
 ---

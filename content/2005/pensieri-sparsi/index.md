@@ -1,6 +1,6 @@
 ---
 title: "Private: pensieri sparsi"
-date: "2005-11-24"
+date: 2005-11-24
 categories: 
   - "thoughts"
 ---

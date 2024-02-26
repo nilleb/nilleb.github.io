@@ -1,6 +1,6 @@
 ---
 title: "Vive la fête des lumières"
-date: "2006-12-11"
+date: 2006-12-11
 categories: 
   - "france"
   - "thoughts"

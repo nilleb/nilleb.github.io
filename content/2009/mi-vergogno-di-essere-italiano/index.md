@@ -1,6 +1,6 @@
 ---
 title: "Mi vergogno di essere italiano"
-date: "2009-06-21"
+date: 2009-06-21
 categories: 
   - "thoughts"
 ---

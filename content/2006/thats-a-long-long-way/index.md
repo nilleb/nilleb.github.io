@@ -1,6 +1,6 @@
 ---
 title: "that&#8217;s a long long way"
-date: "2006-04-16"
+date: 2006-04-16
 categories: 
   - "thoughts"
 ---

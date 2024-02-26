@@ -1,6 +1,6 @@
 ---
 title: "Un evento importante, un&#8217;occasione di festa"
-date: "2006-02-06"
+date: 2006-02-06
 categories: 
   - "thoughts"
 ---

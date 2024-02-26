@@ -1,6 +1,6 @@
 ---
 title: "ullallah!"
-date: "2007-11-27"
+date: 2007-11-27
 categories: 
   - "thoughts"
 ---

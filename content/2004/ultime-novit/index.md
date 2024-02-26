@@ -1,6 +1,6 @@
 ---
 title: "Ultime novit?!"
-date: "2004-07-20"
+date: 2004-07-20
 categories: 
   - "thoughts"
 ---

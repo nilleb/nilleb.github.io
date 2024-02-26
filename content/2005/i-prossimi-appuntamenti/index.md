@@ -1,6 +1,6 @@
 ---
 title: "I prossimi appuntamenti"
-date: "2005-12-06"
+date: 2005-12-06
 categories: 
   - "feelings"
   - "photography"

@@ -1,6 +1,6 @@
 ---
 title: "OpenVideoCrawler"
-date: "2005-12-15"
+date: 2005-12-15
 categories: 
   - "computer-science"
   - "thoughts"

@@ -1,6 +1,6 @@
 ---
 title: "italian non-sense"
-date: "2008-05-05"
+date: 2008-05-05
 categories: 
   - "italia"
 tags: 

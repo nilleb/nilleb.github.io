@@ -1,6 +1,6 @@
 ---
 title: "history?"
-date: "2008-06-04"
+date: 2008-06-04
 categories: 
   - "thoughts"
 tags: 

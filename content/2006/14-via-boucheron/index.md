@@ -1,6 +1,6 @@
 ---
 title: "14, Via Boucheron"
-date: "2006-07-07"
+date: 2006-07-07
 categories: 
   - "thoughts"
 ---

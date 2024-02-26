@@ -1,6 +1,6 @@
 ---
 title: "cronologia web - Google is tracking you"
-date: "2008-04-09"
+date: 2008-04-09
 categories: 
   - "computers"
   - "thoughts"

@@ -1,6 +1,6 @@
 ---
 title: "europa"
-date: "2006-05-24"
+date: 2006-05-24
 categories: 
   - "computer-science"
   - "thoughts"

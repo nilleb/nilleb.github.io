@@ -1,6 +1,6 @@
 ---
 title: "respire"
-date: "2008-03-18"
+date: 2008-03-18
 categories: 
   - "thoughts"
 tags: 

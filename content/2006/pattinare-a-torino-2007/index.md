@@ -1,6 +1,6 @@
 ---
 title: "Pattinare a Torino (2007)"
-date: "2006-11-22"
+date: 2006-11-22
 categories: 
   - "photography"
   - "thoughts"

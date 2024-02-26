@@ -1,6 +1,6 @@
 ---
 title: "The last weekend of August"
-date: "2007-09-12"
+date: 2007-09-12
 categories: 
   - "thoughts"
 ---

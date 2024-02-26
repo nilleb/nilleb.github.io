@@ -1,6 +1,6 @@
 ---
 title: "Indiana Jones e la scheda di voto all'estero"
-date: "2008-04-02"
+date: 2008-04-02
 categories: 
   - "thoughts"
 ---

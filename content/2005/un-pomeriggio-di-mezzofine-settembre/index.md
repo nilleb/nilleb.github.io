@@ -1,6 +1,6 @@
 ---
 title: "Private: Un pomeriggio di mezzo(fine) Settembre"
-date: "2005-09-29"
+date: 2005-09-29
 categories: 
   - "thoughts"
 ---

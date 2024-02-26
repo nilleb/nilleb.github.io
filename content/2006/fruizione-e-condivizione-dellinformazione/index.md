@@ -1,6 +1,6 @@
 ---
 title: "Fruizione e condivizione dell&#8217;informazione"
-date: "2006-11-24"
+date: 2006-11-24
 categories: 
   - "computers"
   - "feed"

@@ -1,6 +1,6 @@
 ---
 title: "EOW"
-date: "2008-02-01"
+date: 2008-02-01
 categories: 
   - "thoughts"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "This blog has moved!"
-date: "2007-10-29"
+date: 2007-10-29
 categories: 
   - "thoughts"
 ---

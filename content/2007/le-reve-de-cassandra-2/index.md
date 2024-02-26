@@ -1,6 +1,6 @@
 ---
 title: "le rêve de cassandra #2"
-date: "2007-11-13"
+date: 2007-11-13
 categories: 
   - "thoughts"
 ---

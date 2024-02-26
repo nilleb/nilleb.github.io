@@ -1,6 +1,6 @@
 ---
 title: "L&#8217;ultima settimana"
-date: "2004-07-12"
+date: 2004-07-12
 categories: 
   - "thoughts"
 ---

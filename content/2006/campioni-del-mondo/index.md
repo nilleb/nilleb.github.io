@@ -1,6 +1,6 @@
 ---
 title: "Campioni del mondo"
-date: "2006-07-10"
+date: 2006-07-10
 categories: 
   - "thoughts"
 ---

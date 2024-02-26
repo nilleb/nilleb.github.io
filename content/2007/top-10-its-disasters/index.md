@@ -1,6 +1,6 @@
 ---
 title: "top 10 ITS disasters"
-date: "2007-12-04"
+date: 2007-12-04
 categories: 
   - "thoughts"
 ---

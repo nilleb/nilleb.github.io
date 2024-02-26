@@ -1,6 +1,6 @@
 ---
 title: "Quante belle notizie!"
-date: "2005-09-10"
+date: 2005-09-10
 categories: 
   - "feelings"
 tags: 

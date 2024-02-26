@@ -1,6 +1,6 @@
 ---
 title: "news today"
-date: "2007-12-11"
+date: 2007-12-11
 categories: 
   - "thoughts"
 ---

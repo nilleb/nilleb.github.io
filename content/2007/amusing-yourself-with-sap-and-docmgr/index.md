@@ -1,6 +1,6 @@
 ---
 title: "amusing yourself with sap and docmgr"
-date: "2007-11-13"
+date: 2007-11-13
 categories: 
   - "thoughts"
 ---

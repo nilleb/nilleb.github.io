@@ -1,6 +1,6 @@
 ---
 title: "Quel che si vede"
-date: "2004-08-26"
+date: 2004-08-26
 categories: 
   - "thoughts"
 ---

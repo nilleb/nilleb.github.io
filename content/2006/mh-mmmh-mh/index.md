@@ -1,6 +1,6 @@
 ---
 title: "mh-mmmh-mh"
-date: "2006-08-05"
+date: 2006-08-05
 categories: 
   - "thoughts"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Belin, wordpress!"
-date: "2006-04-10"
+date: 2006-04-10
 categories: 
   - "thoughts"
 ---

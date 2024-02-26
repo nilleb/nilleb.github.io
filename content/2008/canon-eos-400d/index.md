@@ -1,6 +1,6 @@
 ---
 title: "Canon EOS 400D"
-date: "2008-04-18"
+date: 2008-04-18
 categories: 
   - "photography"
 tags: 

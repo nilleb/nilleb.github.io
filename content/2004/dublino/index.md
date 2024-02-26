@@ -1,6 +1,6 @@
 ---
 title: "Dublino"
-date: "2004-08-25"
+date: 2004-08-25
 categories: 
   - "thoughts"
 ---

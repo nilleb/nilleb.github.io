@@ -1,6 +1,6 @@
 ---
 title: "riportatemi la mia voglia di lavorare!"
-date: "2007-12-18"
+date: 2007-12-18
 categories: 
   - "thoughts"
 ---

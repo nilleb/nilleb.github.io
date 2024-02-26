@@ -1,6 +1,6 @@
 ---
 title: "amazed by the noise"
-date: "2007-12-07"
+date: 2007-12-07
 categories: 
   - "thoughts"
 ---

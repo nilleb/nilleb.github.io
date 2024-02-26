@@ -1,6 +1,6 @@
 ---
 title: "in memory of Carl Ludwig \"Luz\" Long"
-date: "2008-07-19"
+date: 2008-07-19
 categories: 
   - "thoughts"
 ---

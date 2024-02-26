@@ -1,6 +1,6 @@
 ---
 title: "Software per Gentoo/PPC Linux"
-date: "2005-12-31"
+date: 2005-12-31
 categories: 
   - "computer-science"
   - "thoughts"

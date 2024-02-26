@@ -1,6 +1,6 @@
 ---
 title: "riflessione: piccoli ingegneri crescono"
-date: "2008-07-10"
+date: 2008-07-10
 categories: 
   - "thoughts"
 ---

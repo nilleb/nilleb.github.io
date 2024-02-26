@@ -1,6 +1,6 @@
 ---
 title: "abbracciando un pitone"
-date: "2008-01-20"
+date: 2008-01-20
 categories: 
   - "thoughts"
 ---

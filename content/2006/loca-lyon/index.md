@@ -1,6 +1,6 @@
 ---
 title: "loc&#8217;à Lyon"
-date: "2006-09-13"
+date: 2006-09-13
 categories: 
   - "thoughts"
 ---

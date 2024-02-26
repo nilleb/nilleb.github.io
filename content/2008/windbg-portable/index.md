@@ -1,6 +1,6 @@
 ---
 title: "windbg portable"
-date: "2008-01-08"
+date: 2008-01-08
 categories: 
   - "thoughts"
 ---

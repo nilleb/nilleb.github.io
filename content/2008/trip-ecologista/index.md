@@ -1,6 +1,6 @@
 ---
 title: "trip ecologista"
-date: "2008-06-11"
+date: 2008-06-11
 categories: 
   - "thoughts"
 tags: 

@@ -1,6 +1,6 @@
 ---
 title: "? news"
-date: "2008-02-27"
+date: 2008-02-27
 categories: 
   - "thoughts"
 ---

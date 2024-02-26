@@ -1,6 +1,6 @@
 ---
 title: "ma che carina questa pianta di mais con tre pannocchie sulla stessa foglia!"
-date: "2008-03-12"
+date: 2008-03-12
 categories: 
   - "feelings"
   - "information"

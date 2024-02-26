@@ -1,6 +1,6 @@
 ---
 title: "Cavoli, quant&#8217;è difficile programmare!"
-date: "2006-12-21"
+date: 2006-12-21
 categories: 
   - "thoughts"
 ---

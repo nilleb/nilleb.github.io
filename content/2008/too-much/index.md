@@ -1,6 +1,6 @@
 ---
 title: "too much"
-date: "2008-08-19"
+date: 2008-08-19
 categories: 
   - "thoughts"
 ---

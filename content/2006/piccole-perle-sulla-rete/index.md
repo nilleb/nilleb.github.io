@@ -1,6 +1,6 @@
 ---
 title: "Piccole perle sulla rete"
-date: "2006-11-23"
+date: 2006-11-23
 categories: 
   - "thoughts"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "How web navigation and social networks can help you finding masterpieces"
-date: "2007-10-29"
+date: 2007-10-29
 categories: 
   - "thoughts"
 ---

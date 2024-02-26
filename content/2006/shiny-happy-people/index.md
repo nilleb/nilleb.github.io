@@ -1,6 +1,6 @@
 ---
 title: "shiny happy people"
-date: "2006-08-30"
+date: 2006-08-30
 categories: 
   - "thoughts"
 ---

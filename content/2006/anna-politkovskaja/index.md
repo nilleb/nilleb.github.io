@@ -1,6 +1,6 @@
 ---
 title: "Anna Politkovskaja"
-date: "2006-10-11"
+date: 2006-10-11
 categories: 
   - "thoughts"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "e 2..."
-date: "2008-06-06"
+date: 2008-06-06
 categories: 
   - "thoughts"
 ---

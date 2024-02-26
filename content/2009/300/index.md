@@ -1,5 +1,5 @@
 ---
-date: "2009-08-27"
+date: 2009-08-27
 categories: 
   - "thoughts"
 ---

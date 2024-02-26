@@ -1,6 +1,6 @@
 ---
 title: "Lingua Italiana, LaTeX e UTF-8"
-date: "2006-01-26"
+date: 2006-01-26
 categories: 
   - "computer-science"
   - "thoughts"

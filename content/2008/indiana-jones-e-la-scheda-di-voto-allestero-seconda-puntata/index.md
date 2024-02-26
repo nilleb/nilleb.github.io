@@ -1,6 +1,6 @@
 ---
 title: "Indiana Jones e la scheda di voto all'estero (seconda puntata)"
-date: "2008-04-07"
+date: 2008-04-07
 categories: 
   - "thoughts"
 ---

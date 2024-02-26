@@ -1,6 +1,6 @@
 ---
 title: "caffè"
-date: "2008-05-21"
+date: 2008-05-21
 categories: 
   - "everydays"
 tags: 

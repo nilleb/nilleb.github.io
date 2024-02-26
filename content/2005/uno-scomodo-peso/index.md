@@ -1,6 +1,6 @@
 ---
 title: "Uno scomodo peso"
-date: "2005-08-16"
+date: 2005-08-16
 categories: 
   - "thoughts"
 ---

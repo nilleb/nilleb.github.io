@@ -1,6 +1,6 @@
 ---
 title: "Sognando.."
-date: "2006-07-19"
+date: 2006-07-19
 categories: 
   - "thoughts"
 ---

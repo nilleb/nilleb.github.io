@@ -1,6 +1,6 @@
 ---
 title: "Official Announcements"
-date: "2006-11-22"
+date: 2006-11-22
 categories: 
   - "thoughts"
 tags: 

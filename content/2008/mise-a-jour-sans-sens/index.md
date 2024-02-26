@@ -1,6 +1,6 @@
 ---
 title: "mise à jour sans sens"
-date: "2008-03-10"
+date: 2008-03-10
 categories: 
   - "thoughts"
 tags: 

@@ -1,6 +1,6 @@
 ---
 title: "pub: concrete leaf"
-date: "2008-06-12"
+date: 2008-06-12
 categories: 
   - "thoughts"
 tags: 

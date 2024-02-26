@@ -1,6 +1,6 @@
 ---
 title: "hurricane"
-date: "2006-07-12"
+date: 2006-07-12
 categories: 
   - "thoughts"
 ---

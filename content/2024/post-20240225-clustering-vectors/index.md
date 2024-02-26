@@ -1,6 +1,6 @@
 ---
 title: "Clustering vectors in higher dimensions"
-date: "2024-02-25"
+date: 2024-02-25
 tags: 
   - "ML"
   - "clustering"

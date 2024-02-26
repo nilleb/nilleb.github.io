@@ -1,6 +1,6 @@
 ---
 title: "Flickr"
-date: "2005-11-17"
+date: 2005-11-17
 categories: 
   - "feelings"
   - "photography"

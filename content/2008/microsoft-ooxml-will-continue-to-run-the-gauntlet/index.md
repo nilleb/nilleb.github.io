@@ -1,6 +1,6 @@
 ---
 title: "Microsoft OOXML will continue to run the gauntlet"
-date: "2008-04-02"
+date: 2008-04-02
 categories: 
   - "computer-science"
 ---

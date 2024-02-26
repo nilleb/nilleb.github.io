@@ -1,6 +1,6 @@
 ---
 title: "Musica in streaming!"
-date: "2004-05-13"
+date: 2004-05-13
 categories: 
   - "thoughts"
 ---

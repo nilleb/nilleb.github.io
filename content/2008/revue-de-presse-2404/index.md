@@ -1,6 +1,6 @@
 ---
 title: "revue de presse: 2404"
-date: "2008-04-24"
+date: 2008-04-24
 categories: 
   - "information"
 tags: 

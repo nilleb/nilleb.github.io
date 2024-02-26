@@ -1,6 +1,6 @@
 ---
 title: "&#8230;"
-date: "2006-06-22"
+date: 2006-06-22
 categories: 
   - "thoughts"
 ---

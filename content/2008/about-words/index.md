@@ -1,6 +1,6 @@
 ---
 title: "About words"
-date: "2008-01-09"
+date: 2008-01-09
 categories: 
   - "thoughts"
 ---

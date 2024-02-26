@@ -1,6 +1,6 @@
 ---
 title: "week end"
-date: "2008-10-03"
+date: 2008-10-03
 categories: 
   - "thoughts"
 ---

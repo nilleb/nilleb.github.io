@@ -1,6 +1,6 @@
 ---
 title: "Giocattolaio senz&#8217;etica"
-date: "2005-05-31"
+date: 2005-05-31
 categories: 
   - "feelings"
 ---

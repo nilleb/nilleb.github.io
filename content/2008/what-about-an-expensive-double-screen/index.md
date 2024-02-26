@@ -1,6 +1,6 @@
 ---
 title: "what about a[n expensive] double screen?"
-date: "2008-04-17"
+date: 2008-04-17
 categories: 
   - "computers"
 tags: 

@@ -1,6 +1,6 @@
 ---
 title: "Il prossimo viaggio"
-date: "2005-12-05"
+date: 2005-12-05
 categories: 
   - "thoughts"
 tags: 

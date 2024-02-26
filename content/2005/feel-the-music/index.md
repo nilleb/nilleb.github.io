@@ -1,6 +1,6 @@
 ---
 title: "Feel the music"
-date: "2005-07-16"
+date: 2005-07-16
 categories: 
   - "music"
 ---

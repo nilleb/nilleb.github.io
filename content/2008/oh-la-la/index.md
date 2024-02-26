@@ -1,6 +1,6 @@
 ---
 title: "oh la la..."
-date: "2008-01-22"
+date: 2008-01-22
 categories: 
   - "thoughts"
 ---

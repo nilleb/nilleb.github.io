@@ -1,6 +1,6 @@
 ---
 title: "Eire"
-date: "2004-07-28"
+date: 2004-07-28
 categories: 
   - "thoughts"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Irlanda"
-date: "2004-06-30"
+date: 2004-06-30
 categories: 
   - "thoughts"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "writely.com"
-date: "2005-11-28"
+date: 2005-11-28
 categories: 
   - "social-computing"
 tags: 

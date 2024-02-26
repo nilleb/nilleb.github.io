@@ -1,6 +1,6 @@
 ---
 title: "tanti pensieri di corsa"
-date: "2006-10-17"
+date: 2006-10-17
 categories: 
   - "thoughts"
 ---

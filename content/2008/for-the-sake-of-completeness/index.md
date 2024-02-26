@@ -1,6 +1,6 @@
 ---
 title: "for the sake of completeness"
-date: "2008-04-09"
+date: 2008-04-09
 categories: 
   - "politics"
 tags: 

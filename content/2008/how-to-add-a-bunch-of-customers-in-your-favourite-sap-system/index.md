@@ -1,6 +1,6 @@
 ---
 title: "How to add a (bunch of) customer(s) in your favourite SAP system?"
-date: "2008-04-09"
+date: 2008-04-09
 categories: 
   - "thoughts"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Piccoli passi"
-date: "2005-05-20"
+date: 2005-05-20
 categories: 
   - "thoughts"
 ---

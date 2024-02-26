@@ -1,6 +1,6 @@
 ---
 title: "Diari di viaggio"
-date: "2006-08-10"
+date: 2006-08-10
 categories: 
   - "thoughts"
 ---

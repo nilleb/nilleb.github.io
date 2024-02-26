@@ -1,6 +1,6 @@
 ---
 title: "do not forget to switch to elementTree and lxml!"
-date: "2008-03-19"
+date: 2008-03-19
 categories: 
   - "computers"
 tags: 

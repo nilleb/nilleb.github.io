@@ -1,6 +1,6 @@
 ---
 title: "From the wireless e-ink book to GranParadiso"
-date: "2007-11-20"
+date: 2007-11-20
 categories: 
   - "thoughts"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Vacanze!"
-date: "2006-07-28"
+date: 2006-07-28
 categories: 
   - "thoughts"
 ---

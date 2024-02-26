@@ -1,6 +1,6 @@
 ---
 title: "How to unblock a hung SAP STMS - hung while importing requests"
-date: "2008-01-09"
+date: 2008-01-09
 categories: 
   - "thoughts"
 tags: 

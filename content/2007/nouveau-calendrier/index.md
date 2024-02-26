@@ -1,6 +1,6 @@
 ---
 title: "nouveau calendrier"
-date: "2007-11-09"
+date: 2007-11-09
 categories: 
   - "thoughts"
 ---

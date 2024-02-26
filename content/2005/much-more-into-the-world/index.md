@@ -1,6 +1,6 @@
 ---
 title: "La tesi procede!"
-date: "2005-10-27"
+date: 2005-10-27
 categories: 
   - "social-computing"
 tags: 

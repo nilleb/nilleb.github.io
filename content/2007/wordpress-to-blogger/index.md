@@ -1,6 +1,6 @@
 ---
 title: "wordpress to blogger?"
-date: "2007-12-03"
+date: 2007-12-03
 categories: 
   - "thoughts"
 ---

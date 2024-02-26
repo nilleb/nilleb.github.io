@@ -1,6 +1,6 @@
 ---
 title: "asp.net: __eventvalidation"
-date: "2007-11-30"
+date: 2007-11-30
 categories: 
   - "thoughts"
 ---

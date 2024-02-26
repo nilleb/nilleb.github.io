@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>amazed by the noise - run-a-google-cloud-datalab-instance-on-your-computer</title><link href="https://blog.nilleb.com/" rel="alternate"></link><link href="https://blog.nilleb.com/feeds/run-a-google-cloud-datalab-instance-on-your-computer.atom.xml" rel="self"></link><id>https://blog.nilleb.com/</id><updated>2017-08-11T00:00:00+02:00</updated><entry><title>"Run a Google Cloud Datalab instance on your computer"</title><link href="https://blog.nilleb.com/run-a-google-cloud-datalab-instance-on-your-computer.html" rel="alternate"></link><published>2017-08-11T00:00:00+02:00</published><updated>2017-08-11T00:00:00+02:00</updated><author><name>nilleb - Ivo Bellin Salarin</name></author><id>tag:blog.nilleb.com,2017-08-11:/run-a-google-cloud-datalab-instance-on-your-computer.html</id><summary type="html">&lt;p&gt;On the official Google Cloud Datalab &lt;a href="https://cloud.google.com/datalab/docs/quickstarts"&gt;quickstart&lt;/a&gt;, Google gives you the detailed steps about how to start a GCP instance running the Jupyter notebook, where you'll experiment all the functionalities of the Datalab.&lt;/p&gt;
+&lt;p&gt;But, perhaps you don't want to pay the price of the instance. You don't need to use …&lt;/p&gt;</summary><content type="html">&lt;p&gt;On the official Google Cloud Datalab &lt;a href="https://cloud.google.com/datalab/docs/quickstarts"&gt;quickstart&lt;/a&gt;, Google gives you the detailed steps about how to start a GCP instance running the Jupyter notebook, where you'll experiment all the functionalities of the Datalab.&lt;/p&gt;
+&lt;p&gt;But, perhaps you don't want to pay the price of the instance. You don't need to use the cloud for that, since you have your own computer. In this case, to get a Datalab instance on your computer, you just need docker.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;docker run -it -p "127.0.0.1:8081:8080" -v $PWD:"/content" gcr.io/cloud-datalab/datalab:local&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;But let's admit that you have a BigQuery dataset, with which you want to play. To access easily that data from the Datalab notebook as if you were on a dedicated instance, you'll have to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;stop the running Datalab instance&lt;/li&gt;
+&lt;li&gt;read https://developers.google.com/identity/protocols/application-default-credentials#howtheywork and get a credentials.json&lt;/li&gt;
+&lt;li&gt;if you have started the Datalab instance at least once, you'll have a datalab folder. Copy the &lt;code&gt;credentials.json&lt;/code&gt; to the &lt;code&gt;datalab/.config&lt;/code&gt; folder&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;export GOOGLE_APPLICATION_CREDENTIALS=/content/datalab/.config/credentials.json&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;once again, &lt;code&gt;docker run -it -p "127.0.0.1:8081:8080" -v $PWD:"/content" gcr.io/cloud-datalab/datalab:local&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;open your favourite browser to the address that has been printed to the console&lt;/li&gt;
+&lt;li&gt;In the first code cell, type &lt;code&gt;%projects set yourproject&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now you're ready to play with your dataset. For example:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;add a code cell&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;%%sql --module records SELECT field1, field2, field3, field4 FROM dataset.table&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;add another code cell&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;import datalab.bigquery as bq df = bq.Query(records).to_dataframe()&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Congratulations! You have now a working pandas dataset ;-)&lt;/p&gt;</content><category term="run-a-google-cloud-datalab-instance-on-your-computer"></category></entry></feed>

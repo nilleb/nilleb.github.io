@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>amazed by the noise - lingua-italiana-latex-e-utf-8</title><link href="https://blog.nilleb.com/" rel="alternate"></link><link href="https://blog.nilleb.com/feeds/lingua-italiana-latex-e-utf-8.atom.xml" rel="self"></link><id>https://blog.nilleb.com/</id><updated>2006-01-26T00:00:00+01:00</updated><entry><title>"Lingua Italiana, LaTeX e UTF-8"</title><link href="https://blog.nilleb.com/lingua-italiana-latex-e-utf-8.html" rel="alternate"></link><published>2006-01-26T00:00:00+01:00</published><updated>2006-01-26T00:00:00+01:00</updated><author><name>nilleb - Ivo Bellin Salarin</name></author><id>tag:blog.nilleb.com,2006-01-26:/lingua-italiana-latex-e-utf-8.html</id><summary type="html">&lt;ul&gt;
+&lt;li&gt;"computer-science"&lt;/li&gt;
+&lt;li&gt;"thoughts"
+tags: &lt;/li&gt;
+&lt;li&gt;"everydays"&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Era tutto ieri e tutta stamattina che impazzivo alla ricerca di una soluzione per quelle strane lettere accentate che comparivano nella versione DVI della mia tesi.. Sintomo molto strano, dato che aprendo il file con qualsiasi editor, compreso vi, riuscivo invece a vedere le lettere corrette …&lt;/p&gt;</summary><content type="html">&lt;ul&gt;
+&lt;li&gt;"computer-science"&lt;/li&gt;
+&lt;li&gt;"thoughts"
+tags: &lt;/li&gt;
+&lt;li&gt;"everydays"&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Era tutto ieri e tutta stamattina che impazzivo alla ricerca di una soluzione per quelle strane lettere accentate che comparivano nella versione DVI della mia tesi.. Sintomo molto strano, dato che aprendo il file con qualsiasi editor, compreso vi, riuscivo invece a vedere le lettere corrette. Ciò che mi ha aperto gli occhi è stato &lt;em&gt;cat&lt;/em&gt;, con la sua semplicità. C'è voluto un attimo, poi, a capire che si trattava della codifica del file. Tutti gli editor riconoscevano il formato come utf8, e lo formattano come richiesto. Invece, il misero cat non riconosceva le indicazioni di formato.. E neppure LaTeX, nel suo vano tentativo di compilare i miei comandi. In giro sulla rete in tanti si prodigano di consigli e istruzoni su come risolvere il problema, ma Gentoo l'ha risolto brillantemente e con pochissimo sforzo da parte mia. Un &lt;code&gt;emerge latex-unicode&lt;/code&gt; è bastato ad installare le librerie corrette. Ed un &lt;code&gt;\usepackage[utf8x]{inputenc} \usepackage[italian,english]{babel}&lt;/code&gt; sistemato nel preambolo del mio file hanno fatto il resto. Ora posso smettere di usare le sequenze di escape (\'e == é) e scrivere le bellissime lettere accentate della lingua italiana! :-)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Riferimenti&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Gentoo Wiki a proposito della configurazione di Unicode &lt;a href="http://gentoo-wiki.com/HOWTO_Make_your_system_use_unicode/utf-8"&gt;§&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Pagina del CTAN a proposito del modulo Unicode &lt;a href="http://ctan.org/info?id=unicode"&gt;§&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Unicode FAQ &lt;a href="http://www.cl.cam.ac.uk/~mgk25/unicode.html"&gt;§&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="lingua-italiana-latex-e-utf-8"></category></entry></feed>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>amazed by the noise - openvideocrawler</title><link href="https://blog.nilleb.com/" rel="alternate"></link><link href="https://blog.nilleb.com/feeds/openvideocrawler.atom.xml" rel="self"></link><id>https://blog.nilleb.com/</id><updated>2005-12-15T00:00:00+01:00</updated><entry><title>"OpenVideoCrawler"</title><link href="https://blog.nilleb.com/openvideocrawler.html" rel="alternate"></link><published>2005-12-15T00:00:00+01:00</published><updated>2005-12-15T00:00:00+01:00</updated><author><name>nilleb - Ivo Bellin Salarin</name></author><id>tag:blog.nilleb.com,2005-12-15:/openvideocrawler.html</id><summary type="html">&lt;ul&gt;
+&lt;li&gt;"computer-science"&lt;/li&gt;
+&lt;li&gt;"thoughts"
+tags: &lt;/li&gt;
+&lt;li&gt;"everydays"&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;I've completed a crawler for &lt;a href="http://open-video.org/"&gt;open-video.org&lt;/a&gt; video repository. It's written in Python, and it works. It generates descriptors for &lt;a href="http://dose.sourceforge.net/"&gt;H-DOSE&lt;/a&gt; semantic search engine, or a less complicated, non-xml-style information file. Then it computes some keyword statistics about the movies in the collection, tells you whether …&lt;/p&gt;</summary><content type="html">&lt;ul&gt;
+&lt;li&gt;"computer-science"&lt;/li&gt;
+&lt;li&gt;"thoughts"
+tags: &lt;/li&gt;
+&lt;li&gt;"everydays"&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;I've completed a crawler for &lt;a href="http://open-video.org/"&gt;open-video.org&lt;/a&gt; video repository. It's written in Python, and it works. It generates descriptors for &lt;a href="http://dose.sourceforge.net/"&gt;H-DOSE&lt;/a&gt; semantic search engine, or a less complicated, non-xml-style information file. Then it computes some keyword statistics about the movies in the collection, tells you whether you indexed fictitious movies and which where the fictitious ones. It has good performances, but they largely depend on your connection to the internet. I publish this info here and in english for laziness sake. This is a subproject for my degree &lt;a href="http://elite.polito.it/tesista.php?id=76"&gt;thesis&lt;/a&gt; in computer science. &lt;strong&gt;Related files:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.glare.it/Software/OVCrawler/crawler.py"&gt;crawler (Python)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.glare.it/Software/OVCrawler/crawler_run.tar.gz"&gt;first execution output&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://www.glare.it/Software/OVCrawler/OlderStuff/openVideoCrawler.jar"&gt;crawler(Java-not complete)&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://www.glare.it/Software/OVCrawler/OlderStuff/pystats-0.1.py"&gt;python script that extracts some statistics about the java-generated descriptors (BAD!)&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;All the above code is released under the terms of &lt;a href="http://www.gnu.org/licenses/gpl.txt"&gt;GPL&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;</content><category term="openvideocrawler"></category></entry></feed>

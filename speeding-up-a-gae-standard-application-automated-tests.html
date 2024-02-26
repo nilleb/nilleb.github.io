@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>"Speeding up a GAE-standard application automated tests"</title>
+        <link rel="stylesheet" href="https://blog.nilleb.com/theme/css/main.css" />
+        <link href="https://blog.nilleb.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="amazed by the noise Atom Feed" />
+        <meta name="description" content=""development" "python" "test" If you’re developing on a Google AppEngine standard environment, you know how slow the dev_appserver is. You have..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="https://blog.nilleb.com/">amazed by the noise</a></h1>
+                <nav><ul>
+                    <li><a href="https://blog.nilleb.com/category/107.html">107</a></li>
+                    <li><a href="https://blog.nilleb.com/category/135.html">135</a></li>
+                    <li><a href="https://blog.nilleb.com/category/136.html">136</a></li>
+                    <li><a href="https://blog.nilleb.com/category/14-via-boucheron.html">14-via-boucheron</a></li>
+                    <li><a href="https://blog.nilleb.com/category/28-dicembre-2203.html">28-dicembre-2203</a></li>
+                    <li><a href="https://blog.nilleb.com/category/4724.html">4724</a></li>
+                    <li><a href="https://blog.nilleb.com/category/a-posteriori.html">a-posteriori</a></li>
+                    <li><a href="https://blog.nilleb.com/category/a-proposito-di-politica.html">a-proposito-di-politica</a></li>
+                    <li><a href="https://blog.nilleb.com/category/a-twitter-like-blog.html">a-twitter-like-blog</a></li>
+                    <li><a href="https://blog.nilleb.com/category/a-za-zuubuntu.html">a-za-zuubuntu</a></li>
+                    <li><a href="https://blog.nilleb.com/category/abbracciando-un-pitone.html">abbracciando-un-pitone</a></li>
+                    <li><a href="https://blog.nilleb.com/category/about-words.html">about-words</a></li>
+                    <li><a href="https://blog.nilleb.com/category/alftavatn-b.html">alftavatn-b</a></li>
+                    <li><a href="https://blog.nilleb.com/category/amazed-by-the-noise.html">amazed-by-the-noise</a></li>
+                    <li><a href="https://blog.nilleb.com/category/amusing-yourself-with-sap-and-docmgr.html">amusing-yourself-with-sap-and-docmgr</a></li>
+                    <li><a href="https://blog.nilleb.com/category/anna-politkovskaja.html">anna-politkovskaja</a></li>
+                    <li><a href="https://blog.nilleb.com/category/appengine-on-macos-is-a-cpu-hog-solve-this-problem-with-another-python-native-extension-module.html">appengine-on-macos-is-a-cpu-hog-solve-this-problem-with-another-python-native-extension-module</a></li>
+                    <li><a href="https://blog.nilleb.com/category/aspettando-di-dormire.html">aspettando-di-dormire</a></li>
+                    <li><a href="https://blog.nilleb.com/category/aspnet-__eventvalidation.html">aspnet-__eventvalidation</a></li>
+                    <li><a href="https://blog.nilleb.com/category/attaching-an-image-blog-test.html">attaching-an-image-blog-test</a></li>
+                    <li><a href="https://blog.nilleb.com/category/autumn-in-turin.html">autumn-in-turin</a></li>
+                    <li><a href="https://blog.nilleb.com/category/back-to-life.html">back-to-life</a></li>
+                    <li><a href="https://blog.nilleb.com/category/belin-wordpress.html">belin-wordpress</a></li>
+                    <li><a href="https://blog.nilleb.com/category/benvenuti-a-ostuni-italia.html">benvenuti-a-ostuni-italia</a></li>
+                    <li><a href="https://blog.nilleb.com/category/bgy-bergamo-orio-al-serio-nrt-narita-tokio-a-piedi.html">bgy-bergamo-orio-al-serio-nrt-narita-tokio-a-piedi</a></li>
+                    <li><a href="https://blog.nilleb.com/category/blogsearchgooglecom.html">blogsearchgooglecom</a></li>
+                    <li><a href="https://blog.nilleb.com/category/breve-aggiornamento-sul-tutto.html">breve-aggiornamento-sul-tutto</a></li>
+                    <li><a href="https://blog.nilleb.com/category/ca-fait-longtemps.html">ca-fait-longtemps</a></li>
+                    <li><a href="https://blog.nilleb.com/category/caffe.html">caffe</a></li>
+                    <li><a href="https://blog.nilleb.com/category/calma-assortita.html">calma-assortita</a></li>
+                    <li><a href="https://blog.nilleb.com/category/campioni-del-mondo.html">campioni-del-mondo</a></li>
+                    <li><a href="https://blog.nilleb.com/category/canon-eos-400d.html">canon-eos-400d</a></li>
+                    <li><a href="https://blog.nilleb.com/category/carotul.html">carotul</a></li>
+                    <li><a href="https://blog.nilleb.com/category/castino-cn.html">castino-cn</a></li>
+                    <li><a href="https://blog.nilleb.com/category/cavoli-quante-difficile-programmare.html">cavoli-quante-difficile-programmare</a></li>
+                    <li><a href="https://blog.nilleb.com/category/che-fantasiosa-realta.html">che-fantasiosa-realta</a></li>
+                    <li><a href="https://blog.nilleb.com/category/coincidenze-pensando-ad-un-amico.html">coincidenze-pensando-ad-un-amico</a></li>
+                    <li><a href="https://blog.nilleb.com/category/color-management-per-firefox-3.html">color-management-per-firefox-3</a></li>
+                    <li><a href="https://blog.nilleb.com/category/computer-science-sleep-python-and-the-gray-sky.html">computer-science-sleep-python-and-the-gray-sky</a></li>
+                    <li><a href="https://blog.nilleb.com/category/cosa-ci-spaventa-del-software-libero.html">cosa-ci-spaventa-del-software-libero</a></li>
+                    <li><a href="https://blog.nilleb.com/category/costa-dorata.html">costa-dorata</a></li>
+                    <li><a href="https://blog.nilleb.com/category/credete-ai-miracoli-informatici.html">credete-ai-miracoli-informatici</a></li>
+                    <li><a href="https://blog.nilleb.com/category/cronologia-web-google-is-tracking-you.html">cronologia-web-google-is-tracking-you</a></li>
+                    <li><a href="https://blog.nilleb.com/category/diari-di-viaggio.html">diari-di-viaggio</a></li>
+                    <li><a href="https://blog.nilleb.com/category/do-not-forget-to-switch-to-elementtree-and-lxml.html">do-not-forget-to-switch-to-elementtree-and-lxml</a></li>
+                    <li><a href="https://blog.nilleb.com/category/dove-pattinare-sul-ghiaccio-a-torino.html">dove-pattinare-sul-ghiaccio-a-torino</a></li>
+                    <li><a href="https://blog.nilleb.com/category/dublino.html">dublino</a></li>
+                    <li><a href="https://blog.nilleb.com/category/e-2.html">e-2</a></li>
+                    <li><a href="https://blog.nilleb.com/category/e-morto-enzo-biagi.html">e-morto-enzo-biagi</a></li>
+                    <li><a href="https://blog.nilleb.com/category/ecologia-in-ufficio.html">ecologia-in-ufficio</a></li>
+                    <li><a href="https://blog.nilleb.com/category/eire.html">eire</a></li>
+                    <li><a href="https://blog.nilleb.com/category/eow.html">eow</a></li>
+                    <li><a href="https://blog.nilleb.com/category/esperimento-per-informatici.html">esperimento-per-informatici</a></li>
+                    <li><a href="https://blog.nilleb.com/category/etools.html">etools</a></li>
+                    <li><a href="https://blog.nilleb.com/category/eucdinfo.html">eucdinfo</a></li>
+                    <li><a href="https://blog.nilleb.com/category/europa.html">europa</a></li>
+                    <li><a href="https://blog.nilleb.com/category/exchange-2010-and-organizational-forms-libraries.html">exchange-2010-and-organizational-forms-libraries</a></li>
+                    <li><a href="https://blog.nilleb.com/category/feel-the-music.html">feel-the-music</a></li>
+                    <li><a href="https://blog.nilleb.com/category/feel-the-music-2.html">feel-the-music-2</a></li>
+                    <li><a href="https://blog.nilleb.com/category/ferragosto.html">ferragosto</a></li>
+                    <li><a href="https://blog.nilleb.com/category/festa-della-repubblica.html">festa-della-repubblica</a></li>
+                    <li><a href="https://blog.nilleb.com/category/fiera-internazionale-del-libro.html">fiera-internazionale-del-libro</a></li>
+                    <li><a href="https://blog.nilleb.com/category/finisterrae.html">finisterrae</a></li>
+                    <li><a href="https://blog.nilleb.com/category/firefox-2.html">firefox-2</a></li>
+                    <li><a href="https://blog.nilleb.com/category/flickr.html">flickr</a></li>
+                    <li><a href="https://blog.nilleb.com/category/for-the-sake-of-completeness.html">for-the-sake-of-completeness</a></li>
+                    <li><a href="https://blog.nilleb.com/category/fotophotos-vieux-lyon.html">fotophotos-vieux-lyon</a></li>
+                    <li><a href="https://blog.nilleb.com/category/friendss-closing.html">friendss-closing</a></li>
+                    <li><a href="https://blog.nilleb.com/category/from-the-wireless-e-ink-book-to-granparadiso.html">from-the-wireless-e-ink-book-to-granparadiso</a></li>
+                    <li><a href="https://blog.nilleb.com/category/fruizione-e-condivizione-dellinformazione.html">fruizione-e-condivizione-dellinformazione</a></li>
+                    <li><a href="https://blog.nilleb.com/category/getting-worse.html">getting-worse</a></li>
+                    <li><a href="https://blog.nilleb.com/category/giocattolaio-senza-etica.html">giocattolaio-senza-etica</a></li>
+                    <li><a href="https://blog.nilleb.com/category/giornata-delezioni.html">giornata-delezioni</a></li>
+                    <li><a href="https://blog.nilleb.com/category/hello-world.html">hello-world</a></li>
+                    <li><a href="https://blog.nilleb.com/category/history.html">history</a></li>
+                    <li><a href="https://blog.nilleb.com/category/ho-sonno-non-saremo-mai-in-tempo.html">ho-sonno-non-saremo-mai-in-tempo</a></li>
+                    <li><a href="https://blog.nilleb.com/category/how-to-add-a-bunch-of-customers-in-your-favourite-sap-system.html">how-to-add-a-bunch-of-customers-in-your-favourite-sap-system</a></li>
+                    <li><a href="https://blog.nilleb.com/category/how-to-contract-a-pacs-being-a-stranger-in-france-still-incomplete.html">how-to-contract-a-pacs-being-a-stranger-in-france-still-incomplete</a></li>
+                    <li><a href="https://blog.nilleb.com/category/how-to-unblock-a-hung-sap-stms-hung-while-importing-requests.html">how-to-unblock-a-hung-sap-stms-hung-while-importing-requests</a></li>
+                    <li><a href="https://blog.nilleb.com/category/how-web-navigation-and-social-networks-can-help-you-finding-masterpieces.html">how-web-navigation-and-social-networks-can-help-you-finding-masterpieces</a></li>
+                    <li><a href="https://blog.nilleb.com/category/hurricane-katrina-from-space-hurricanekatrina.html">hurricane-katrina-from-space-hurricanekatrina</a></li>
+                    <li><a href="https://blog.nilleb.com/category/i-miei-dieci-pensieri.html">i-miei-dieci-pensieri</a></li>
+                    <li><a href="https://blog.nilleb.com/category/i-prossimi-appuntamenti.html">i-prossimi-appuntamenti</a></li>
+                    <li><a href="https://blog.nilleb.com/category/i-rimedi-della-bis-nonna.html">i-rimedi-della-bis-nonna</a></li>
+                    <li><a href="https://blog.nilleb.com/category/ibook-e-layout-italiano-funziona.html">ibook-e-layout-italiano-funziona</a></li>
+                    <li><a href="https://blog.nilleb.com/category/idv.html">idv</a></li>
+                    <li><a href="https://blog.nilleb.com/category/il-mio-bar-preferito.html">il-mio-bar-preferito</a></li>
+                    <li><a href="https://blog.nilleb.com/category/il-mondo-intorno.html">il-mondo-intorno</a></li>
+                    <li><a href="https://blog.nilleb.com/category/il-prossimo-viaggio.html">il-prossimo-viaggio</a></li>
+                    <li><a href="https://blog.nilleb.com/category/il-sogno-di-un-bambino.html">il-sogno-di-un-bambino</a></li>
+                    <li><a href="https://blog.nilleb.com/category/im-at-home.html">im-at-home</a></li>
+                    <li><a href="https://blog.nilleb.com/category/im-back.html">im-back</a></li>
+                    <li><a href="https://blog.nilleb.com/category/im-back-once-more.html">im-back-once-more</a></li>
+                    <li><a href="https://blog.nilleb.com/category/im-not-sure.html">im-not-sure</a></li>
+                    <li><a href="https://blog.nilleb.com/category/immagini-bucoliche.html">immagini-bucoliche</a></li>
+                    <li><a href="https://blog.nilleb.com/category/in-memory-of-carl-ludwig-luz-long.html">in-memory-of-carl-ludwig-luz-long</a></li>
+                    <li><a href="https://blog.nilleb.com/category/indiana-jones-e-la-scheda-di-voto-allestero.html">indiana-jones-e-la-scheda-di-voto-allestero</a></li>
+                    <li><a href="https://blog.nilleb.com/category/indiana-jones-e-la-scheda-di-voto-allestero-seconda-puntata.html">indiana-jones-e-la-scheda-di-voto-allestero-seconda-puntata</a></li>
+                    <li><a href="https://blog.nilleb.com/category/ingiustizia.html">ingiustizia</a></li>
+                    <li><a href="https://blog.nilleb.com/category/inseguendo-un-filo.html">inseguendo-un-filo</a></li>
+                    <li><a href="https://blog.nilleb.com/category/ireland.html">ireland</a></li>
+                    <li><a href="https://blog.nilleb.com/category/irlanda.html">irlanda</a></li>
+                    <li><a href="https://blog.nilleb.com/category/iso-8859-1qblog_via_email.html">iso-8859-1qblog_via_email</a></li>
+                    <li><a href="https://blog.nilleb.com/category/italia-intercettazioni-di-comunicazioni-private.html">italia-intercettazioni-di-comunicazioni-private</a></li>
+                    <li><a href="https://blog.nilleb.com/category/italian-non-sense.html">italian-non-sense</a></li>
+                    <li><a href="https://blog.nilleb.com/category/la-bonaccia-ed-il-foen.html">la-bonaccia-ed-il-foen</a></li>
+                    <li><a href="https://blog.nilleb.com/category/la-cronaca-di-oggi.html">la-cronaca-di-oggi</a></li>
+                    <li><a href="https://blog.nilleb.com/category/la-legge-non-e-uguale-per-tutti.html">la-legge-non-e-uguale-per-tutti</a></li>
+                    <li><a href="https://blog.nilleb.com/category/langage-a-utiliser.html">langage-a-utiliser</a></li>
+                    <li><a href="https://blog.nilleb.com/category/lastfm.html">lastfm</a></li>
+                    <li><a href="https://blog.nilleb.com/category/lautoroute-ferroviaire-sur-les-rails.html">lautoroute-ferroviaire-sur-les-rails</a></li>
+                    <li><a href="https://blog.nilleb.com/category/le-reve-de-cassandra-2.html">le-reve-de-cassandra-2</a></li>
+                    <li><a href="https://blog.nilleb.com/category/le-reve-de-cassandre.html">le-reve-de-cassandre</a></li>
+                    <li><a href="https://blog.nilleb.com/category/legge-del-week-end.html">legge-del-week-end</a></li>
+                    <li><a href="https://blog.nilleb.com/category/leggerezza.html">leggerezza</a></li>
+                    <li><a href="https://blog.nilleb.com/category/let-me-introduce-daniele.html">let-me-introduce-daniele</a></li>
+                    <li><a href="https://blog.nilleb.com/category/lingua-italiana-latex-e-utf-8.html">lingua-italiana-latex-e-utf-8</a></li>
+                    <li><a href="https://blog.nilleb.com/category/litalia-va-a-destra.html">litalia-va-a-destra</a></li>
+                    <li><a href="https://blog.nilleb.com/category/lo-spirito-del-cagacazzo-e-forte-in-me.html">lo-spirito-del-cagacazzo-e-forte-in-me</a></li>
+                    <li><a href="https://blog.nilleb.com/category/loca-lyon.html">loca-lyon</a></li>
+                    <li><a href="https://blog.nilleb.com/category/lultima-settimana.html">lultima-settimana</a></li>
+                    <li><a href="https://blog.nilleb.com/category/ma-che-carina-questa-pianta-di-mais-con-tre-pannocchie-sulla-stessa-foglia.html">ma-che-carina-questa-pianta-di-mais-con-tre-pannocchie-sulla-stessa-foglia</a></li>
+                    <li><a href="https://blog.nilleb.com/category/menage-fait-ubuntu-mise-a-jour.html">menage-fait-ubuntu-mise-a-jour</a></li>
+                    <li><a href="https://blog.nilleb.com/category/mh-mmmh-mh.html">mh-mmmh-mh</a></li>
+                    <li><a href="https://blog.nilleb.com/category/mi-vergogno-di-essere-italiano.html">mi-vergogno-di-essere-italiano</a></li>
+                    <li><a href="https://blog.nilleb.com/category/microsoft-ooxml-will-continue-to-run-the-gauntlet.html">microsoft-ooxml-will-continue-to-run-the-gauntlet</a></li>
+                    <li><a href="https://blog.nilleb.com/category/miro.html">miro</a></li>
+                    <li><a href="https://blog.nilleb.com/category/mise-a-jour-sans-sens.html">mise-a-jour-sans-sens</a></li>
+                    <li><a href="https://blog.nilleb.com/category/molto-dubbioso-sulle-sorti-dellitalia.html">molto-dubbioso-sulle-sorti-dellitalia</a></li>
+                    <li><a href="https://blog.nilleb.com/category/much-more-into-the-world.html">much-more-into-the-world</a></li>
+                    <li><a href="https://blog.nilleb.com/category/musica-in-streaming.html">musica-in-streaming</a></li>
+                    <li><a href="https://blog.nilleb.com/category/my-new-python-pendrive.html">my-new-python-pendrive</a></li>
+                    <li><a href="https://blog.nilleb.com/category/myanmar.html">myanmar</a></li>
+                    <li><a href="https://blog.nilleb.com/category/net-updates-are-graying-out-your-web-site.html">net-updates-are-graying-out-your-web-site</a></li>
+                    <li><a href="https://blog.nilleb.com/category/news.html">news</a></li>
+                    <li><a href="https://blog.nilleb.com/category/news-at-morning.html">news-at-morning</a></li>
+                    <li><a href="https://blog.nilleb.com/category/news-today.html">news-today</a></li>
+                    <li><a href="https://blog.nilleb.com/category/nilleb-tech-blog.html">nilleb-tech-blog</a></li>
+                    <li><a href="https://blog.nilleb.com/category/notizie-in-ordine-sparso.html">notizie-in-ordine-sparso</a></li>
+                    <li><a href="https://blog.nilleb.com/category/nouveau-calendrier.html">nouveau-calendrier</a></li>
+                    <li><a href="https://blog.nilleb.com/category/official-announcements.html">official-announcements</a></li>
+                    <li><a href="https://blog.nilleb.com/category/oh-la-la.html">oh-la-la</a></li>
+                    <li><a href="https://blog.nilleb.com/category/openlebanonorg.html">openlebanonorg</a></li>
+                    <li><a href="https://blog.nilleb.com/category/openvideocrawler.html">openvideocrawler</a></li>
+                    <li><a href="https://blog.nilleb.com/category/palleggio-lento.html">palleggio-lento</a></li>
+                    <li><a href="https://blog.nilleb.com/category/pang-sei-morto.html">pang-sei-morto</a></li>
+                    <li><a href="https://blog.nilleb.com/category/pattinare-a-torino-2007.html">pattinare-a-torino-2007</a></li>
+                    <li><a href="https://blog.nilleb.com/category/pause.html">pause</a></li>
+                    <li><a href="https://blog.nilleb.com/category/pcnfsd-questo-sconosciuto.html">pcnfsd-questo-sconosciuto</a></li>
+                    <li><a href="https://blog.nilleb.com/category/pd.html">pd</a></li>
+                    <li><a href="https://blog.nilleb.com/category/pensieri-sparsi.html">pensieri-sparsi</a></li>
+                    <li><a href="https://blog.nilleb.com/category/perche-fare-le-cose-se-le-si-fanno-male.html">perche-fare-le-cose-se-le-si-fanno-male</a></li>
+                    <li><a href="https://blog.nilleb.com/category/piccole-perle-sulla-rete.html">piccole-perle-sulla-rete</a></li>
+                    <li><a href="https://blog.nilleb.com/category/piccoli-passi.html">piccoli-passi</a></li>
+                    <li><a href="https://blog.nilleb.com/category/pistacchio-pronto.html">pistacchio-pronto</a></li>
+                    <li><a href="https://blog.nilleb.com/category/poesia-portoghese.html">poesia-portoghese</a></li>
+                    <li><a href="https://blog.nilleb.com/category/politica.html">politica</a></li>
+                    <li><a href="https://blog.nilleb.com/category/post-20240223-searching-for-people.html">post-20240223-searching-for-people</a></li>
+                    <li><a href="https://blog.nilleb.com/category/post-20240225-clustering-vectors.html">post-20240225-clustering-vectors</a></li>
+                    <li><a href="https://blog.nilleb.com/category/post-by-email-ca-marche-aussi.html">post-by-email-ca-marche-aussi</a></li>
+                    <li><a href="https://blog.nilleb.com/category/preoccupato-dalla-pubblica-amministrazione.html">preoccupato-dalla-pubblica-amministrazione</a></li>
+                    <li><a href="https://blog.nilleb.com/category/primavera-in-canavese.html">primavera-in-canavese</a></li>
+                    <li><a href="https://blog.nilleb.com/category/prova.html">prova</a></li>
+                    <li><a href="https://blog.nilleb.com/category/pub-concrete-leaf.html">pub-concrete-leaf</a></li>
+                    <li><a href="https://blog.nilleb.com/category/pynotes-1.html">pynotes-1</a></li>
+                    <li><a href="https://blog.nilleb.com/category/quante-belle-notizie.html">quante-belle-notizie</a></li>
+                    <li><a href="https://blog.nilleb.com/category/quel-che-si-vede.html">quel-che-si-vede</a></li>
+                    <li><a href="https://blog.nilleb.com/category/quotidiani-e-rss-feed.html">quotidiani-e-rss-feed</a></li>
+                    <li><a href="https://blog.nilleb.com/category/recuperando-dati.html">recuperando-dati</a></li>
+                    <li><a href="https://blog.nilleb.com/category/relazioni-nascoste-tra-la-francia-e-litalia.html">relazioni-nascoste-tra-la-francia-e-litalia</a></li>
+                    <li><a href="https://blog.nilleb.com/category/respire.html">respire</a></li>
+                    <li><a href="https://blog.nilleb.com/category/revue-de-presse-22042008-1545.html">revue-de-presse-22042008-1545</a></li>
+                    <li><a href="https://blog.nilleb.com/category/revue-de-presse-2404.html">revue-de-presse-2404</a></li>
+                    <li><a href="https://blog.nilleb.com/category/ricordi.html">ricordi</a></li>
+                    <li><a href="https://blog.nilleb.com/category/riflessione-piccoli-ingegneri-crescono.html">riflessione-piccoli-ingegneri-crescono</a></li>
+                    <li><a href="https://blog.nilleb.com/category/riportatemi-la-mia-voglia-di-lavorare.html">riportatemi-la-mia-voglia-di-lavorare</a></li>
+                    <li><a href="https://blog.nilleb.com/category/rivarolo-my-town.html">rivarolo-my-town</a></li>
+                    <li><a href="https://blog.nilleb.com/category/run-a-google-cloud-datalab-instance-on-your-computer.html">run-a-google-cloud-datalab-instance-on-your-computer</a></li>
+                    <li><a href="https://blog.nilleb.com/category/sabato-a-la-plagne-la-rai-ai-comunisti-e-una-domenica-grigia.html">sabato-a-la-plagne-la-rai-ai-comunisti-e-una-domenica-grigia</a></li>
+                    <li><a href="https://blog.nilleb.com/category/san-martino-campanaro.html">san-martino-campanaro</a></li>
+                    <li><a href="https://blog.nilleb.com/category/sapping.html">sapping</a></li>
+                    <li><a href="https://blog.nilleb.com/category/sconvolto.html">sconvolto</a></li>
+                    <li><a href="https://blog.nilleb.com/category/sei-gradi-di-separazione.html">sei-gradi-di-separazione</a></li>
+                    <li><a href="https://blog.nilleb.com/category/sempre-in-viaggio.html">sempre-in-viaggio</a></li>
+                    <li><a href="https://blog.nilleb.com/category/shiny-happy-people.html">shiny-happy-people</a></li>
+                    <li><a href="https://blog.nilleb.com/category/silenzio.html">silenzio</a></li>
+                    <li><a href="https://blog.nilleb.com/category/slow-down.html">slow-down</a></li>
+                    <li><a href="https://blog.nilleb.com/category/software-per-gentooppc-linux.html">software-per-gentooppc-linux</a></li>
+                    <li><a href="https://blog.nilleb.com/category/sognando.html">sognando</a></li>
+                    <li><a href="https://blog.nilleb.com/category/soluzioni-al-traffico.html">soluzioni-al-traffico</a></li>
+                    <li class="active"><a href="https://blog.nilleb.com/category/speeding-up-a-gae-standard-application-automated-tests.html">speeding-up-a-gae-standard-application-automated-tests</a></li>
+                    <li><a href="https://blog.nilleb.com/category/tanti-pensieri-di-corsa.html">tanti-pensieri-di-corsa</a></li>
+                    <li><a href="https://blog.nilleb.com/category/testing-my-blog.html">testing-my-blog</a></li>
+                    <li><a href="https://blog.nilleb.com/category/thats-a-long-long-way.html">thats-a-long-long-way</a></li>
+                    <li><a href="https://blog.nilleb.com/category/the-devils-in-the-details.html">the-devils-in-the-details</a></li>
+                    <li><a href="https://blog.nilleb.com/category/the-last-weekend-of-august.html">the-last-weekend-of-august</a></li>
+                    <li><a href="https://blog.nilleb.com/category/the-span-of-freedom.html">the-span-of-freedom</a></li>
+                    <li><a href="https://blog.nilleb.com/category/thierry-raymond-e-gli-altri.html">thierry-raymond-e-gli-altri</a></li>
+                    <li><a href="https://blog.nilleb.com/category/this-blog-has-moved.html">this-blog-has-moved</a></li>
+                    <li><a href="https://blog.nilleb.com/category/too-much.html">too-much</a></li>
+                    <li><a href="https://blog.nilleb.com/category/top-10-its-disasters.html">top-10-its-disasters</a></li>
+                    <li><a href="https://blog.nilleb.com/category/torino-olimpica.html">torino-olimpica</a></li>
+                    <li><a href="https://blog.nilleb.com/category/tra-una-foto-e-laltra.html">tra-una-foto-e-laltra</a></li>
+                    <li><a href="https://blog.nilleb.com/category/tra-una-vacanza-e-laltra.html">tra-una-vacanza-e-laltra</a></li>
+                    <li><a href="https://blog.nilleb.com/category/trip-ecologista.html">trip-ecologista</a></li>
+                    <li><a href="https://blog.nilleb.com/category/trying-scribefire-2.html">trying-scribefire-2</a></li>
+                    <li><a href="https://blog.nilleb.com/category/tutto-e-possibile-con-mastelcard.html">tutto-e-possibile-con-mastelcard</a></li>
+                    <li><a href="https://blog.nilleb.com/category/uhi-ohi-ahi-la-liberta.html">uhi-ohi-ahi-la-liberta</a></li>
+                    <li><a href="https://blog.nilleb.com/category/ullallah.html">ullallah</a></li>
+                    <li><a href="https://blog.nilleb.com/category/ultime-novit.html">ultime-novit</a></li>
+                    <li><a href="https://blog.nilleb.com/category/un-evento-importante-unoccasione-di-festa.html">un-evento-importante-unoccasione-di-festa</a></li>
+                    <li><a href="https://blog.nilleb.com/category/un-lundi-particulier.html">un-lundi-particulier</a></li>
+                    <li><a href="https://blog.nilleb.com/category/un-pomeriggio-di-mezzofine-settembre.html">un-pomeriggio-di-mezzofine-settembre</a></li>
+                    <li><a href="https://blog.nilleb.com/category/una-tattica-vincente.html">una-tattica-vincente</a></li>
+                    <li><a href="https://blog.nilleb.com/category/uno-scomodo-peso.html">uno-scomodo-peso</a></li>
+                    <li><a href="https://blog.nilleb.com/category/updates-from-snips.html">updates-from-snips</a></li>
+                    <li><a href="https://blog.nilleb.com/category/vacanze.html">vacanze</a></li>
+                    <li><a href="https://blog.nilleb.com/category/villa-hanbury-capo-mortola.html">villa-hanbury-capo-mortola</a></li>
+                    <li><a href="https://blog.nilleb.com/category/vive-la-fete-des-lumieres.html">vive-la-fete-des-lumieres</a></li>
+                    <li><a href="https://blog.nilleb.com/category/volo.html">volo</a></li>
+                    <li><a href="https://blog.nilleb.com/category/votare-dallestero.html">votare-dallestero</a></li>
+                    <li><a href="https://blog.nilleb.com/category/waw-2009.html">waw-2009</a></li>
+                    <li><a href="https://blog.nilleb.com/category/week-end.html">week-end</a></li>
+                    <li><a href="https://blog.nilleb.com/category/what-a-day.html">what-a-day</a></li>
+                    <li><a href="https://blog.nilleb.com/category/what-about-an-expensive-double-screen.html">what-about-an-expensive-double-screen</a></li>
+                    <li><a href="https://blog.nilleb.com/category/whats-miro.html">whats-miro</a></li>
+                    <li><a href="https://blog.nilleb.com/category/whats-new-about-olympic-games.html">whats-new-about-olympic-games</a></li>
+                    <li><a href="https://blog.nilleb.com/category/windbg-portable.html">windbg-portable</a></li>
+                    <li><a href="https://blog.nilleb.com/category/wordpress-to-blogger.html">wordpress-to-blogger</a></li>
+                    <li><a href="https://blog.nilleb.com/category/wordpress-upgrade.html">wordpress-upgrade</a></li>
+                    <li><a href="https://blog.nilleb.com/category/writelycom.html">writelycom</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="https://blog.nilleb.com/speeding-up-a-gae-standard-application-automated-tests.html" rel="bookmark"
+           title="Permalink to "Speeding up a GAE-standard application automated tests"">"Speeding up a GAE-standard application automated tests"</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-05-29T00:00:00+02:00">
+                Published: 2017-05-29
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://blog.nilleb.com/author/nilleb-ivo-bellin-salarin.html">nilleb - Ivo Bellin Salarin</a>
+        </address>
+<p>In <a href="https://blog.nilleb.com/category/speeding-up-a-gae-standard-application-automated-tests.html">speeding-up-a-gae-standard-application-automated-tests</a>.</p>
+
+</footer><!-- /.post-info -->      <ul>
+<li>"development"</li>
+<li>"python"</li>
+<li>"test"</li>
+</ul>
+<hr>
+<p>If you’re developing on a Google AppEngine standard environment, you know how slow the dev_appserver is. You have surely experienced its long setup times on the first request being served (probably because of the SQLite based datastore implementation). And also the long shutdown times (when the search indexes are being written to the disk).</p>
+<p><a href="https://www.lumapps.com/en/">LumApps</a> had an automated tests suite, split up in scenarii. Each scenario was performing a set of requests to a (new) dev_appserver instance. The isolation was made restoring the datastore and search index before playing a scenario. A specific scenario was in charge of recreating the reference datastore and search index. To complete the isolation, the instance was rebooted between two scenarii.</p>
+<p>In this situation, the scenarii took 46’ to complete. We didn’t have an idea of how much code was being covered. We just evaluated the number of public endpoints being called (this gave a gross evaluation). Debugging the server in order to get more information about what was going on was also kind of prehistoric.</p>
+<p>And last, on my system the tests took even more than 46’. Much more. And I was unable to test my code impacts.</p>
+<h2>The journey begins</h2>
+<p>At first, I started coding unit tests. Since I was new to Python and GAE, that allowed me to discover coverage.py, pytest, mock, and the GAE testbed. I was delighted about their maturity level and the functionalities they sported out. In particular, thanks Ned, thanks Alex.</p>
+<p>After a few weeks writing unit tests, my thoughts went back to the existing automated tests. I knew that I could make something to speed them up. How do they work? They’re LumRest scenarii (LumRest is an <a href="https://github.com/lumapps/lumRest">open-source project</a>). You just put in a <a href="https://github.com/lumapps/lumRest/blob/master/scenarios/urlshortener.yaml">yaml file</a> a list of commands, where each command corresponds to an endpoint that shall be called. Each command has a body (in the form of: a json file, inline json, a list of fields and the corresponding values). When in the scope of a command, you have a few keywords that allow you to eval python code or jsonpath expressions, just before or just after emitting the request. You can save a response, in order to reuse it. And you can check that the response corresponds to a certain model/statuscode.</p>
+<h2>Discovering endpoints and messages</h2>
+<p>The first step I took was to discover endpoints and messages. When addressing google-endpoints, you have to provide a typed request and you will receive a typed response. Type validation takes place when querying endpoints. Discovering endpoints was pretty easy, using the <code>get_api_classes()</code> method.</p>
+<div class="highlight"><pre><span></span><code><span class="n">our_endpoints</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">endpoints</span><span class="p">.</span><span class="n">api</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;application&#39;</span><span class="p">,</span>
+<span class="w"> </span><span class="n">version</span><span class="o">=</span><span class="s1">&#39;v1&#39;</span><span class="p">,</span>
+<span class="w"> </span><span class="n">description</span><span class="o">=</span><span class="ss">&quot;Application APIs&quot;</span><span class="p">,</span>
+<span class="w"> </span><span class="n">documentation</span><span class="o">=</span><span class="ss">&quot;http://api.company.com/application/&quot;</span><span class="p">,</span>
+<span class="w"> </span><span class="n">allowed_client_ids</span><span class="o">=</span><span class="n">CLIENT_IDS</span><span class="p">)</span>
+
+<span class="n">def</span><span class="w"> </span><span class="n">get_endpoints_map</span><span class="p">(</span><span class="n">endpoints_def</span><span class="p">)</span><span class="err">:</span>
+<span class="w"> </span><span class="n">api_classes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">endpoints_def</span><span class="p">.</span><span class="n">get_api_classes</span><span class="p">()</span>
+<span class="w"> </span><span class="n">paths</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">{}</span>
+<span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">cls</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nl">api_classes</span><span class="p">:</span>
+<span class="w"> </span><span class="n">base_path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cls</span><span class="p">.</span><span class="n">api_info</span><span class="p">.</span><span class="n">_ApiInfo__path</span>
+<span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">_</span><span class="p">,</span><span class="w"> </span><span class="n">method_desc</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">cls</span><span class="p">.</span><span class="n">_ServiceClass__remote_methods</span><span class="p">.</span><span class="n">items</span><span class="p">()</span><span class="err">:</span>
+<span class="w"> </span><span class="n">method_key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;{}/{}&#39;</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">base_path</span><span class="p">,</span><span class="w"> </span><span class="n">method_desc</span><span class="p">.</span><span class="n">method_info</span><span class="p">.</span><span class="n">_MethodInfo__path</span><span class="p">)</span>
+<span class="w"> </span><span class="n">paths</span><span class="o">[</span><span class="n">method_key</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">cls</span><span class="p">,</span><span class="w"> </span><span class="n">method_desc</span><span class="p">)</span>
+<span class="w"> </span><span class="n">assert</span><span class="w"> </span><span class="n">paths</span>
+<span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">paths</span>
+
+<span class="n">api_map</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">get_endpoints_map</span><span class="p">(</span><span class="n">our_endpoints</span><span class="p">)</span>
+<span class="err">#</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">api_map</span>
+<span class="err">{</span><span class="s1">&#39;user/list&#39;</span><span class="err">:</span><span class="w"> </span><span class="o">&lt;</span><span class="k">function</span><span class="o">&gt;</span><span class="err">}</span>
+<span class="err">{</span><span class="s1">&#39;user/get&#39;</span><span class="err">:</span><span class="w"> </span><span class="o">&lt;</span><span class="k">function</span><span class="o">&gt;</span><span class="err">}</span>
+<span class="o">[</span><span class="n">..</span><span class="o">]</span>
+</code></pre></div>
+
+<p>This function hasn’t evolved at all, that’s a sign that it was good enough to get its job done. The discovery doesn’t take long, and it is being executed only once, at the beginning of the tests.</p>
+<h2>Call the endpoints…</h2>
+<p>Once the endpoints were known, how to use them? I had the function to call, and that means also the request/response types. But our implementation was just passing json objects and getting back json objects.</p>
+<p>On the one way side, I have searched the google code for the classes transforming a json request in a Message, but after a while I decided that implementing a simple recursive algorithm would have taken less time. I was probably wrong, because I kept modifying this function until the last days. But with about 50 lines of code, today everything seems to work.</p>
+<div class="highlight"><pre><span></span><code><span class="n">def</span><span class="w"> </span><span class="n">process_value</span><span class="p">(</span><span class="n">value_type</span><span class="p">,</span><span class="w"> </span><span class="k">value</span><span class="p">,</span><span class="w"> </span><span class="n">is_repeated</span><span class="p">,</span><span class="w"> </span><span class="n">contextualize</span><span class="o">=</span><span class="k">None</span><span class="p">)</span><span class="err">:</span>
+<span class="w"> </span><span class="k">current</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">value</span>
+<span class="w"> </span><span class="n">variant</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value_type</span><span class="p">.</span><span class="n">variant</span>
+<span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">is_repeated</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="n">isinstance</span><span class="p">(</span><span class="k">value</span><span class="p">,</span><span class="w"> </span><span class="n">list</span><span class="p">)</span><span class="err">:</span>
+<span class="w"> </span><span class="k">current</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="n">value</span><span class="o">]</span>
+<span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">is_repeated</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="k">value</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="k">None</span><span class="err">:</span>
+<span class="w"> </span><span class="k">current</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">[]</span>
+<span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">variant</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">Variant</span><span class="p">.</span><span class="nl">ENUM</span><span class="p">:</span>
+<span class="w"> </span><span class="k">current</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value_type</span><span class="p">.</span><span class="n">type</span><span class="p">(</span><span class="k">value</span><span class="p">)</span>
+<span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">variant</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">Variant</span><span class="p">.</span><span class="n">STRING</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">isinstance</span><span class="p">(</span><span class="k">value</span><span class="p">,</span><span class="w"> </span><span class="nc">int</span><span class="p">)</span><span class="err">:</span>
+<span class="w"> </span><span class="k">current</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">unicode</span><span class="p">(</span><span class="k">value</span><span class="p">)</span>
+<span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">variant</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">Variant</span><span class="p">.</span><span class="n">INT32</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">isinstance</span><span class="p">(</span><span class="k">value</span><span class="p">,</span><span class="w"> </span><span class="n">basestring</span><span class="p">)</span><span class="err">:</span>
+<span class="w"> </span><span class="k">current</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">int</span><span class="p">(</span><span class="k">value</span><span class="p">)</span>
+<span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">variant</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">Variant</span><span class="p">.</span><span class="nl">MESSAGE</span><span class="p">:</span>
+<span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nl">is_repeated</span><span class="p">:</span>
+<span class="w"> </span><span class="k">current</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">[]</span>
+<span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">isinstance</span><span class="p">(</span><span class="k">value</span><span class="p">,</span><span class="w"> </span><span class="n">list</span><span class="p">)</span><span class="err">:</span>
+<span class="w"> </span><span class="k">current</span><span class="p">.</span><span class="n">extend</span><span class="p">(</span><span class="n">process_value</span><span class="p">(</span><span class="n">value_type</span><span class="p">,</span><span class="w"> </span><span class="n">item</span><span class="p">,</span><span class="w"> </span><span class="k">False</span><span class="p">,</span><span class="w"> </span><span class="n">contextualize</span><span class="p">)</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">item</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="k">value</span><span class="p">)</span>
+<span class="w"> </span><span class="n">elif</span><span class="w"> </span><span class="n">isinstance</span><span class="p">(</span><span class="k">value</span><span class="p">,</span><span class="w"> </span><span class="n">dict</span><span class="p">)</span><span class="err">:</span>
+<span class="w"> </span><span class="n">list_elem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value_type</span><span class="p">.</span><span class="n">type</span><span class="p">()</span>
+<span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="k">key</span><span class="p">,</span><span class="w"> </span><span class="n">item</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="k">value</span><span class="p">.</span><span class="n">items</span><span class="p">()</span><span class="err">:</span>
+<span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">hasattr</span><span class="p">(</span><span class="n">list_elem</span><span class="p">,</span><span class="w"> </span><span class="k">key</span><span class="p">)</span><span class="err">:</span>
+<span class="w"> </span><span class="k">current</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="n">process_value(</span>
+<span class="n"> getattr(value_type.type, key), item, value_type.type.repeated, contextualize</span>
+<span class="n"> )</span><span class="o">]</span>
+<span class="w"> </span><span class="k">else</span><span class="err">:</span>
+<span class="w"> </span><span class="n">raise</span><span class="w"> </span><span class="n">ValueError</span><span class="p">(</span><span class="s1">&#39;unexpected type {} for value&#39;</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">type</span><span class="p">(</span><span class="k">value</span><span class="p">)))</span>
+<span class="w"> </span><span class="k">else</span><span class="err">:</span>
+<span class="w"> </span><span class="k">current</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value_type</span><span class="p">.</span><span class="n">type</span><span class="p">()</span>
+<span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="k">key</span><span class="p">,</span><span class="w"> </span><span class="n">item</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="k">value</span><span class="p">.</span><span class="n">items</span><span class="p">()</span><span class="err">:</span>
+<span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">hasattr</span><span class="p">(</span><span class="k">current</span><span class="p">,</span><span class="w"> </span><span class="k">key</span><span class="p">)</span><span class="err">:</span>
+<span class="w"> </span><span class="n">subtype</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getattr</span><span class="p">(</span><span class="n">value_type</span><span class="p">.</span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="k">key</span><span class="p">)</span>
+<span class="w"> </span><span class="n">setattr</span><span class="p">(</span><span class="k">current</span><span class="p">,</span><span class="w"> </span><span class="k">key</span><span class="p">,</span><span class="w"> </span><span class="n">process_value</span><span class="p">(</span><span class="n">subtype</span><span class="p">,</span><span class="w"> </span><span class="n">item</span><span class="p">,</span><span class="w"> </span><span class="n">subtype</span><span class="p">.</span><span class="n">repeated</span><span class="p">,</span><span class="w"> </span><span class="n">contextualize</span><span class="p">))</span>
+<span class="w"> </span><span class="k">else</span><span class="err">:</span>
+<span class="w"> </span><span class="n">context</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">contextualize</span><span class="p">()</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">contextualize</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;&#39;</span>
+<span class="w"> </span><span class="n">logger</span><span class="p">.</span><span class="n">warning</span><span class="p">(</span><span class="ss">&quot;%s the request type &lt;%s&gt; lacks a &#39;%s&#39; attribute&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">context</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="p">,</span><span class="w"> </span><span class="k">key</span><span class="p">)</span>
+<span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="k">current</span>
+
+<span class="n">def</span><span class="w"> </span><span class="n">call_endpoint</span><span class="p">(</span><span class="n">target_class</span><span class="p">,</span><span class="w"> </span><span class="n">method_desc</span><span class="p">,</span><span class="w"> </span><span class="n">contextualize</span><span class="o">=</span><span class="k">None</span><span class="p">,</span><span class="w"> </span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span><span class="err">:</span>
+<span class="w"> </span><span class="n">request_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">method_desc</span><span class="p">.</span><span class="n">remote</span><span class="p">.</span><span class="n">request_type</span>
+<span class="w"> </span><span class="n">response_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">method_desc</span><span class="p">.</span><span class="n">remote</span><span class="p">.</span><span class="n">response_type</span>
+<span class="w"> </span><span class="n">request</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">request_type</span><span class="p">()</span>
+<span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nl">kwargs</span><span class="p">:</span>
+<span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="k">key</span><span class="p">,</span><span class="w"> </span><span class="k">value</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">kwargs</span><span class="p">.</span><span class="n">items</span><span class="p">()</span><span class="err">:</span>
+<span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">hasattr</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="w"> </span><span class="k">key</span><span class="p">)</span><span class="err">:</span>
+<span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getattr</span><span class="p">(</span><span class="n">request_type</span><span class="p">,</span><span class="w"> </span><span class="k">key</span><span class="p">,</span><span class="w"> </span><span class="k">None</span><span class="p">)</span>
+<span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nl">value_type</span><span class="p">:</span>
+<span class="w"> </span><span class="n">setattr</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="w"> </span><span class="k">key</span><span class="p">,</span><span class="w"> </span><span class="n">process_value</span><span class="p">(</span><span class="n">value_type</span><span class="p">,</span><span class="w"> </span><span class="k">value</span><span class="p">,</span><span class="w"> </span><span class="n">value_type</span><span class="p">.</span><span class="n">repeated</span><span class="p">,</span><span class="w"> </span><span class="n">contextualize</span><span class="p">))</span>
+<span class="w"> </span><span class="k">else</span><span class="err">:</span>
+<span class="w"> </span><span class="n">setattr</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="w"> </span><span class="k">key</span><span class="p">,</span><span class="w"> </span><span class="k">value</span><span class="p">)</span>
+<span class="w"> </span><span class="k">else</span><span class="err">:</span>
+<span class="w"> </span><span class="n">context</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">contextualize</span><span class="p">()</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">contextualize</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;&#39;</span>
+<span class="w"> </span><span class="n">logger</span><span class="p">.</span><span class="n">warning</span><span class="p">(</span><span class="ss">&quot;%s the request type &lt;%s&gt; lacks a &#39;%s&#39; attribute&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">context</span><span class="p">,</span><span class="w"> </span><span class="n">request_type</span><span class="p">,</span><span class="w"> </span><span class="k">key</span><span class="p">)</span>
+
+<span class="n">instance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">target_class</span><span class="p">()</span>
+<span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">isinstance</span><span class="p">(</span><span class="n">instance</span><span class="p">,</span><span class="w"> </span><span class="n">Service</span><span class="p">)</span><span class="err">:</span>
+<span class="w"> </span><span class="n">instance</span><span class="p">.</span><span class="n">initialize_request_state</span><span class="p">(</span><span class="n">FakeHttpRequestState</span><span class="p">())</span>
+
+<span class="n">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">method_desc</span><span class="p">(</span><span class="n">instance</span><span class="p">,</span><span class="w"> </span><span class="n">request</span><span class="p">)</span>
+<span class="w"> </span><span class="n">assert</span><span class="w"> </span><span class="n">isinstance</span><span class="p">(</span><span class="n">response</span><span class="p">,</span><span class="w"> </span><span class="n">response_type</span><span class="p">)</span>
+<span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">response</span>
+</code></pre></div>
+
+<h2>.. and get something back</h2>
+<p>Then it came the time of serializing the response. In this case, I was so dissatisfied with my implementation, that after a few days I searched more in depth the google code, finding at last ProtoJson. This is probably not the code used by the appserver (because the serialization sometimes differs, when it’s question of nested empty dictionaries/lists).</p>
+<div class="highlight"><pre><span></span><code><span class="n">def</span><span class="w"> </span><span class="n">typed_response_to_dict</span><span class="p">(</span><span class="n">instance</span><span class="p">):</span>
+<span class="w"> </span><span class="n">converted</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">instance</span>
+<span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">isinstance</span><span class="p">(</span><span class="n">instance</span><span class="p">,</span><span class="w"> </span><span class="n">Message</span><span class="p">):</span>
+<span class="w"> </span><span class="n">original_instance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">instance</span><span class="p">)</span>
+<span class="w"> </span><span class="n">converted</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">ProtoJson</span><span class="p">()</span><span class="o">.</span><span class="n">encode_message</span><span class="p">(</span><span class="n">instance</span><span class="p">))</span>
+<span class="w"> </span><span class="c1"># fixette: to pass the workflow tests (dictionaries which contain only None values are dropped) till the root</span>
+<span class="w"> </span><span class="c1"># this is not true for the dev_appserver</span>
+<span class="w"> </span><span class="n">original_properties</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getattr</span><span class="p">(</span><span class="n">original_instance</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;properties&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{})</span>
+<span class="w"> </span><span class="n">properties</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getattr</span><span class="p">(</span><span class="n">instance</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;properties&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{})</span>
+<span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">original_properties</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="n">properties</span><span class="p">:</span>
+<span class="w"> </span><span class="n">converted</span><span class="p">[</span><span class="s1">&#39;properties&#39;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{}</span>
+<span class="w"> </span><span class="k">elif</span><span class="w"> </span><span class="n">isinstance</span><span class="p">(</span><span class="n">instance</span><span class="p">,</span><span class="w"> </span><span class="n">BaseEndpointsModel</span><span class="p">):</span>
+<span class="w"> </span><span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s1">&#39;We are receiving a BaseEndpointsModel instead of a protorpc.messages.Message&#39;</span><span class="p">)</span>
+<span class="w"> </span><span class="n">converted</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">instance</span><span class="o">.</span><span class="n">to_dict_full</span><span class="p">()</span>
+<span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">converted</span>
+</code></pre></div>
+
+<h2>Stubbing out the dev_appserver — a rapid introduction</h2>
+<p>The pitch of this dissertation was about the slugginess of the dev_appserver. So, how to make it faster? When you’re unit-testing a GAE application, you can use the <a href="https://cloud.google.com/appengine/docs/standard/python/tools/localunittesting">testbed</a>. It’s a great piece of code. My knowledge of the dev_appserver is small, yet, but.. It uses a set of stubs to fullfill its tasks. On the production nvironment, these stubs are being replaced with real services, queried through an api_proxy. On the local environment, the dev_appserver uses Sqlite as datastore stub, the RAM for the memcache and the search_index stubs. In the unit tests context, you will be using an alternative DatastoreStub (based on simple pickling/unpickling of objects to the filesystem) and the same stubs for the search_index and memcache. You could be willing to use also the urlfetch stub (when consuming data from google cloud storage, for example). It’s good to know that you will have to initialize the blobstore stub along with the urlfetch stub:</p>
+<div class="highlight"><pre><span></span><code>self.testbed.init_blobstore_stub()
+self.testbed.init_urlfetch_stub()
+</code></pre></div>
+
+<p>And, if your application is made up of several modules, you will also need the modules stub. I suggest you to read the topic on <a href="http://stackoverflow.com/a/28228867">http://stackoverflow.com/a/28228867</a>, in order to know how to initialize all the modules required by your application. And, at last, if your application uses deferred tasks and/or background tasks, you will have to initialize the taskqueue stub specifying the path to the folder containing the <code>queues.yaml</code> file. I have not mentioned the email stub or the appidentity stub (or all the other stubs you could need for your tests). It’s better to read the official documentation, there’s always a useful option you could make profit of.</p>
+<h3>Persist data</h3>
+<p>If you like to persist the data at the end of a test, you can use the datastore_file=path, save_changes=True option of the init_datastore_stub. For the search index stub, you will have to get the stub and use its Write method. We use this technique for our ‘generator’ scenario.</p>
+<h4>At the test setup</h4>
+<div class="highlight"><pre><span></span><code><span class="bp">self</span><span class="o">.</span><span class="n">testbed</span> <span class="o">=</span> <span class="n">testbed</span><span class="o">.</span><span class="n">Testbed</span><span class="p">()</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">testbed</span><span class="o">.</span><span class="n">activate</span><span class="p">()</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">testbed</span><span class="o">.</span><span class="n">init_memcache_stub</span><span class="p">()</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">testbed</span><span class="o">.</span><span class="n">init_datastore_v3_stub</span><span class="p">(</span><span class="n">datastore_file</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">DATASTORE_FILE</span><span class="p">,</span> <span class="n">save_changes</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="p">[</span><span class="o">..</span><span class="p">]</span>
+<span class="kn">from</span> <span class="nn">google.appengine.ext.testbed</span> <span class="kn">import</span> <span class="n">SEARCH_SERVICE_NAME</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">enable</span><span class="p">:</span>
+ <span class="bp">self</span><span class="o">.</span><span class="n">testbed</span><span class="o">.</span><span class="n">_disable_stub</span><span class="p">(</span><span class="n">SEARCH_SERVICE_NAME</span><span class="p">)</span>
+ <span class="k">return</span>
+<span class="kn">from</span> <span class="nn">google.appengine.api.search</span> <span class="kn">import</span> <span class="n">simple_search_stub</span>
+<span class="k">if</span> <span class="n">simple_search_stub</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+ <span class="kn">from</span> <span class="nn">google.appengine.ext.testbed</span> <span class="kn">import</span> <span class="n">StubNotSupportedError</span>
+ <span class="k">raise</span> <span class="n">StubNotSupportedError</span><span class="p">(</span><span class="s1">&#39;Could not initialize search API&#39;</span><span class="p">)</span>
+<span class="n">stub</span> <span class="o">=</span> <span class="n">simple_search_stub</span><span class="o">.</span><span class="n">SearchServiceStub</span><span class="p">(</span><span class="n">index_file</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">SEARCH_INDEX_FILE</span><span class="p">)</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">testbed</span><span class="o">.</span><span class="n">_register_stub</span><span class="p">(</span><span class="n">SEARCH_SERVICE_NAME</span><span class="p">,</span> <span class="n">stub</span><span class="p">)</span>
+</code></pre></div>
+
+<h4>At the test teardown</h4>
+<div class="highlight"><pre><span></span><code><span class="gh">#</span> nothing to do with the datastore stub (thanks to the save_changes kwarg)
+self.search_stub.Write()
+</code></pre></div>
+
+<h2>LumRest grammar support</h2>
+<p>Since the topic of this document is about performances, I won’t give you details. In order to execute the existing tests, I have had to support the DSL they were written in. It has taken a certain time, and it’s not fully supported, yet. The commands supported today allow my layer to execute 99% of the tests (and to get hints about what’s going wrong or what could be improved)</p>
+<h2>Background tasks execution</h2>
+<p>The testbed doesn’t provide any kind of task runner. It’s up to you to decide whether to execute the tasks that have been queued during the unit test (or just check they’re there). The official google documentation gives you an example about how to execute deferred tasks. But old applications probably use task handlers. A task handler is registered as a special route, at your application startup. At last, a task will just be a method of the http request handler. And in order to interact with a task, you will have to provide a specially crafted HTTP Request. I have already spoken about reimplementing the serialization/deserialization of requests and responses.. But this time it has been definitely simpler. In facts, I kept some bugs in the execution logic till the last days just to spice up my experience :-) The whole taskrunner logic takes about 80 lines of code, and will be the longest except in this dissertation.</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="n">AggregateException</span><span class="p">(</span><span class="n">Exception</span><span class="p">):</span>
+<span class="w"> </span><span class="n">def</span><span class="w"> </span><span class="n">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="w"> </span><span class="n">message</span><span class="p">,</span><span class="w"> </span><span class="n">errors</span><span class="p">):</span>
+<span class="w"> </span><span class="n">super</span><span class="p">(</span><span class="n">AggregateException</span><span class="p">,</span><span class="w"> </span><span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+<span class="w"> </span><span class="bp">self</span><span class="o">.</span><span class="n">errors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">errors</span>
+
+<span class="k">class</span><span class="w"> </span><span class="n">FakeHttpRequestState</span><span class="p">(</span><span class="n">object</span><span class="p">):</span>
+<span class="w"> </span><span class="n">def</span><span class="w"> </span><span class="n">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="w"> </span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="w"> </span><span class="bp">self</span><span class="o">.</span><span class="n">headers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">kwargs</span>
+
+<span class="k">class</span><span class="w"> </span><span class="n">FakeSessionStore</span><span class="p">(</span><span class="n">object</span><span class="p">):</span>
+<span class="w"> </span><span class="n">def</span><span class="w"> </span><span class="n">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w"> </span><span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="s1">&#39;cookie_args&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{}}</span>
+
+<span class="n">def</span><span class="w"> </span><span class="n">get_session</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="w"> </span><span class="n">factory</span><span class="o">=</span><span class="n">None</span><span class="p">):</span>
+<span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">factory</span><span class="p">(</span><span class="s1">&#39;mock&#39;</span><span class="p">,</span><span class="w"> </span><span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">get_session</span><span class="p">()</span>
+
+<span class="n">def</span><span class="w"> </span><span class="n">get_secure_cookie</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">args</span><span class="p">,</span><span class="w"> </span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s1">&#39;&#39;</span>
+
+<span class="k">class</span><span class="w"> </span><span class="n">TaskRunner</span><span class="p">(</span><span class="n">object</span><span class="p">):</span>
+<span class="w"> </span><span class="n">def</span><span class="w"> </span><span class="n">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w"> </span><span class="bp">self</span><span class="o">.</span><span class="n">routes_patterns</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]</span>
+<span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">route</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">routes</span><span class="p">:</span><span class="w"> </span><span class="c1"># your web application routes</span>
+<span class="w"> </span><span class="n">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">route</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="w"> </span><span class="bp">self</span><span class="o">.</span><span class="n">routes_patterns</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">pattern</span><span class="p">,</span><span class="w"> </span><span class="n">route</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+
+<span class="err">@</span><span class="n">staticmethod</span>
+<span class="w"> </span><span class="n">def</span><span class="w"> </span><span class="n">__init_handler</span><span class="p">(</span><span class="n">handler</span><span class="p">,</span><span class="w"> </span><span class="n">task</span><span class="p">):</span>
+<span class="w"> </span><span class="n">environ</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{}</span>
+<span class="w"> </span><span class="n">method</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">task</span><span class="o">.</span><span class="n">method</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+<span class="w"> </span><span class="n">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">task</span><span class="o">.</span><span class="n">url</span>
+<span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">task</span><span class="o">.</span><span class="n">payload</span><span class="p">:</span>
+<span class="w"> </span><span class="n">args</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="n">method</span><span class="p">:</span><span class="w"> </span><span class="n">task</span><span class="o">.</span><span class="n">payload</span><span class="p">}</span>
+<span class="w"> </span><span class="k">else</span><span class="p">:</span>
+<span class="w"> </span><span class="n">args</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{}</span>
+
+<span class="n">handler</span><span class="o">.</span><span class="n">request</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Request</span><span class="o">.</span><span class="n">blank</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="w"> </span><span class="n">environ</span><span class="o">=</span><span class="n">environ</span><span class="p">,</span><span class="w"> </span><span class="n">headers</span><span class="o">=</span><span class="n">task</span><span class="o">.</span><span class="n">headers</span><span class="p">,</span><span class="w"> </span><span class="o">**</span><span class="n">args</span><span class="p">)</span>
+<span class="w"> </span><span class="n">handler</span><span class="o">.</span><span class="n">session_store</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FakeSessionStore</span><span class="p">()</span>
+
+<span class="n">def</span><span class="w"> </span><span class="n">run_task</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="w"> </span><span class="n">task</span><span class="p">):</span>
+<span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">task</span><span class="o">.</span><span class="n">url</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">&#39;/_ah/queue/deferred&#39;</span><span class="p">:</span>
+<span class="w"> </span><span class="n">deferred</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">task</span><span class="o">.</span><span class="n">payload</span><span class="p">)</span>
+<span class="w"> </span><span class="k">else</span><span class="p">:</span>
+<span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">route</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="bp">self</span><span class="o">.</span><span class="n">routes_patterns</span><span class="p">:</span>
+<span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">route</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="k">match</span><span class="p">(</span><span class="n">task</span><span class="o">.</span><span class="n">url</span><span class="p">):</span>
+<span class="w"> </span><span class="n">handler_cls</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">route</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="w"> </span><span class="k">break</span>
+<span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="n">handler_cls</span><span class="p">:</span>
+<span class="w"> </span><span class="n">raise</span><span class="w"> </span><span class="n">ValueError</span><span class="p">(</span><span class="s2">&quot;handler not found for task: </span><span class="si">%s</span><span class="s2">/%&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">task</span><span class="o">.</span><span class="n">url</span><span class="p">,</span><span class="w"> </span><span class="n">task</span><span class="o">.</span><span class="n">payload</span><span class="p">)</span>
+<span class="w"> </span><span class="n">handler</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">handler_cls</span><span class="p">()</span>
+<span class="w"> </span><span class="bp">self</span><span class="o">.</span><span class="n">__init_handler</span><span class="p">(</span><span class="n">handler</span><span class="p">,</span><span class="w"> </span><span class="n">task</span><span class="p">)</span>
+<span class="w"> </span><span class="n">method</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getattr</span><span class="p">(</span><span class="n">handler</span><span class="p">,</span><span class="w"> </span><span class="n">task</span><span class="o">.</span><span class="n">method</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+<span class="w"> </span><span class="n">method</span><span class="p">()</span>
+
+<span class="n">def</span><span class="w"> </span><span class="n">safe_run_task</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="w"> </span><span class="n">task</span><span class="p">):</span>
+<span class="w"> </span><span class="n">try</span><span class="p">:</span>
+<span class="w"> </span><span class="bp">self</span><span class="o">.</span><span class="n">run_task</span><span class="p">(</span><span class="n">task</span><span class="p">)</span>
+<span class="w"> </span><span class="n">except</span><span class="w"> </span><span class="n">Exception</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">err</span><span class="p">:</span>
+<span class="w"> </span><span class="n">task_desc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">task</span><span class="o">.</span><span class="n">url</span>
+<span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">task</span><span class="o">.</span><span class="n">url</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">&#39;/_ah/queue/deferred&#39;</span><span class="p">:</span>
+<span class="w"> </span><span class="n">import</span><span class="w"> </span><span class="n">pickle</span>
+<span class="w"> </span><span class="n">task_unpickled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pickle</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">task</span><span class="o">.</span><span class="n">payload</span><span class="p">)</span>
+<span class="w"> </span><span class="n">task_desc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">task_unpickled</span><span class="p">[</span><span class="mi">1</span><span class="p">][:</span><span class="mi">2</span><span class="p">]</span>
+<span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">len</span><span class="p">(</span><span class="n">task_desc</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span>
+<span class="w"> </span><span class="n">task_desc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sa">u</span><span class="s1">&#39;{}.{}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">type</span><span class="p">(</span><span class="n">task_desc</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">__name__</span><span class="p">,</span><span class="w"> </span><span class="n">task_desc</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="w"> </span><span class="k">else</span><span class="p">:</span>
+<span class="w"> </span><span class="n">task_desc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">repr</span><span class="p">(</span><span class="n">task_unpickled</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">func_code</span><span class="p">)</span>
+<span class="w"> </span><span class="n">logger</span><span class="o">.</span><span class="n">exception</span><span class="p">(</span><span class="s2">&quot;caught exception during the execution of the task &#39;</span><span class="si">%s</span><span class="s2">&#39;: </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">task_desc</span><span class="p">,</span><span class="w"> </span><span class="n">err</span><span class="p">)</span>
+<span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">err</span>
+
+<span class="n">def</span><span class="w"> </span><span class="n">run_tasks</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="w"> </span><span class="n">tasks</span><span class="p">):</span>
+<span class="w"> </span><span class="n">exceptions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]</span>
+<span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">task</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">tasks</span><span class="p">:</span>
+<span class="w"> </span><span class="n">val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">self</span><span class="o">.</span><span class="n">safe_run_task</span><span class="p">(</span><span class="n">task</span><span class="p">)</span>
+<span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">val</span><span class="p">:</span>
+<span class="w"> </span><span class="n">exceptions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+<span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">exceptions</span><span class="p">:</span>
+<span class="w"> </span><span class="n">raise</span><span class="w"> </span><span class="n">AggregateException</span><span class="p">(</span>
+<span class="w"> </span><span class="s1">&#39;caught one or more exceptions during the execution of background tasks&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">exceptions</span>
+<span class="w"> </span><span class="p">)</span>
+</code></pre></div>
+
+<h2>Stubbing out the HTTP communications</h2>
+<p>The application was still interacting with third party APIs. This was a pain in the neck, because of sluggy/unstable network connections (yeah, they still exist in 2017). For this reason, at some point we started using <a href="https://vcrpy.readthedocs.io/en/latest/index.html">vcrpy</a>. This kind of tool replaces all the classes/methods responsible of communicating with a remote server via HTTP. The replacements record all the exchanges (on their first execution). And if a scenario has already been registered, vcrpy uses the recorded exchanges to simulate the dialog between our application and the third party server. This way of proceeding is safe unless the third party APIs undergo a breaking change. For our tests, that meant decorating all the methods with the attribute:</p>
+<div class="highlight"><pre><span></span><code><span class="err">@</span><span class="nx">vcr</span><span class="p">.</span><span class="nx">use_cassette</span><span class="p">(</span><span class="nx">cassette_library_dir</span><span class="p">=</span><span class="nx">os</span><span class="p">.</span><span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">os</span><span class="p">.</span><span class="nx">path</span><span class="p">.</span><span class="nx">dirname</span><span class="p">(</span><span class="nx">os</span><span class="p">.</span><span class="nx">path</span><span class="p">.</span><span class="nx">dirname</span><span class="p">(</span><span class="nx">__file__</span><span class="p">)),</span><span class="w"> </span><span class="err">&#39;</span><span class="nx">data</span><span class="o">/</span><span class="nx">cassettes</span><span class="err">&#39;</span><span class="p">))</span>
+</code></pre></div>
+
+<h2>Conclusion</h2>
+<h3>What’s strange, today</h3>
+<ul>
+<li>The GAE DatastoreFileStub seems to have some bugs related to concurrency. One of our tests was failing since the results were not consistent. Mocking the <code>threading.Thread()``start</code> and <code>join</code> methods allowed us to pass past these buggy behaviors.</li>
+<li>The sortOrder doesn’t seem to work for datetimes (when querying objects from the datastore — ndb, and sorting them by their createdAt date, we get results that are not sorted).</li>
+</ul>
+<h3>Results met</h3>
+<ul>
+<li>The tests execute faster. They take only 20% of the time they took initially.</li>
+<li>We are able to get branch-level code coverage indicators. We know which portions of the code can be changed confidently.</li>
+<li>We are able to debug a test using pdb (or pydev).</li>
+<li>I a able to evaluate confidently what I’m breaking! And it doesn’t take an entire night ;-)</li>
+</ul>
+<h3>What could be improved</h3>
+<ul>
+<li>drop the support for the LumRest grammar and write the tests directly in python. To accomplish this aim, we shall be able to execute the tests on the stubs AND on the dev_appserver (like lumrest did). This could allow us to detect misbehaviors in the google appengine communication layers. The best way to do this kind of tests, would be to use a dedicated deployed test environment (identical to the production one). Advantage of this solution: you don’t need to learn lumRest to write a test.</li>
+<li>surely, the current lumrest-stubs implementation could be made yet faster.</li>
+</ul>
+<p>TL;DR</p>
+<p>​</p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="https://blog.nilleb.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a rel="nofollow" href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

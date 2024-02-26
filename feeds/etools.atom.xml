@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>amazed by the noise - etools</title><link href="https://blog.nilleb.com/" rel="alternate"></link><link href="https://blog.nilleb.com/feeds/etools.atom.xml" rel="self"></link><id>https://blog.nilleb.com/</id><updated>2008-03-19T00:00:00+01:00</updated><entry><title>"etools"</title><link href="https://blog.nilleb.com/etools.html" rel="alternate"></link><published>2008-03-19T00:00:00+01:00</published><updated>2008-03-19T00:00:00+01:00</updated><author><name>nilleb - Ivo Bellin Salarin</name></author><id>tag:blog.nilleb.com,2008-03-19:/etools.html</id><summary type="html">&lt;ul&gt;
+&lt;li&gt;"computer-science"
+tags: &lt;/li&gt;
+&lt;li&gt;"assembla"&lt;/li&gt;
+&lt;li&gt;"dev"&lt;/li&gt;
+&lt;li&gt;"eclipse"&lt;/li&gt;
+&lt;li&gt;"python"&lt;/li&gt;
+&lt;li&gt;"wxpython"&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;I don't know how much this is visible for Everyone, but I have started to publish small code snippets on &lt;a href="http://www.assembla.com/"&gt;assembla&lt;/a&gt;. I use only SVN for the moment, since I find it really useful for code development.&lt;/p&gt;
+&lt;p&gt;the &lt;a href="http://www.assembla.com/wiki/show/etools"&gt;wiki page&lt;/a&gt; of my current …&lt;/p&gt;</summary><content type="html">&lt;ul&gt;
+&lt;li&gt;"computer-science"
+tags: &lt;/li&gt;
+&lt;li&gt;"assembla"&lt;/li&gt;
+&lt;li&gt;"dev"&lt;/li&gt;
+&lt;li&gt;"eclipse"&lt;/li&gt;
+&lt;li&gt;"python"&lt;/li&gt;
+&lt;li&gt;"wxpython"&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;I don't know how much this is visible for Everyone, but I have started to publish small code snippets on &lt;a href="http://www.assembla.com/"&gt;assembla&lt;/a&gt;. I use only SVN for the moment, since I find it really useful for code development.&lt;/p&gt;
+&lt;p&gt;the &lt;a href="http://www.assembla.com/wiki/show/etools"&gt;wiki page&lt;/a&gt; of my current project. it includes a dumb printer, a credit card number generator and a tiff merger. The last two have a &lt;a href="http://www.wxpython.org/"&gt;wxPython&lt;/a&gt; GUI (almost the same one).&lt;/p&gt;
+&lt;p&gt;These tools have been written using Eclipse -&lt;a href="http://easyeclipse.org/site/distributions/python.html"&gt;EasyEclipseForPython&lt;/a&gt; 1.2.2.2- and &lt;a href="http://wxglade.sourceforge.net/"&gt;wxGlade&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I'd wish to publish some other code before it disappears from the net (glare.it will be sent to Walhalla in the next months), perhaps the next week. stay tuned if you're interested in a webcrawler and a patch for indexing multimedia content on a semantic search engine ;-)&lt;/p&gt;</content><category term="etools"></category></entry></feed>

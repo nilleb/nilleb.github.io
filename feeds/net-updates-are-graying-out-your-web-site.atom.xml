@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>amazed by the noise - net-updates-are-graying-out-your-web-site</title><link href="https://blog.nilleb.com/" rel="alternate"></link><link href="https://blog.nilleb.com/feeds/net-updates-are-graying-out-your-web-site.atom.xml" rel="self"></link><id>https://blog.nilleb.com/</id><updated>2007-12-11T00:00:00+01:00</updated><entry><title>".net updates are graying out your web site?"</title><link href="https://blog.nilleb.com/net-updates-are-graying-out-your-web-site.html" rel="alternate"></link><published>2007-12-11T00:00:00+01:00</published><updated>2007-12-11T00:00:00+01:00</updated><author><name>nilleb - Ivo Bellin Salarin</name></author><id>tag:blog.nilleb.com,2007-12-11:/net-updates-are-graying-out-your-web-site.html</id><summary type="html">&lt;h2&gt;- "thoughts"&lt;/h2&gt;
+&lt;p&gt;do you have updates since a few seconds/minutes/hours your .net platform?&lt;br&gt;
+or are you obtaining "page not found" error for a web site that you're sure it was working yesterday evening?&lt;br&gt;
+well, the first thing you've to try is to go to the IIS manager, and take …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;- "thoughts"&lt;/h2&gt;
+&lt;p&gt;do you have updates since a few seconds/minutes/hours your .net platform?&lt;br&gt;
+or are you obtaining "page not found" error for a web site that you're sure it was working yesterday evening?&lt;br&gt;
+well, the first thing you've to try is to go to the IIS manager, and take a look at the Web Services extensions. Are they enabled? All the ones required by your web site?  &lt;/p&gt;
+&lt;p&gt;be careful to enable ONLY the ones you need, otherwise you can open gates to malicious users!&lt;/p&gt;</content><category term="net-updates-are-graying-out-your-web-site"></category></entry></feed>

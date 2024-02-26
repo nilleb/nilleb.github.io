@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>amazed by the noise - ho-sonno-non-saremo-mai-in-tempo</title><link href="https://blog.nilleb.com/" rel="alternate"></link><link href="https://blog.nilleb.com/feeds/ho-sonno-non-saremo-mai-in-tempo.atom.xml" rel="self"></link><id>https://blog.nilleb.com/</id><updated>2008-06-25T00:00:00+02:00</updated><entry><title>"ho sonno, non saremo mai in tempo"</title><link href="https://blog.nilleb.com/ho-sonno-non-saremo-mai-in-tempo.html" rel="alternate"></link><published>2008-06-25T00:00:00+02:00</published><updated>2008-06-25T00:00:00+02:00</updated><author><name>nilleb - Ivo Bellin Salarin</name></author><id>tag:blog.nilleb.com,2008-06-25:/ho-sonno-non-saremo-mai-in-tempo.html</id><summary type="html">&lt;ul&gt;
+&lt;li&gt;"thoughts"
+tags: &lt;/li&gt;
+&lt;li&gt;"24993"&lt;/li&gt;
+&lt;li&gt;"err_unknown"&lt;/li&gt;
+&lt;li&gt;"maxdb"&lt;/li&gt;
+&lt;li&gt;"sap"&lt;/li&gt;
+&lt;li&gt;"sonno"&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;ancora problemi. tuttora problemi, e più o meno sempre gli stessi.&lt;/p&gt;
+&lt;p&gt;Oppure, problemi che solo il Santo Signore dei Binari compilati senza codice sorgente puo chiarificare. come ad esempio un "-24993, ERR_UNKNOWN". Io ringrazio molto il cazzone che ha previsto un errore del …&lt;/p&gt;</summary><content type="html">&lt;ul&gt;
+&lt;li&gt;"thoughts"
+tags: &lt;/li&gt;
+&lt;li&gt;"24993"&lt;/li&gt;
+&lt;li&gt;"err_unknown"&lt;/li&gt;
+&lt;li&gt;"maxdb"&lt;/li&gt;
+&lt;li&gt;"sap"&lt;/li&gt;
+&lt;li&gt;"sonno"&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;ancora problemi. tuttora problemi, e più o meno sempre gli stessi.&lt;/p&gt;
+&lt;p&gt;Oppure, problemi che solo il Santo Signore dei Binari compilati senza codice sorgente puo chiarificare. come ad esempio un "-24993, ERR_UNKNOWN". Io ringrazio molto il cazzone che ha previsto un errore del genere nel suo codice. Questo fantastico errore mi permette di scaricare il binario di 113MB da sdn.com, sperando che al suo interno ci sia uno straccio di codice. E che non sia commentato in tedesco..&lt;/p&gt;
+&lt;p&gt;già, perchè secondo voi cosa si trova cercando su google 24993, ERR_UNKNOWN? Non molto, devo essere sincero. I codici di errore, ad esemio, sembrano essere cambiati rispetto alla versione passata (7.4, siamo alla 7.6). Non servirà a niente scaricare la documentazione sui messaggi d'errore.&lt;/p&gt;
+&lt;p&gt;Dando un'occhiata al comando eseguito, direi che a prima vista è l'opzione -uSRV che scassa i marroni. Una service_connect, insomma. E cio mi porterebbe verso i diritti di esecuzione.&lt;/p&gt;
+&lt;p&gt;L'investigator Salarini continua la sua indagine...&lt;/p&gt;</content><category term="ho-sonno-non-saremo-mai-in-tempo"></category></entry></feed>

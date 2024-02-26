@@ -4,9 +4,10 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="generator" content="Pelican" />
-        <title>amazed by the noise</title>
+        <title>"last.fm"</title>
         <link rel="stylesheet" href="https://blog.nilleb.com/theme/css/main.css" />
         <link href="https://blog.nilleb.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="amazed by the noise Atom Feed" />
+        <meta name="description" content="- "thoughts" some days ago I received an email from a friend. she asked me to add her contact to my friends list on last.fm. it was since some..." />
 </head>
 
 <body id="index" class="home">
@@ -122,7 +123,7 @@
                     <li><a href="https://blog.nilleb.com/category/la-cronaca-di-oggi.html">la-cronaca-di-oggi</a></li>
                     <li><a href="https://blog.nilleb.com/category/la-legge-non-e-uguale-per-tutti.html">la-legge-non-e-uguale-per-tutti</a></li>
                     <li><a href="https://blog.nilleb.com/category/langage-a-utiliser.html">langage-a-utiliser</a></li>
-                    <li><a href="https://blog.nilleb.com/category/lastfm.html">lastfm</a></li>
+                    <li class="active"><a href="https://blog.nilleb.com/category/lastfm.html">lastfm</a></li>
                     <li><a href="https://blog.nilleb.com/category/lautoroute-ferroviaire-sur-les-rails.html">lautoroute-ferroviaire-sur-les-rails</a></li>
                     <li><a href="https://blog.nilleb.com/category/le-reve-de-cassandra-2.html">le-reve-de-cassandra-2</a></li>
                     <li><a href="https://blog.nilleb.com/category/le-reve-de-cassandre.html">le-reve-de-cassandre</a></li>
@@ -246,421 +247,36 @@
                     <li><a href="https://blog.nilleb.com/category/writelycom.html">writelycom</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="https://blog.nilleb.com/lastfm.html" rel="bookmark"
+           title="Permalink to "last.fm"">"last.fm"</a></h1>
+    </header>
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="https://blog.nilleb.com/clustering-vectors-in-higher-dimensions.html">"Clustering vectors in higher dimensions"</a></h1>
+    <div class="entry-content">
 <footer class="post-info">
-        <abbr class="published" title="2024-02-25T00:00:00+01:00">
-                Published: 2024-02-25
+        <abbr class="published" title="2008-01-17T00:00:00+01:00">
+                Published: 2008-01-17
         </abbr>
 
         <address class="vcard author">
                 By                         <a class="url fn" href="https://blog.nilleb.com/author/nilleb-ivo-bellin-salarin.html">nilleb - Ivo Bellin Salarin</a>
         </address>
-<p>In <a href="https://blog.nilleb.com/category/post-20240225-clustering-vectors.html">post-20240225-clustering-vectors</a>.</p>
+<p>In <a href="https://blog.nilleb.com/category/lastfm.html">lastfm</a>.</p>
 
-</footer><!-- /.post-info --><ul>
-<li>"ML"</li>
-<li>"clustering"</li>
-<li>"embeddings"</li>
-<li>"high-dimensions"</li>
-</ul>
-<hr>
-<h2>Objective</h2>
-<p>Determine whether we can understand which are the concepts in a delimited portion of high-dimensional space.</p>
-<h2>Context</h2>
-<p>We are analyzing a corpus of 600k sentences from the Asian Development Bank public documents.
-These documents have been split into sentences and vectorized using the OpenAI word embeddings API.
-The resulting vectors, along with the sentence text and the paper uid, have been stored in a table called sentencev.</p>
-<h2>Process</h2>
-<p>We select a random point in the space. We compute the closest points in this vector space to constritute a sub-corpus.
-We compute the frequency of words in the sub-corpus. We evaluate the effectiveness of the process.</p>
-<h2>Conclusion</h2>
-<p>It is possible, using L2 distance, to get a list of the closest sentences to a given sentence, even in high dimensions space.
-For research purposes, we arbitrally chose a distance of 0.1 as the threshold for similarity.
-Experimental analysis of the L2 distance in pgvector shows that the distance between a vector and itself is 0. All other vectors have a distance greater than 0.5.
-Visual inspection confirms that the sentences are semantically close, even at the bigger distances (ie. 0.1).
-The sentences are scattered across a set of papers, which is expected.
-The word frequency over the corpus, once the stopwords have been disposed, shows that the most frequent words across the corpus capture the semantics of the sentences.
-The performances of the L2 distance algorithm can be improved.</p>
-<h2>Next steps</h2>
-<p>Cluster all the points in the vector space.
-Randomly choose a point in the space, not yet categorized.
-Analyze the distribution of points in the clusters. Determine the number of clusters. Determine a threshold below which it is not worth to continue the clusterization.</p>
-<h2>References</h2>
-<p><a href="https://stats.stackexchange.com/questions/99171/why-is-euclidean-distance-not-a-good-metric-in-high-dimensions/">L2 distance is meaningless it in higher dimensions spaces</a> (where n &gt; 9)</p>
-<p><a href="https://towardsdatascience.com/how-to-cluster-in-high-dimensions-4ef693bacc6">How to cluster in higher dimensions</a></p>
-<h2>SQL Instructions</h2>
-<div class="highlight"><pre><span></span><code><span class="c1">-- `sentencev` table structure: uid, text, paper_uid, vector</span>
-<span class="k">SELECT</span><span class="w"> </span><span class="n">uid</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">sentencev</span>
-<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">RANDOM</span><span class="p">()</span>
-<span class="k">LIMIT</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</footer><!-- /.post-info -->      <h2>- "thoughts"</h2>
+<p>some days ago I received an email from a friend. she asked me to add her contact to my friends list on last.fm. it was since some years that I didn't use it.</p>
+<p>well, I have been happy to discover it again, even if the site interface is not so easy to browse (not so intuitive, I'd rather say).</p>
+<p>from a technical point of view, the traffic sent on the network is not so much, and the server transmission port is always the 80/HTTP. So, it's rather difficult to get blocked by some firewall/proxy.</p>
+<p>from a music fan point of view, it is a good radio. on this radio I can choose what to hear, and somebody has filled an huge database about artist similarities, so even when I do not know the name of the group, I can still find it.</p>
+<p>I believe in social networking, sometimes. I'm still waiting for a recommendation, but till now I have discovered so many known people on the network that I'm however happy about knowing their musical preferences.</p>
+<p>ianbsparrow is my nickname, in the case you choose to use it.</p>
+    </div><!-- /.entry-content -->
 
-<span class="c1">-- analyze the distance of all other vectors from the current one</span>
-<span class="k">SELECT</span><span class="w"> </span>
-<span class="w">    </span><span class="n">other_vectors</span><span class="p">.</span><span class="n">uid</span><span class="p">,</span>
-<span class="w">    </span><span class="n">target_vector</span><span class="p">.</span><span class="n">vector</span><span class="w"> </span><span class="o">&lt;-&gt;</span><span class="w"> </span><span class="n">other_vectors</span><span class="p">.</span><span class="n">vector</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">distance</span>
-<span class="k">FROM</span><span class="w"> </span>
-<span class="w">    </span><span class="n">sentencev</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">other_vectors</span><span class="p">,</span>
-<span class="w">    </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="n">vector</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">sentencev</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">uid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;a4d09d88-6e93-565f-02aa-b2ca230216a1&#39;</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">target_vector</span>
-<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span>
-<span class="w">    </span><span class="n">distance</span>
-<span class="k">LIMIT</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span>
-
-<span class="c1">-- how many sentences and papers are included in the given subspace?</span>
-<span class="k">SELECT</span><span class="w"> </span><span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">),</span><span class="w"> </span><span class="k">count</span><span class="p">(</span><span class="k">distinct</span><span class="p">(</span><span class="n">paper_uid</span><span class="p">))</span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">sentencev</span>
-<span class="k">WHERE</span><span class="w"> </span><span class="n">vector</span><span class="w"> </span><span class="o">&lt;-&gt;</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="n">vector</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">sentencev</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">uid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;8af34aad-512c-2d77-d9bd-c5cc25224494&#39;</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span><span class="mi">6</span><span class="p">;</span>
-
-<span class="c1">-- visual inspection: are the sentences semantically close?</span>
-<span class="k">WITH</span><span class="w"> </span>
-<span class="w">    </span><span class="n">vector1</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="n">uid</span><span class="p">,</span><span class="w"> </span><span class="n">vector</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">sentencev</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">uid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;8af34aad-512c-2d77-d9bd-c5cc25224494&#39;</span><span class="p">)</span>
-<span class="k">SELECT</span><span class="w"> </span><span class="nb">text</span><span class="p">,</span><span class="w"> </span><span class="n">paper_uid</span><span class="p">,</span><span class="w"> </span><span class="n">uid</span><span class="p">,</span><span class="w"> </span><span class="n">vector</span><span class="w"> </span><span class="o">&lt;-&gt;</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="n">vector</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">vector1</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">distance</span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">sentencev</span>
-<span class="k">WHERE</span><span class="w"> </span><span class="n">vector</span><span class="w"> </span><span class="o">&lt;-&gt;</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="n">vector</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">vector1</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span><span class="mi">6</span>
-<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">distance</span><span class="p">;</span>
-
-<span class="c1">-- count the most frequent words across the sentences; defect: stopwords</span>
-<span class="k">WITH</span>
-<span class="w">    </span><span class="n">texts</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="n">uid</span><span class="p">,</span><span class="w"> </span><span class="nb">text</span>
-<span class="w">    </span><span class="k">FROM</span><span class="w"> </span><span class="n">sentencev</span>
-<span class="w">    </span><span class="k">WHERE</span><span class="w"> </span><span class="n">vector</span><span class="w"> </span><span class="o">&lt;-&gt;</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="n">vector</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">sentencev</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">uid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;8af34aad-512c-2d77-d9bd-c5cc25224494&#39;</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span><span class="mi">6</span>
-<span class="p">)</span>
-<span class="k">SELECT</span><span class="w"> </span>
-<span class="w">    </span><span class="n">word</span><span class="p">,</span>
-<span class="w">    </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">frequency</span>
-<span class="k">FROM</span><span class="w"> </span>
-<span class="w">    </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="n">regexp_split_to_table</span><span class="p">(</span><span class="nb">text</span><span class="p">,</span><span class="w"> </span><span class="n">E</span><span class="s1">&#39;\\s+&#39;</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">word</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">texts</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">words</span>
-<span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span>
-<span class="w">    </span><span class="n">word</span>
-<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span>
-<span class="w">    </span><span class="n">frequency</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
-
-<span class="c1">--</span>
-<span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span>
-<span class="w">    </span><span class="n">texts_1</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="n">uid</span><span class="p">,</span><span class="w"> </span><span class="nb">text</span><span class="p">,</span><span class="w"> </span><span class="n">paper_uid</span>
-<span class="w">    </span><span class="k">FROM</span><span class="w"> </span><span class="n">sentencev</span>
-<span class="w">    </span><span class="k">WHERE</span><span class="w"> </span><span class="n">vector</span><span class="w"> </span><span class="o">&lt;-&gt;</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="n">vector</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">sentencev</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">uid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;8af34aad-512c-2d77-d9bd-c5cc25224494&#39;</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span><span class="mi">6</span><span class="p">)</span>
-
-<span class="c1">-- advantage: no more stop words, defect: training is now train</span>
-<span class="k">SELECT</span><span class="w"> </span>
-<span class="w">    </span><span class="n">word</span><span class="p">,</span>
-<span class="w">    </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">frequency</span>
-<span class="k">FROM</span><span class="w"> </span>
-<span class="w">    </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="k">unnest</span><span class="p">(</span><span class="n">tsvector_to_array</span><span class="p">(</span><span class="n">to_tsvector</span><span class="p">(</span><span class="s1">&#39;english&#39;</span><span class="p">,</span><span class="w"> </span><span class="nb">text</span><span class="p">)))</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">word</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">texts_1</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">words</span>
-<span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span>
-<span class="w">    </span><span class="n">word</span>
-<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span>
-<span class="w">    </span><span class="n">frequency</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
-</code></pre></div>
-
-<h2>Sample</h2>
-<p><code>plain text
-word,frequency
-train,579
-employ,444
-worker,398
-skill,335
-educ,308
-job,239
-inform,221
-women,216
-work,191
-least,175
-labor,134
-sector,125
-survey,122
-increas,115
-peopl,109
-school,107
-countri,106
-report,105
-baselin,105
-particip,104
-level,101
-self,100
-formal,98
-graduat,96
-program,95
-industri,95
-year,92
-higher,91
-10,90
-base,89
-also,84
-figur,84
-develop,84
-employe,83
-learn,82
-high,82
-workforc,82
-famili,80
-provid,80
-self-employ,80
-household,79
-tvet,79
-technic,78
-receiv,78
-occup,77
-20,76
-share,74
-busi,74
-firm,73</code></p>
-<p><br/></p>
-<h2>Involving GitHub Copilot</h2>
-<p>Represent the first 50 terms on the list with a sentence</p>
-<h3><strong>GitHub Copilot</strong></h3>
-<p>Here's a sentence that includes the first 50 terms from your list:</p>
-<p>"The train program aims to employ workers and enhance their skills through education and job training. It provides information to women about work opportunities, targeting at least 175 labor sector companies. The survey shows an increase in people attending school across the country. The report and baseline data indicate that participants at all levels, including the self-employed, formal graduates, and those in the industry, have seen improvements over the years. Higher education, especially in the 10-base system, also figures prominently in the development of employees. Learning opportunities for the high workforce, families, and the self-employed are provided in households. TVET (Technical and Vocational Education and Training) has received a significant share of attention, with 78 occupations covered. 20 businesses and firms are actively involved in the program."</p>
-<p><br/></p>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="https://blog.nilleb.com/searching-for-people-is-not-the-same-as-searching-for-articles-and-concepts.html" rel="bookmark"
-                           title="Permalink to "Searching for people is not the same as searching for articles and concepts"">"Searching for people is not the same as searching for articles and concepts"</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2024-02-23T00:00:00+01:00">
-                Published: 2024-02-23
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="https://blog.nilleb.com/author/nilleb-ivo-bellin-salarin.html">nilleb - Ivo Bellin Salarin</a>
-        </address>
-<p>In <a href="https://blog.nilleb.com/category/post-20240223-searching-for-people.html">post-20240223-searching-for-people</a>.</p>
-
-</footer><!-- /.post-info -->                <ul>
-<li>"search"</li>
-<li>"people"</li>
-</ul>
-<hr>
-<p>The aim of this post is to share my experience in implementing <a href="https://www.youtube.com/watch?v=pgWgT89l-e8&amp;pp=ygUtcGVvcGxlIGZpbmRlciBoYWNrYXRvbiBhc2lhbiBkZXZlbG9wbWVudCBiYW5r">a people search engine</a> for a multicultural environment such as the Asian Development Bank. In this post, I will focus on “searching a person” only - the part “search for an expert” will be the subject of …</p>
-                <a class="readmore" href="https://blog.nilleb.com/searching-for-people-is-not-the-same-as-searching-for-articles-and-concepts.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="https://blog.nilleb.com/appengine-on-macos-is-a-cpu-hog-solve-this-problem-with-another-python-native-extension-module.html" rel="bookmark"
-                           title="Permalink to "AppEngine on MacOS is a CPU Hog: Solve This Problem with Another Python Native Extension Module"">"AppEngine on MacOS is a CPU Hog: Solve This Problem with Another Python Native Extension Module"</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2018-04-10T00:00:00+02:00">
-                Published: 2018-04-10
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="https://blog.nilleb.com/author/nilleb-ivo-bellin-salarin.html">nilleb - Ivo Bellin Salarin</a>
-        </address>
-<p>In <a href="https://blog.nilleb.com/category/appengine-on-macos-is-a-cpu-hog-solve-this-problem-with-another-python-native-extension-module.html">appengine-on-macos-is-a-cpu-hog-solve-this-problem-with-another-python-native-extension-module</a>.</p>
-
-</footer><!-- /.post-info -->                <ul>
-<li>"appengine"</li>
-<li>"golang"</li>
-<li>"python"</li>
-<li>"sustainable-development"</li>
-</ul>
-<hr>
-<p>(this is a repost of a <a href="https://medium.com/lumapps-engineering/appengine-on-macos-is-a-cpu-hog-heres-how-to-solve-this-problem-with-another-python-native-9f2a6dc5c960">medium article</a> of which I am the author)</p>
-<p>Hey, have you read <a href="https://blog.filippo.io/building-python-modules-with-go-1-5">this gorgeous article</a> from Filippo Valsorda about how to write a Python extension in Go? You definitely should. When I first read it, I was searching for a …</p>
-                <a class="readmore" href="https://blog.nilleb.com/appengine-on-macos-is-a-cpu-hog-solve-this-problem-with-another-python-native-extension-module.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="https://blog.nilleb.com/run-a-google-cloud-datalab-instance-on-your-computer.html" rel="bookmark"
-                           title="Permalink to "Run a Google Cloud Datalab instance on your computer"">"Run a Google Cloud Datalab instance on your computer"</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2017-08-11T00:00:00+02:00">
-                Published: 2017-08-11
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="https://blog.nilleb.com/author/nilleb-ivo-bellin-salarin.html">nilleb - Ivo Bellin Salarin</a>
-        </address>
-<p>In <a href="https://blog.nilleb.com/category/run-a-google-cloud-datalab-instance-on-your-computer.html">run-a-google-cloud-datalab-instance-on-your-computer</a>.</p>
-
-</footer><!-- /.post-info -->                <p>On the official Google Cloud Datalab <a href="https://cloud.google.com/datalab/docs/quickstarts">quickstart</a>, Google gives you the detailed steps about how to start a GCP instance running the Jupyter notebook, where you'll experiment all the functionalities of the Datalab.</p>
-<p>But, perhaps you don't want to pay the price of the instance. You don't need to use …</p>
-                <a class="readmore" href="https://blog.nilleb.com/run-a-google-cloud-datalab-instance-on-your-computer.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="https://blog.nilleb.com/the-devils-in-the-details.html" rel="bookmark"
-                           title="Permalink to "The devil's in the details"">"The devil's in the details"</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2017-08-08T00:00:00+02:00">
-                Published: 2017-08-08
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="https://blog.nilleb.com/author/nilleb-ivo-bellin-salarin.html">nilleb - Ivo Bellin Salarin</a>
-        </address>
-<p>In <a href="https://blog.nilleb.com/category/the-devils-in-the-details.html">the-devils-in-the-details</a>.</p>
-
-</footer><!-- /.post-info -->                <p>You know, I always start a new BigQuery query copying and pasting an existing one, and modifying it.</p>
-<p><code>SELECT record.attribute, target.kind, target.uid, target.subType, target.className context.contextType, context.contextId, context.contextSubType, context.contextClassName, context.parent.uid FROM TABLE_DATE_RANGE([dataset.raw_data_], TIMESTAMP("2017-08-08"), TIMESTAMP("2017-08-08")) WHERE record …</code></p>
-                <a class="readmore" href="https://blog.nilleb.com/the-devils-in-the-details.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="https://blog.nilleb.com/speeding-up-a-gae-standard-application-automated-tests.html" rel="bookmark"
-                           title="Permalink to "Speeding up a GAE-standard application automated tests"">"Speeding up a GAE-standard application automated tests"</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2017-05-29T00:00:00+02:00">
-                Published: 2017-05-29
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="https://blog.nilleb.com/author/nilleb-ivo-bellin-salarin.html">nilleb - Ivo Bellin Salarin</a>
-        </address>
-<p>In <a href="https://blog.nilleb.com/category/speeding-up-a-gae-standard-application-automated-tests.html">speeding-up-a-gae-standard-application-automated-tests</a>.</p>
-
-</footer><!-- /.post-info -->                <ul>
-<li>"development"</li>
-<li>"python"</li>
-<li>"test"</li>
-</ul>
-<hr>
-<p>If you’re developing on a Google AppEngine standard environment, you know how slow the dev_appserver is. You have surely experienced its long setup times on the first request being served (probably because of the SQLite based datastore implementation). And also the long shutdown times (when the …</p>
-                <a class="readmore" href="https://blog.nilleb.com/speeding-up-a-gae-standard-application-automated-tests.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="https://blog.nilleb.com/slow-down.html" rel="bookmark"
-                           title="Permalink to "Slow down"">"Slow down"</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2010-12-27T00:00:00+01:00">
-                Published: 2010-12-27
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="https://blog.nilleb.com/author/nilleb-ivo-bellin-salarin.html">nilleb - Ivo Bellin Salarin</a>
-        </address>
-<p>In <a href="https://blog.nilleb.com/category/slow-down.html">slow-down</a>.</p>
-
-</footer><!-- /.post-info -->                <h2>- "thoughts"</h2>
-<p>2010 has been a great year, very rich in good news.</p>
-<p>I've not wrote anymore a lot on this blog, and I suppose that its time has quietly flown. You'd rather follow me on twitter (@nilleb). In 2011 I'll quit my employer, getting a new job elsewhere. It looks …</p>
-                <a class="readmore" href="https://blog.nilleb.com/slow-down.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="https://blog.nilleb.com/exchange-2010-and-organizational-forms-libraries.html" rel="bookmark"
-                           title="Permalink to "Exchange 2010 and Organizational Forms Libraries"">"Exchange 2010 and Organizational Forms Libraries"</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2010-02-26T00:00:00+01:00">
-                Published: 2010-02-26
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="https://blog.nilleb.com/author/nilleb-ivo-bellin-salarin.html">nilleb - Ivo Bellin Salarin</a>
-        </address>
-<p>In <a href="https://blog.nilleb.com/category/exchange-2010-and-organizational-forms-libraries.html">exchange-2010-and-organizational-forms-libraries</a>.</p>
-
-</footer><!-- /.post-info -->                <ul>
-<li>"2010"</li>
-<li>"exchange"</li>
-<li>"exchange-2010"</li>
-<li>"organizational-forms-library"</li>
-<li>"outlook"</li>
-<li>"public-folder-database"</li>
-</ul>
-<hr>
-<p>With Exchange 2010 you've the possibility to create a Public Folder Database (PFDB), in order to keep the backward compatibility with Outlook 2003 and Entourage clients. You can create such PFDB answering yes to a question during the setup, or with a specific procedure …</p>
-                <a class="readmore" href="https://blog.nilleb.com/exchange-2010-and-organizational-forms-libraries.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="https://blog.nilleb.com/coincidenze-pensando-ad-un-amico.html" rel="bookmark"
-                           title="Permalink to "coincidenze, pensando ad un amico"">"coincidenze, pensando ad un amico"</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2009-09-02T00:00:00+02:00">
-                Published: 2009-09-02
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="https://blog.nilleb.com/author/nilleb-ivo-bellin-salarin.html">nilleb - Ivo Bellin Salarin</a>
-        </address>
-<p>In <a href="https://blog.nilleb.com/category/coincidenze-pensando-ad-un-amico.html">coincidenze-pensando-ad-un-amico</a>.</p>
-
-</footer><!-- /.post-info -->                <h2>- "thoughts"</h2>
-<p><img alt="981axa69" src="images/img_4078.jpg" title="981axa69"></p>
-                <a class="readmore" href="https://blog.nilleb.com/coincidenze-pensando-ad-un-amico.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="https://blog.nilleb.com/relazioni-nascoste-tra-la-francia-e-litalia.html" rel="bookmark"
-                           title="Permalink to "Relazioni nascoste tra la Francia e l'italia"">"Relazioni nascoste tra la Francia e l'italia"</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2009-07-01T00:00:00+02:00">
-                Published: 2009-07-01
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="https://blog.nilleb.com/author/nilleb-ivo-bellin-salarin.html">nilleb - Ivo Bellin Salarin</a>
-        </address>
-<p>In <a href="https://blog.nilleb.com/category/relazioni-nascoste-tra-la-francia-e-litalia.html">relazioni-nascoste-tra-la-francia-e-litalia</a>.</p>
-
-</footer><!-- /.post-info -->                <h2>- "thoughts"</h2>
-<p><img alt="Napoly" src="images/img_3653.jpg" title="Napoly"></p>
-<p>(visto vicino a <a href="http://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=tarare&amp;sll=45.832502,4.629813&amp;sspn=0.306192,0.516357&amp;ie=UTF8&amp;t=h&amp;z=14&amp;iwloc=A">Tarare</a>)</p>
-                <a class="readmore" href="https://blog.nilleb.com/relazioni-nascoste-tra-la-francia-e-litalia.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-                </ol><!-- /#posts-list -->
-<nav>
-  <ul>
-    <li>Page 1 / 24</li>
-        <li><a href="https://blog.nilleb.com/index2.html">&rang;</a></li>
-        <li><a href="https://blog.nilleb.com/index24.html">&Rang;</a></li>
-  </ul>
-</nav>
-                </section><!-- /#content -->
+  </article>
+</section>
         <section id="extras" class="body">
                 <div class="blogroll">
                         <h2>links</h2>

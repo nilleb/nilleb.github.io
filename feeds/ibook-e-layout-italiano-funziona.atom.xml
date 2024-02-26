@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>amazed by the noise - ibook-e-layout-italiano-funziona</title><link href="https://blog.nilleb.com/" rel="alternate"></link><link href="https://blog.nilleb.com/feeds/ibook-e-layout-italiano-funziona.atom.xml" rel="self"></link><id>https://blog.nilleb.com/</id><updated>2006-01-23T00:00:00+01:00</updated><entry><title>"iBook e layout italiano"</title><link href="https://blog.nilleb.com/ibook-e-layout-italiano.html" rel="alternate"></link><published>2006-01-23T00:00:00+01:00</published><updated>2006-01-23T00:00:00+01:00</updated><author><name>nilleb - Ivo Bellin Salarin</name></author><id>tag:blog.nilleb.com,2006-01-23:/ibook-e-layout-italiano.html</id><summary type="html">&lt;ul&gt;
+&lt;li&gt;"computer-science"
+tags: &lt;/li&gt;
+&lt;li&gt;"everydays"&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Ringraziando il cielo, e un finlandese dei fori di Gentoo.org, posso finalmente usare tutti i tasti del mio portatile come se fossi su MacOS X. Beh, è vero, non è proprio la stessa cosa (devo usare il tasto Mela al posto dell'AltGR).. Però è un primo …&lt;/p&gt;</summary><content type="html">&lt;ul&gt;
+&lt;li&gt;"computer-science"
+tags: &lt;/li&gt;
+&lt;li&gt;"everydays"&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Ringraziando il cielo, e un finlandese dei fori di Gentoo.org, posso finalmente usare tutti i tasti del mio portatile come se fossi su MacOS X. Beh, è vero, non è proprio la stessa cosa (devo usare il tasto Mela al posto dell'AltGR).. Però è un primo passo. Domani magari sistemerò i tasti in modo esattamente uguale a MacOS, ma per oggi è sufficiente. Una volta avevo risolto lo stesso problema attraverso xmodmap, ma richiedeva ben più complicate operazioni e andava configurato per ogni desktop manager. Invece, questa volta posso dirmi del tutto soddisfatto. Evviva la pigrizia! :-) &lt;strong&gt;Aggiornamento&lt;/strong&gt; nel resto del pomeriggio ho aggiustato anche i font del mio iBook. Ieri mi mancavano proprio tutti quei caratteri windows-like.. è sempre triste cercare di scrivere un documento assieme ad un utente windows..&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Riferimenti&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Il post sui Gentoo Forums &lt;a href="http://forums.gentoo.org/viewtopic-t-322207-highlight-ibook+italian+layout.html"&gt;§&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Gentoo HOWTO a proposito di Xorg e dell'installazione dei fonts &lt;a href="http://gentoo-wiki.com/HOWTO_Xorg_and_Fonts"&gt;§&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="ibook-e-layout-italiano-funziona"></category></entry></feed>

@@ -16,6 +16,7 @@ elif [ "$1" == "setup" ]; then
 elif [ "$1" == "gen" ]; then
     . venv/bin/activate
     pelican content -o output -s publishconf.py
+    git push origin master
 elif [ "$1" == "publish" ]; then
     . venv/bin/activate
     ghp-import -m "Generate Pelican site" --no-jekyll -b master output

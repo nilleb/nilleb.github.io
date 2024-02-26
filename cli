@@ -13,8 +13,9 @@ elif [ "$1" == "setup" ]; then
     . venv/bin/activate
     pip install --upgrade pip
     pip install pelican ghp-import Markdown
-elif [ "$1" = "deploy" ]; then
-    set -xveuo pipefail
+elif [ "$1" == "publish" ]; then
+    pelican content -o output -s publishconf.py
+    ghp-import -m "Generate Pelican site" --no-jekyll -b master output
 else
     echo "Invalid argument"
 fi

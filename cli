@@ -1,6 +1,6 @@
 if [ "$1" == "serve" ]; then
     . ./venv/bin/activate
-    DEBUG=true uvicorn app.main:app --reload --log-level debug --port 8001
+    DEBUG=true pelican --listen
 elif [ "$1" == "test" ]; then
     . ./venv/bin/activate
     DEBUG=true pytest $2 $3 $4 $5 $6 $7 $8 $9
@@ -13,8 +13,11 @@ elif [ "$1" == "setup" ]; then
     . venv/bin/activate
     pip install --upgrade pip
     pip install pelican ghp-import Markdown
-elif [ "$1" == "publish" ]; then
+elif [ "$1" == "gen" ]; then
+    . venv/bin/activate
     pelican content -o output -s publishconf.py
+elif [ "$1" == "publish" ]; then
+    . venv/bin/activate
     ghp-import -m "Generate Pelican site" --no-jekyll -b master output
 else
     echo "Invalid argument"

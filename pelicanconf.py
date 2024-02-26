@@ -1,12 +1,12 @@
-AUTHOR = 'nilleb - Ivo Bellin Salarin'
-SITENAME = 'amazed by the noise'
+AUTHOR = "nilleb - Ivo Bellin Salarin"
+SITENAME = "amazed by the noise"
 SITEURL = ""
 
 PATH = "content"
 
-TIMEZONE = 'Europe/Rome'
+TIMEZONE = "Europe/Rome"
 
-DEFAULT_LANG = 'en'
+DEFAULT_LANG = "en"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -33,3 +33,5 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
+
+DEFAULT_DATE_FORMAT = "%Y-%m-%d"

@@ -1,0 +1,25 @@
+---
+title: "Silenzio."
+date: "2006-05-23"
+categories: 
+  - "feelings"
+  - "thoughts"
+tags: 
+  - "everydays"
+---
+
+Silenzio, rotto da qualche auto che passa sotto la mia finestra. Se sto attento sento la TV del vicino che emana le sue onde musicali.
+
+La luce è stantìa, ferma. A poco a poco se ne va, con la lenta certezza del tempo che scorre. Poco più di un'ora fa si stavano addensando nuvole, sopra la nostra testa. Nuvole scure, cariche di acqua e di elettricità. Tutto intorno, le nuvole cambiavano forma o la perdevano del tutto, sciogliendosi verso terra. Da disegni ben definiti sui toni del grigio e del blu a sciami che scompaiono mano a mano.
+
+Un po' come le nuvole di adesso, macchie scolorite su un lenzuolo bianco latte. Laggiù in fondo, il cielo diventa più blu, quel colore che amo così tanto. Ma non è cielo, è solo un altro lembo di nuvola.
+
+E così, mi metto a guardare dentro di me e scopro un po' di cose..
+
+Innanzitutto, sono fotopatico. Questi giorni mi riempiono di tristezza, perchè come le nuvole non hanno contorni ben definiti, e soprattutto si muovono su di me senza lasciare traccia (se non le rughe).
+
+Poi, mi sento impotente. Per l'impossibilità di fare qualcosa del mio futuro, ma anche perchè posso essere poco utile a coloro che amo/a cui voglio bene/sono miei amici. Gran brutta bestia, la disoccupazione. Soprattutto quando si hanno tremiladuecento sogni tutti in fila, che vogliono essere realizzati.
+
+Inoltre, quando sono così, non riesco a comunicare. Non con le parole, intendo. Forse con quelle scritte, un po' di più, ma solo perchè me le leggo io. Mi rincresce non riuscire a capire cosa serve agli altri e cosa si vorrebbero sentire dire. Credo anche di dare di me un'impressione un po' sbagliata (di disinteresse verso gli altri). E invece davvero vorrei non lasciarmi prendere dalle cose da fare, o perlomeno farle tutte ed avere ancora un sacco di tempo per gli altri. Ma non ci riesco, e così cerco di destinare il poco tempo che mi rimane sulle poche persone che ho a contatto. Non nascondo a nessuno che ad esempio mi piacerebbe risentire Valerio, di Roma. O che mi piacerebbe passare più tempo con certe compagnie. (per mantenere l'anonimato e permettere a tutti di identificarsi: G., E., A., S., J., M., E., C., M., G., S.)
+
+Ma più di tutto, mi piacerebbe tanto avere casa a Torino, mia.

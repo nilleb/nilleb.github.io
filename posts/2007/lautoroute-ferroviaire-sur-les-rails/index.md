@@ -1,0 +1,24 @@
+---
+title: "L&#8217;autoroute ferroviaire sur les rails"
+date: "2007-03-29"
+categories: 
+  - "thoughts"
+---
+
+- [Articolo su Le Figaro](http://www.lefigaro.fr/economie/20070329.WWW000000316_l_autoroute_ferroviaire_sur_les_rails.html)
+
+Questo articolo, comparso su LeFigaro, mi ha fatto pensare: tra le ultime righe, una citazione a Orbassano, nella periferia di Torino. E un'altra a Vénissieux, nella banlieue di Lione. Quindi quella famigerata Torino-Lione, di cui tanto si parla in Val di Susa.
+
+Ragiono: qui (dall'altra parte delle alpi rispetto alla Val di Susa) inaugurano una linea lunga 1000km, a spanne, per risparmiare 10.000 tonnellate di CO2 per anno (oltre a 10centesimi per camion per km, e 30.000 camion all'anno sulle autostrade). lì si discute se fare o no l'opera, con argomentazioni ecologiste.
+
+Non ho dati sul traffico tra Italia e Francia attraverso i tunnel. Potrei averli, ma visto che ho fatto un po'di volte la strada, ne faccio a meno. Ricordo ancora molto bene i tir avanti e dietro di me nel tunnel del Bianco. Ricordo le code allímbocco del tunnel. E ho presente cosa voglia dire la chiusura saltuaria del tunnel a causa di frane su uno dei due versanti.
+
+Sempre a tentoni, brancolando nel buio di dati interpretabili, penso un attimo a come vanno le cose. Qualcuno dice che fa più caldo di un tempo, qualcuno lo associa alle emissioni di CO2 e altre schifezze. Neppure qui ho dati, ma d'altronde ne posso fare a meno. Ho presente la sensazione di caldo intenso. Ricordo come stavo l'anno passato, il 20 Luglio, qui a Lione. È vero, chissenefrega. È solo il mio ricordo, in effetti. Non ci sono dati certi a proposito. Fatto sta, io avrei preferito stare al mare, che nella periferia di una grande città.
+
+Se penso alle mie sensazioni, alle mie personali esperienze, sono brutalmente pro-TAV. Non ho vere e proprie motivazioni, basate sui dati verificabili di qualche 'savant'. Non mi interessano.
+
+A tutti quelli che si sentono offesi dalla mia impressione, dò un consiglio. Fatevi l'autostrada da Torino fino a Lione. Vi raccomando un giorno lavorativo qualunque. Fate attenzione alle ferie dei due popoli, altrimenti potreste avere brutte sorprese.
+
+Il ricordo delle estate passate dovreste averlo anche voi, anche se non a Vénissieux, il 20 Luglio.
+
+Tenendo a mente le due cose, lasciate un commento qui.

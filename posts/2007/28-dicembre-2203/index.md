@@ -1,0 +1,10 @@
+---
+title: "28 dicembre, 22.03"
+date: "2007-12-28"
+categories: 
+  - "thoughts"
+---
+
+mi sono passate per la testa un sacco di cose, questa sera. un po', a causa del telegiornale (benazir bhutto assassinata in Pakistan, Al Qaida tra i responsabili). un po', perché non sono completamente soddisfatto della mia situazione e mi piacerebbe cambiarla. vorrei essere un ingegnere, indipendente. vorrei poter lavorare su progetti anche grandi, ma senza sottostare ai voleri di una terza persona. non sono soddisfatto perché non mi identifico con la mia ditta, e questo per molteplici ragioni. non sono altro che un ingranaggio, sostituibile; come tale, ho uno stipendio da ingranaggio, il che mi rende difficile la vita; non ho responsabilità, o comunque molto ridotte. Insomma, un lavoro senza pregio né infamia. mi piacerebbe inventare qualcosa, di sicuro. e vincere alla lotteria del lavoro, con una metafora. ma non ci credo molto, non ne ho la stoffa. quindi, in assoluta sincerità, mi conviene fare qualcos'altro, di più limitate pretese. lasciando a parte le seghe mentali, oggi ho passato la giornata sugli sci. a Pila, in Valle d'Aosta. un bellissimo posto, una bellissima giornata e una magnifica compagnia. tutto perfetto, a parte i capitomboli. sempre sulla chiappa/fianco destro, povera lei. improvvisamente mi ricordo che non ho avvisato Pommys per andare all'allenamento Usac. non sarei potuto andarci cmq, ma avrei dovuto chiamarlo, almeno per cortesia nei suoi confronti. pero, tutto sommato, me ne catafotto. domani lattina papà passa a prendermi presto, e devo fare un sacco di cose prima di vederlo. forse è meglio se vado a dormire... buonanotte à tout le monde!
+
+cose da fare: mandare una cartolina a Lucia e Plamen. Augurare buon anno nuovo a Bridgette, Sanoé et Jeff, Vince et Benoit. preparare la valigia per andare da Giada sabato sera. fare la spesa per la mamma. Sentire/vedere Mimmo. 22.19: EndOfText

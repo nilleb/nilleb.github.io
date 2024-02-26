@@ -1,0 +1,24 @@
+---
+title: "&#8230;"
+date: "2006-06-22"
+categories: 
+  - "thoughts"
+---
+
+[![](images/21166389_a8044a28b1_m.jpg)](http://www.flickr.com/photos/stillmemory/21166389/ "photo sharing")  
+
+[wheelchairs](http://www.flickr.com/photos/stillmemory/21166389/)  
+Originally uploaded by [Irina / Riri](http://www.flickr.com/people/stillmemory/).
+
+  
+Non mi veniva in mente un titolo per questo post. Un po' di tempo fa, sinceramente volevo proprio eliminare questo inutile attributo dal mio blog. Un blog che ho un po' abbandonato, ultimamente.. E dire che di cose magari ce ne sarebbero pure da dire:
+
+ho sentito voci per cui un inceneritore sarebbe dato in fase di progetto/costruzione a Pont Canavese o nelle sue vicinanze (e dire che i tassi di mortalità per cancro sono già tra i più alti d'italia, in questa valle).
+
+ho sentito i telegiornali parlare di riavvio del dialogo a proposito della TAV Torino-Lione. Ma questi politici cosa fanno? Un giorno guardano i cittadini, l'altro il portafogli.. Sarà meglio ribadire il concetto, nei prossimi mesi: il datore di lavoro siamo noi, non l'Unione Europea.
+
+ho sentito parlare di teleriscaldamento a Rivarolo, da realizzarsi presso il vecchio Vallesusa. Anno di inizio dei lavori: 2007.
+
+ho sentito un vecchio amico regista, che mi ha parlato di un suo progetto da realizzare. Voglio dargli un po' di spazio, quindi Vi rubo cinque minuti. Lui aveva intenzione di realizzare un film per il cinema con interpreti (protagonisti e unici interpreti) i portatori di handicap. Lo scopo, realizzare un'opera che permetta di assumere il punto di vista di un portatore di handicap, seppure per un paio d'ore. Immergersi nella realtà dei disabili, e capire come sia il nostro (di noi abili) mondo per un portatore di handicap. Il regista aveva stretto contatti con Comune di Rivarolo, ANFFAS e enti locali, anche aiutato da amici più influenti (omissis). Gli incontri con questi enti, però, sono stati molto poco producenti. Da una parte una scrollata di spalle, dall'altra qualche parola a vanvera, dall'altra ancora una richiesta di prospetti circa le possibile entrate. Insomma, solita storia. Se non si caccia il soldo, niente finanziamenti. Assurdo, no? Per concludere questo discorso, il mio amico regista ha deciso di produrre con soldi suoi un'opera teatrale sugli stessi temi, con gli stessi interpreti.
+
+Beh, per il momento è tutto. Bau bau.

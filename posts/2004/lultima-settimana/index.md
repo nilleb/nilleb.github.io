@@ -1,0 +1,8 @@
+---
+title: "L&#8217;ultima settimana"
+date: "2004-07-12"
+categories: 
+  - "thoughts"
+---
+
+Dopo lunghe giornate passate a studiare, sopportando il caldo, la voglia di uscire e ogni possibile sorta di imprevisti, finalmente ? cominciata l'ultima settimana. Un solo esame, una sola ora di stress mi divide dalle vacanze. Intorno gli amici cominciano a sparire, chi al mare, chi in giro per il mondo. Le tante agognate vacanze sono l'unica via per rilassarsi dopo un anno di fatiche e di stress. Questo ? quello che ci racconta il senso comune. Le vacanze servono a staccarci da quella realt? che ci sta intorno gli altri undici mesi dell'anno o poco meno. Si piomba in un altro mondo, pi? rarefatto o pi? accanito a seconda di cosa si scelga. Si perdono tutti i riferimenti, e se non si fa attenzione, pure la memoria. In vacanza si costruisce un nuovo microcosmo che scade in fretta, un po' come le uova. E sapendolo, da met? vacanza in avanti si rimpiange la precoce morte di questo microcosmo. Un buon modo di affrontare le vacanze ? dimenticarsi dell'altro mondo e affermare che questo (quello delle vacanze) ? l'unico mondo possibile. A parte i tagli bruschi che il regista della vita mette sui viaggi, un po' come in "The snatch". Chiss? qual ? il corretto modo di affrontare una cosa come le vacanze. Io ne approfitter? per vedere un po' di gente nuova, un po' di posti nuovi. E anche per vedere la gente vecchia, che trascuro un po' troppo durante il resto dell'anno. E cos?, arrivederci a tutti! :-D

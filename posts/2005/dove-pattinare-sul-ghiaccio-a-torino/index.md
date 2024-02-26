@@ -1,0 +1,10 @@
+---
+title: "Dove pattinare sul ghiaccio a Torino?"
+date: "2005-12-28"
+categories: 
+  - "thoughts"
+---
+
+La maggior parte dei palazzetti del ghiaccio è al momento chiusa, complici le Olimpiadi. In un moto d'ingenuità ieri siamo andati a Torino Esposizioni, dove una volta c'era il palaghiaccio rotelliere (che nome astruso!).. A salutarci c'erano un paio di cantonieri e un mucchio di sabbia. (Ma gli impianti per le olimpiadi non erano già tutti finiti?) Entrati in un bar, siamo riusciti a scoprire per sentito dire che tutti gli impianti di Torino sono chiusi al momento, eccetto per l'Atrium di piazza Solferino e l'impianto di corso Tazzoli all'estremo sud di Torino. Le voci da bar però non sono sempre corrette: questa mattina con spirito indagatore ho scoperto il [post](http://www.bloggers.it/torinopazienzaolimpica/index.cfm?blogaction=permalink&id=524F42C8-D983-687A-9BE244B4B947DA21) di un'altro blogger di Torino, che elenca quali piste sono aperte. Poi c'è il sito di [TSG-Skater](http://www.tsg-skater.org/mappe.htm), che elenca tutte le piste a Torino, ma non è molto aggiornato e non indica gli orari di apertura. è comunque utile perchè elenca tante altre piste dove pattinare anche d'estate, ma senza ghiaccio. Di mio aggiungo che in Valle d'Aosta ci sono un sacco di posti dove pattinare: Aosta, Cervinia, Gressoney, Brusson e molti altri. In piemonte aggiungo anche Biella. Insomma, andate a pattinare! :-)
+
+\[Aggiornamento\] Ho scoperto un articolo della Stampa Web che parla degli impianti aperti. Si tratta solo della Provincia di Torino, però è utile lo stesso! [Piste nella provincia di Torino](http://www.lastampa.it/nordovest/torinoprovincia/05/12/pisteghiaccio/default.asp) Aggiungo anche un'altra chicca: [Il blog di Massimo Gramellini](http://www.lastampa.it/cmstp/rubriche/rubricahome.asp?ID_blog=41), autore del Buongiorno! sulla Stampa. Consiglio l'articolo del [22/12](http://www.lastampa.it/cmstp/rubriche/girata.asp?ID_blog=41&ID_articolo=20&ID_sezione=56&sezione=Buongiorno)! ;-)

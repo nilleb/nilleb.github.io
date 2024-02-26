@@ -1,0 +1,12 @@
+---
+title: "mise à jour sans sens"
+date: "2008-03-10"
+categories: 
+  - "thoughts"
+tags: 
+  - "everydays"
+---
+
+l'ovest è il regno delle nuvole e del vento invernale, quest'oggi. tutto è cominciato ieri, mentre facevamo una piacevole passeggiata sui monti del Beaujolais. eravamo fuori sin dal mattino, con una coppia di amici. lo zaino conteneva soltanto qualche fetta di pane e un paio di tavolette di cioccolata, buone come energia solida. la domenica, all'ovest, certe associazioni organizzano scampagnate sui monti, offrendo per una cifra irrisoria un paio di rinfreschi ogni 6-8 km di camminata. e una zuppa di cipolle al traguardo. al di là del nome, niente residui sull'alito ma un sacco di gusto quando mangiata con formaggio e crostini di pane. la sera la faccia scottava leggermente, a forza di tutto quel vento. poi, non essendo abituati a dicia-sette kilometri a piedi, tutti insieme a piccole deviazioni non previste che ti portano fuori dal percorso abilmente balisé, ci siamo sbattuti sul divano assumendo forma amebica. un buon modo di riposare gli arti e la mente, visto che in tv ci sono solo gli exit poll delle comunali. un insieme di cifre, non definitive e ripetute senza sosta e senza senso, fino a che, alle dieciedieci non abbiamo chiuso gli occhi, presi dall'abbiocco.
+
+ben, stamattina per fortuna ci sentivamo dei leoni. il week end è meraviglioso.

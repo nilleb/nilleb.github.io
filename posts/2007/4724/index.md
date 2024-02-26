@@ -1,0 +1,10 @@
+---
+title: "4724"
+date: "2007-11-20"
+categories: 
+  - "thoughts"
+---
+
+4724: barzeletta... 19 Nov 2007 Xxxxxo
+
+thus we have reached 4724 messages. it is a great amount. I didn't expect such an amount. the last message date is recent. just yesterday. nobody maintains anymore. I don't know which will be the first: the web site or the mysql engine. but I have probably chosen to leave the 'glare.it' domain to itself. it's a fuzzy decision, as the greatest number I take. Dear guys and friends, only one thing is clear: in the next year the hosted domain will be taken back. Thus it is necessary to find a 'B' solution.

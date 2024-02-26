@@ -1,0 +1,14 @@
+---
+title: "14, Via Boucheron"
+date: "2006-07-07"
+categories: 
+  - "thoughts"
+---
+
+14 è il doppio di 7. Questo numero mi perseguita dal passato gennaio, e credo che sia di buon auspicio. Inoltre, la casa dove mi sono trovato meglio, durante i lunghi peregrinare di Gennaio e Febbraio, si trovava proprio in Via Boucheron..
+
+Questo nome francese mi piace molto, e ormai saranno in tanti ad essere stufi di sentirlo ripetere (da me). Però volevo dare un annuncio ufficiale, nel giorno in cui si firma il contratto e forse avviene la consegna delle chiavi. Divento cittadino! :-)
+
+Quanto sarei felice, se potessero leggere questo post anche Tatiana e Fabrizio, i nostri vecchi e simpaticissimi coinquilini.. Beh, mi sa che li avviserò a voce.. :-)
+
+Sono impaziente di cominciare, mi piace pensare a come sarà casa nostra, al fatto di poterla chiamare casa, al piacere di tornarci dopo un viaggio, una vacanza, una serata.

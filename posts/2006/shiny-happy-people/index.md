@@ -1,0 +1,14 @@
+---
+title: "shiny happy people"
+date: "2006-08-30"
+categories: 
+  - "thoughts"
+---
+
+![shiny-happy-people](images/stor_8766793_38570.jpg)
+
+[otto indagati](http://www.repubblica.it/2006/08/sezioni/cronaca/autostrada-berlusconi/autostrada-berlusconi/autostrada-berlusconi.html). per aver concluso un po' troppo in fretta le perizie sulla sicurezza della Palermo-Messina. per poter inaugurare in anticipo l'opera. per riscuotere consenso tra la popolazione. la stessa che probabilmente avrebbe preso l'autostrada, rischiando la vita.
+
+ma. ma chi ci governa(va)? santo cielo, ma quante inaugurazioni della "nuova fiera di Milano" dovremo vedere, ancora? e quando riusciremo a usare, senza pericoli per la nostra vita, le mirabolanti imprese avviate dal governo (passato, presente e futuro)?
+
+e poi, quante mosse vengono organizzate apposta per corrompere la nostra opinione? vale davvero tanto, la nostra opinione. Cerchiamo di non svenderla.

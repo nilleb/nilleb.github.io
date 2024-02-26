@@ -1,0 +1,9 @@
+---
+title: "Quotidiani e RSS Feed"
+date: "2005-10-30"
+categories: 
+  - "social-computing"
+  - "thoughts"
+---
+
+Sono diventato un lettore di notizie. Ho scoperto nuovi strumenti per assecondare la mia curiosità. Sono felice di poter leggere notizie da tutto il mondo con poco sforzo! Mi è venuta voglia di ripassare lo spagnolo e d'imparare il francese. Sono anche convinto che il [miglior quotidiano del mondo](http://www.lemonde.fr/) sia d'oltralpe, e leggendo alcuni titoli delle principali testate europee mi sono reso conto della provincialità degli italiani. Non tanto per la scarsità di talento quanto piuttosto per la piccolezza della loro finestra sul mondo. C'è poca coscienza dell'essere cittadini del mondo! Al di là della bontà degli articoli di molte testate.. consiglio a tutti di provare un aggregatore di feed rss. Attualmente uso akgregator, incluso in [KDE](http://www.kde.org). Per GNOME consiglio [Liferea](http://liferea.sf.net), dato che [Straw](http://www.nongnu.org/straw/) su PowerPC non funziona granchè.. Invece per coloro che cambiano di frequente macchina e sistema operativo c'è anche [Google Reader](http://www.google.com/reader/), comodamente accessibile via internet (mi spiace solo che sia ancora una beta e così poco usabile). Qualche informazione in più: cosa sono gli [RSS](http://it.wikipedia.org/wiki/RSS); quali quotidiani sono disponibili [on-line](http://www.onlinenewspapers.com/)? (l'ho provato solo per la Spagna e l'Italia, ma funziona).

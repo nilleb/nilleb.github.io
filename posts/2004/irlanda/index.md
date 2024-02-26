@@ -1,0 +1,8 @@
+---
+title: "Irlanda"
+date: "2004-06-30"
+categories: 
+  - "thoughts"
+---
+
+E' da tempo che volevo scrivere di questa stupenda isola. In realt? non so di sicuro se ? bellissima o no, tuttavia quelli che ci sono stati ne parlano un gran bene. E cos? quest'estate avr? la possibilit? di vedere un pezzettino d'Europa, l'isola pi? verde e magica di questo vecchio vecchio continente.. :-) Il mio viaggio partir? da Torino il 21 Luglio, un mese dopo il Solstizio d'Estate, e finir? il 4 Agosto. In queste due settimane visiter? Dublino, Belfast, Derry e la Giant's Causeway, Galway e le Aran Islands. E poi torner? a Dublino passando per Cork e Killarney. Non includo link a questi posti, a me piace di pi? immaginarli. Comunque, se proprio volete avere un'idea di cosa sono, c'? sempre Google. La mia compagna di questo viaggio sar? la macchina fotografica. In realt? spero di conoscere qualcuno durante il viaggio, spesso ho paura di dover viaggiare solo per le intere due settimane. Quello che avr? al ritorno saranno interi rullini di foto, di qualcosa che ho visto e che forse sono anche riuscito a riportare sulla pellicola. E' un compito difficile, ma spero che quello che ho visto spinga qualcun altro a vedere gli stessi posti. Quella che ho dell'Irlanda ? un'idea piuttosto vaga. Mi piace perdermi nel fantasticare, ma ? doloroso ritornare alla realt?. Cos? qui non includo nessuno dei miei pensieri, per ora. Spero soltanto di poter aggiornare questo blog con i miei appunti di viaggio. Mi sto attrezzando per poter aggiungere post a questo blog anche durante il mio viaggio, semplicemente col cellulare. Adesso saluto e torno a casa :-)

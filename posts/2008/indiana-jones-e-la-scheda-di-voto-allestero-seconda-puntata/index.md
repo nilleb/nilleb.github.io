@@ -1,0 +1,26 @@
+---
+title: "Indiana Jones e la scheda di voto all'estero (seconda puntata)"
+date: "2008-04-07"
+categories: 
+  - "thoughts"
+---
+
+Eccomi di nuovo al telefono. sto chiamando il consolato, dal mio cellulare. sono di buon umore, ieri sera sono rimasto piacevolmente sorpreso.
+
+dunque sto chiamando. dopo qualche squillo la segretaria risponde. telefoni che suonano, nel suo ufficio. dopo qualche istante mi dice che dovro passare nel suo ufficio. con tutti i documenti nella busta che ho ricevuto. e con la busta.
+
+come, la busta? sinceramente l'ho lasciata a casa, nella pattumiera. era strappata. devo dire che non l'ho aperta con un coltello, ordinatamente. ma l'ho piuttosto strappata a mani nude, come faccio da quando sono piccolo.
+
+lei ride. io ci resto male. in fin dei conti mi sembra inutile portare una busta su cui c'è scritto il mio nome e il mio indirizzo. io me lo ricordo, dove abito.. e loro pure. vabbeh. lei mi dice di passare entro l'una, mi apriranno. sembra ci sia parecchia gente nelle mie condizioni.
+
+Cosi, esco un attimo prima della pausa pranzo dall'ufficio, mi reco al consolato. sono le 1202, suono il campanello. nessuno mi apre. ri-suono. mh, definitivamente nessuna risposta. guardo attraverso il vetro oscurato, coprendomi gli occhi. il guardiano è li. in fin dei conti mi sta guardando, cavolo!
+
+chiamo il numero di stamattina. è lui stavolta, a rispondermi: il guardiano. mi sputa un "il consolato è chiuso". ribatto che la segretaria di stamattina mi ha detto di... ok, ha premuto il pulsante dell'interfono.
+
+entro, salgo al primo piano. entro nell'ufficio preposto, mi siedo. mi dicono di attendere, non 'è nessuno oltre a me. attendo.
+
+dopo qualche minuto mi danno un foglio bianco: "scriva, che Lei non ha ricevuto a casa i fogli che non ha ricevuto. intanto Le vado a prendere i nuovi". scrivo, e cosi scarico il nervosismo contro il guardiano. firmo, adesso sono contento, ho le mie schede elettorali.
+
+chiedo se posso andare in bagno, votare e restituire tutto al mio ritorno. No, non posso, è un voto per posta.
+
+esco dal consolato, mi fermo in strada e voto. cosi naturale, in un paese straniero che non sa cosa siano quei simboli colorati sui miei fogli. questo pomeriggio, le liste dei candidati -per partito e con simbolo- saranno argomento di discussione coi colleghi. pubblicherò le foto delle liste, prima o poi. sinceramente mi hanno fatto ridere.

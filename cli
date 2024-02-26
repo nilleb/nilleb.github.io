@@ -1,0 +1,20 @@
+if [ "$1" == "serve" ]; then
+    . ./venv/bin/activate
+    DEBUG=true uvicorn app.main:app --reload --log-level debug --port 8001
+elif [ "$1" == "test" ]; then
+    . ./venv/bin/activate
+    DEBUG=true pytest $2 $3 $4 $5 $6 $7 $8 $9
+elif [ "$1" == "wrap" ]; then
+    . ./venv/bin/activate
+    DEBUG=true $2 $3 $4 $5 $6 $7 $8 $9
+elif [ "$1" == "setup" ]; then
+    set -euo pipefail
+    python3 -m venv venv
+    . venv/bin/activate
+    pip install --upgrade pip
+    pip install pelican ghp-import Markdown
+elif [ "$1" = "deploy" ]; then
+    set -xveuo pipefail
+else
+    echo "Invalid argument"
+fi

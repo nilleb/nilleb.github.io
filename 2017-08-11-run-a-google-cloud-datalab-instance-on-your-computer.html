@@ -1,0 +1,32 @@
+
+        <html>
+        <head>
+            <title>Run a Google Cloud Datalab instance on your computer</title>
+        </head>
+        <body>
+            <h1>Run a Google Cloud Datalab instance on your computer</h1>
+            <p>2017-08-11</p>
+            <p>On the official Google Cloud Datalab <a href="https://cloud.google.com/datalab/docs/quickstarts">quickstart</a>, Google gives you the detailed steps about how to start a GCP instance running the Jupyter notebook, where you'll experiment all the functionalities of the Datalab.</p>
+<p>But, perhaps you don't want to pay the price of the instance. You don't need to use the cloud for that, since you have your own computer. In this case, to get a Datalab instance on your computer, you just need docker.</p>
+<p><code>docker run -it -p "127.0.0.1:8081:8080" -v $PWD:"/content" gcr.io/cloud-datalab/datalab:local</code></p>
+<p>But let's admit that you have a BigQuery dataset, with which you want to play. To access easily that data from the Datalab notebook as if you were on a dedicated instance, you'll have to:</p>
+<ol>
+<li>stop the running Datalab instance</li>
+<li>read https://developers.google.com/identity/protocols/application-default-credentials#howtheywork and get a credentials.json</li>
+<li>if you have started the Datalab instance at least once, you'll have a datalab folder. Copy the <code>credentials.json</code> to the <code>datalab/.config</code> folder</li>
+<li><code>export GOOGLE_APPLICATION_CREDENTIALS=/content/datalab/.config/credentials.json</code></li>
+<li>once again, <code>docker run -it -p "127.0.0.1:8081:8080" -v $PWD:"/content" gcr.io/cloud-datalab/datalab:local</code></li>
+<li>open your favourite browser to the address that has been printed to the console</li>
+<li>In the first code cell, type <code>%projects set yourproject</code></li>
+</ol>
+<p>Now you're ready to play with your dataset. For example:</p>
+<ol>
+<li>add a code cell</li>
+<li><code>%%sql --module records SELECT field1, field2, field3, field4 FROM dataset.table</code></li>
+<li>add another code cell</li>
+<li><code>import datalab.bigquery as bq df = bq.Query(records).to_dataframe()</code></li>
+</ol>
+<p>Congratulations! You have now a working pandas dataset ;-)</p>
+        </body>
+        </html>
+        

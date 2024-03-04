@@ -1,0 +1,34 @@
+
+        <html>
+        <head>
+            <title>asp.net: __eventvalidation</title>
+        </head>
+        <body>
+            <h1>asp.net: __eventvalidation</h1>
+            <p>2007-11-30</p>
+            <p>a mechanism has been added in <a href="http://asp.net">asp.net</a> to avoid injection on sensible page contents: the event validation.<br />
+simple as registering, server side, all the possible values of all the variables in your web page.<br />
+something like:<br />
+HASH(DropDownList1.UniqueID) XOR HASH(Valeur de l'article)<br />
+the result is then serialized to the __eventvalidation hidden field.  </p>
+<p>more on VIEWSTATE, a strict friend to __EVENTVALIDATION [excerpt from a pdf published in the follow-up]<br />
+__VIEWSTATE is an application state container.<br />
+Maintain state between multiple postback requests.<br />
+"Holds all your variables"<br />
+Serialized base64 encoded data.<br />
+Viewstate contents can be encrypted.  </p>
+<p>to understand what this is used for, here are the following pages<br />
+<a href="http://msdn2.microsoft.com/en-us/library/7kh55542.aspx">http://msdn2.microsoft.com/en-us/library/7kh55542.aspx</a><br />
+<a href="http://blogs.msdn.com/amitsh/archive/2007/07/31/why-i-get-invalid-postback-or-callback-argument-errors.aspx">http://blogs.msdn.com/amitsh/archive/2007/07/31/why-i-get-invalid-postback-or-callback-argument-errors.aspx</a><br />
+<a href="http://odetocode.com/Blogs/scott/archive/2006/03/21/3153.aspx">http://odetocode.com/Blogs/scott/archive/2006/03/21/3153.aspx</a><br />
+<a href="http://weblogs.asp.net/bleroy/archive/2004/08/18/216861.aspx">http://weblogs.asp.net/bleroy/archive/2004/08/18/216861.aspx</a><br />
+<a href="http://msdn.microsoft.com/msdnmag/issues/06/12/CuttingEdge/">http://msdn.microsoft.com/msdnmag/issues/06/12/CuttingEdge/</a>  </p>
+<p>now on more precise explications<br />
+<a href="http://www.security-assessment.com/files/presentations/Syscan%2520-%2520Next%2520Generation%2520.NET%2520Vulnerabilities.pdf">http://www.security-assessment.com/files/presentations/Syscan%20-%20Next%20Generation%20.NET%20Vulnerabilities.pdf</a>  </p>
+<p>tools<br />
+<a href="http://www.windowsecurity.com/articles/SPIKE-BURP-real-world-computer-security-usage-Part4.html">http://www.windowsecurity.com/articles/SPIKE-BURP-real-world-computer-security-usage-Part4.html</a><br />
+<a href="http://www.portswigger.net/proxy/">http://www.portswigger.net/proxy/</a>  </p>
+<p>all this is fun.</p>
+        </body>
+        </html>
+        

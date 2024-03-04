@@ -1,0 +1,70 @@
+
+        <html>
+        <head>
+            <title>Searching for people is not the same as searching for articles and concepts</title>
+        </head>
+        <body>
+            <h1>Searching for people is not the same as searching for articles and concepts</h1>
+            <p>2024-02-23</p>
+            <p>The aim of this post is to share my experience in implementing <a href="https://www.youtube.com/watch?v=pgWgT89l-e8&amp;pp=ygUtcGVvcGxlIGZpbmRlciBoYWNrYXRvbiBhc2lhbiBkZXZlbG9wbWVudCBiYW5r">a people search engine</a> for a multicultural environment such as the Asian Development Bank. In this post, I will focus on “searching a person” only - the part “search for an expert” will be the subject of the next post.</p>
+<p><br/></p>
+<p>Cultural differences make that searching for a person is often hard. In Asia, you can’t even imagine counting all the existing cultures. Even if your workplace assumes that every employee uses English for their everyday job, differences in prononciation and context transform a simple task in a nightmare. Usually this ends up calling a Friend of a Friend who still remembers that person that you need to call.</p>
+<p><br/></p>
+<p>In terms of off-the-shelf solutions you may find some relief in your default digital workplace (what a chance to be able to browse the profile pictures all your colleagues!) but…</p>
+<ul>
+<li>
+<p>chances are that this tool has been implemented by a company immersed in a culture very different from yours</p>
+</li>
+<li>
+<p>chances are that you will have to test many different solutions before finding one suitable to your needs</p>
+</li>
+<li>
+<p>last, if such a solution exists, you shall struggle with internal policies (because people data is sensitive! because of many little interoperability issues that could arise, when your digital landscape is thirty years old..)</p>
+</li>
+</ul>
+<p><br/></p>
+<h2>Why searching for people is so difficult?</h2>
+<p>Because of typos, misspellings, phonetics, incompatible vocabulary, incomplete or incorrect contextual information. At least! 😊</p>
+<p><br/></p>
+<p>My personal list to solve this problem is this one:</p>
+<ul>
+<li>
+<p>considering just the name</p>
+<ul>
+<li>
+<p>tolerance to typos and misspellings (fuzzy string matching)</p>
+</li>
+<li>
+<p>phonetics (metaphones)</p>
+</li>
+</ul>
+</li>
+<li>
+<p>considering the organizational structure (department, division, job title) and the location</p>
+<ul>
+<li>
+<p>acronyms (data preparation)</p>
+</li>
+<li>
+<p>dividing roots from suffixes (data preparation)</p>
+</li>
+<li>
+<p>different weights for different fields (first and last name, then job title, then department, then division, then location; data preparation)</p>
+</li>
+<li>
+<p>trigrams</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><br/></p>
+<p>Technically speaking, solving these problems requires the use of several techniques at the same time - phonetical matching along with trigrams and string distances for example.</p>
+<p>Every technique will be producing results for a specific use case (ie. searching for a phoneme vs searching for a trigram), hence it will be paramount to research the best weights to blend the results of different techniques.</p>
+<p>Always speaking of weights, the contextual information about a person should concur in finding her - just not all the context information is equivalent (the system identifier of the person has negligeable importance compared to the first name; the department acronym could be more important than the department long name; is it easy, in your context, to define whether the division or the department is more important?).</p>
+<h2>How can you determine if you are doing this right?</h2>
+<p>Good knowledge of the data you are leveraging will help - a lot. Spend a fair amount of time just inspecting it, checking for outliers, describing it.</p>
+<p>Feedback is a gift, so you should not be counting on it. A corporate search engine has also the defect of a low query volume. Nevertheless, in the modern landscape you can easily collect KPIs about your solution behavior, and analyze its trends. The intensive use of Structured Logging and tags can not only help you monitor the state of your application, but also build governance dashboards that will help you visualize how the search engine is doing.</p>
+<p>In Search Engines theory you will find a few techniques about how to assess whether a search engine is returning the right results. We recommend organizing beta test sessions with users from across all the organization, to make sure that their use cases are addressed. Then prepare a collection of integration tests, to be played against every new release of the search engine AND iteration of the indexer.</p>
+        </body>
+        </html>
+        

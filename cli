@@ -24,7 +24,7 @@ elif [ "$1" == "gen" ]; then
     git push origin master
 elif [ "$1" == "publish" ]; then
     . venv/bin/activate
-    ghp-import -m "Generate Pelican site" --no-jekyll -b master output
+    ghp-import -m "Generate site" --no-jekyll -b master output
 else
     echo "Invalid argument"
 fi

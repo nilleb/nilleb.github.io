@@ -99,10 +99,11 @@ with open("output/index.html", "w") as file:
         f"""
     <html>
     <head>
-        <title>Index</title>
+        <title>Amazed by the noise</title>
     </head>
     <body>
-        <h1>Index</h1>
+        <h1>Amazed by the noise</h1>
+        <p>Blog posts from Ivo Bellin Salarin, aka `nilleb`</p>
         <ul>
             {''.join(index_lines)}
         </ul>

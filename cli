@@ -1,6 +1,10 @@
 if [ "$1" == "serve" ]; then
     . ./venv/bin/activate
     DEBUG=true pelican --listen
+elif [ "$1" == "lint" ]; then
+    . ./venv/bin/activate
+    isort *.py
+    black *.py
 elif [ "$1" == "test" ]; then
     . ./venv/bin/activate
     DEBUG=true pytest $2 $3 $4 $5 $6 $7 $8 $9
@@ -12,10 +16,11 @@ elif [ "$1" == "setup" ]; then
     python3 -m venv venv
     . venv/bin/activate
     pip install --upgrade pip
-    pip install pelican ghp-import Markdown
+    pip install Markdown pyyaml python-slugify ghp-import
+    pip install isort black
 elif [ "$1" == "gen" ]; then
     . venv/bin/activate
-    pelican content -o output -s publishconf.py
+    python md2html.py
     git push origin master
 elif [ "$1" == "publish" ]; then
     . venv/bin/activate

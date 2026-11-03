@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nilleb · Ivo Bellin Salarin</title>
+  <meta name="description" content="Personal pages of Ivo Bellin Salarin (nilleb): side projects and twenty years of notes.">
+  <link rel="canonical" href="https://nilleb.io/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fbfaf7;
+      --text: #1f1d1a;
+      --muted: #6b665e;
+      --line: #e7e3da;
+      --accent: #b4532a;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #161513;
+        --text: #e9e5dc;
+        --muted: #9b958a;
+        --line: #2b2925;
+        --accent: #e58a5e;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 17px/1.65 'Literata', Georgia, serif;
+    }
+
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 4rem 1rem 5rem;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    h1 { font-size: 2.2rem; line-height: 1.2; margin: 0 0 0.25rem; }
+    h2, h3, nav, .year span, footer { font-family: 'Inter', system-ui, sans-serif; }
+    h2 { font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 3rem 0 1rem; }
+
+    .handle { color: var(--muted); margin: 0 0 1.5rem; font-family: 'Inter', system-ui, sans-serif; }
+
+    nav { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; font-size: 0.95rem; }
+
+    .things { list-style: none; padding: 0; margin: 0; }
+    .things li { padding: 0.5rem 0; border-top: 1px solid var(--line); }
+    .things li:first-child { border-top: none; }
+
+    .year { display: grid; grid-template-columns: 4rem 1fr; gap: 1rem; border-top: 1px solid var(--line); padding: 0.75rem 0; }
+    .year h3 { margin: 0; font-size: 0.95rem; color: var(--muted); }
+    .year ul { list-style: none; margin: 0; padding: 0; }
+    .year li { display: flex; justify-content: space-between; gap: 1rem; padding: 0.15rem 0; }
+    .year span { color: var(--muted); font-size: 0.8rem; white-space: nowrap; padding-top: 0.2rem; }
+
+    footer { margin-top: 4rem; font-size: 0.8rem; color: var(--muted); }
+
+    @media (max-width: 480px) {
+      .year { grid-template-columns: 1fr; gap: 0.25rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Ivo Bellin Salarin</h1>
+    <p class="handle">aka nilleb · Turin → Lyon</p>
+
+    <p>Italian, living in France since 2006. Software engineer by trade — the work side lives on
+      <a href="https://nilleb.com">nilleb.com</a>. This is the personal one: things I tinker with after hours, and
+      twenty years of notes written in Italian, French and English.</p>
+
+    <nav>
+      <a href="https://github.com/nilleb">GitHub</a>
+      <a href="https://bsky.app/profile/nilleb.io">Bluesky</a>
+      <a href="https://h4.io/@nilleb">Mastodon</a>
+      <a href="https://nilleb.com/blog">Tech blog</a>
+    </nav>
+
+    <h2>Tinkering</h2>
+    <ul class="things">
+      <li><a href="https://labs.nilleb.co">labs.nilleb.co</a> — an ESP32 voice assistant, e-ink gadgets and 3D-printing notes.</li>
+      <li><a href="https://family.nilleb.io">family.nilleb.io</a> — a pedigree viewer for our family tree.</li>
+      <li><a href="https://github.com/nillebco/tessera">tessera</a> — a macOS window manager, because none of the others did Spaces right.</li>
+    </ul>
+
+    <h2>Notes, 2004 → today · {{count}} posts</h2>
+    {{archive}}
+
+    <footer>© Ivo Bellin Salarin. Old posts are kept as written, typos included.</footer>
+  </main>
+</body>
+
+</html>

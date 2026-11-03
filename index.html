@@ -57,6 +57,8 @@
     .things { list-style: none; padding: 0; margin: 0; }
     .things li { padding: 0.5rem 0; border-top: 1px solid var(--line); }
     .things li:first-child { border-top: none; }
+    h3.group { font-family: 'Inter', system-ui, sans-serif; font-size: 0.95rem; margin: 1.5rem 0 0.25rem; }
+    code { font-size: 0.85em; }
 
     .year { display: grid; grid-template-columns: 4rem 1fr; gap: 1rem; border-top: 1px solid var(--line); padding: 0.75rem 0; }
     .year h3 { margin: 0; font-size: 0.95rem; color: var(--muted); }
@@ -89,10 +91,27 @@
     </nav>
 
     <h2>Tinkering</h2>
+    <h3 class="group">Around the house</h3>
     <ul class="things">
-      <li><a href="https://labs.nilleb.co">labs.nilleb.co</a> — an ESP32 voice assistant, e-ink gadgets and 3D-printing notes.</li>
+      <li><a href="https://labs.nilleb.co">labs.nilleb.co</a> — an ESP32-S3 e-ink voice assistant that writes notes to my vault, plus 3D-printing notes.</li>
+      <li><a href="https://github.com/nilleb/matins">Matins</a> — a morning newspaper for e-readers, composed from my read-later queue and RSS feeds, served over OPDS.</li>
+      <li><a href="https://nilleb.io/jean-carmet/">Jean Carmet</a> — the week's shows at our local theatre-cinema, rebuilt every Monday from the venue's PDFs.</li>
       <li><a href="https://family.nilleb.io">family.nilleb.io</a> — a pedigree viewer for our family tree.</li>
-      <li><a href="https://github.com/nillebco/tessera">tessera</a> — a macOS window manager, because none of the others did Spaces right.</li>
+      <li><a href="https://github.com/nillebco/tresor">trésor</a> — a one-page, browser-only household treasury forecast.</li>
+    </ul>
+    <h3 class="group">On my Mac</h3>
+    <ul class="things">
+      <li><a href="https://github.com/nillebco/tessera">tessera</a> — a tiling window manager in Rust, because none of the others did Spaces right.</li>
+      <li><a href="https://github.com/nillebco/stts">stts</a> — local speech-to-text and text-to-speech, tuned for Apple Silicon.</li>
+      <li><a href="https://github.com/nilleb/omnisess">omnisess</a> — search every AI coding session (Claude Code, Codex, Cursor…) from one place.</li>
+      <li><a href="https://github.com/nillebco/localhost-router">localhost-router</a> — <code>https://app.localhost</code> for every local port.</li>
+    </ul>
+    <h3 class="group">Agents &amp; plumbing</h3>
+    <ul class="things">
+      <li><a href="https://github.com/nillebco/varda">varda</a> — hands markdown tasks to AI agents and runs them in sandboxes.</li>
+      <li><a href="https://github.com/nillebco/switchboard">switchboard</a> — Signal, WhatsApp and Telegram behind one API, for bots that talk to the family.</li>
+      <li><a href="https://github.com/nillebco/proxium">proxium</a> — an authentication proxy that injects API keys so agents never see them.</li>
+      <li><a href="https://github.com/nillebco/ics_normalizer">ics_normalizer</a> — makes Outlook and Google Calendar agree on time zones.</li>
     </ul>
 
     <h2>Notes, 2004 → today · 196 posts</h2>

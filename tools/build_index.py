@@ -1,4 +1,4 @@
-"""Regenerate index.html: personal intro + post archive grouped by year.
+"""Regenerate index.html (personal intro + post archive grouped by year) and sitemap.xml.
 
 Usage: python3 tools/build_index.py
 """
@@ -33,6 +33,20 @@ def posts():
         yield m.group(1), f"{MONTHS[int(m.group(2)) - 1]} {int(m.group(3))}", title, path.name
 
 
+def write_sitemap(hrefs):
+    urls = ["  <url><loc>https://nilleb.io/</loc></url>"] + [
+        f"  <url><loc>https://nilleb.io/{html.escape(h)}</loc><lastmod>{h[:10]}</lastmod></url>"
+        for h in hrefs
+    ]
+    (ROOT / "sitemap.xml").write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + "\n".join(urls)
+        + "\n</urlset>\n",
+        encoding="utf-8",
+    )
+
+
 def main():
     by_year = defaultdict(list)
     for year, day, title, href in posts():
@@ -50,7 +64,8 @@ def main():
     count = sum(len(v) for v in by_year.values())
     out = template.replace("{{archive}}", archive).replace("{{count}}", str(count))
     (ROOT / "index.html").write_text(out, encoding="utf-8")
-    print(f"index.html: {count} posts across {len(by_year)} years")
+    write_sitemap(h for items in by_year.values() for _, _, h in items)
+    print(f"index.html + sitemap.xml: {count} posts across {len(by_year)} years")
 
 
 if __name__ == "__main__":

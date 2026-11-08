@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pagecast — privacy policy</title>
+  <meta name="description" content="Pagecast collects nothing, has no server and no analytics. This page describes what it reads locally and why.">
+  <link rel="canonical" href="https://nilleb.io/pagecast/privacy/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fbfaf7;
+      --text: #1f1d1a;
+      --muted: #6b665e;
+      --line: #e7e3da;
+      --accent: #b4532a;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #161513;
+        --text: #e9e5dc;
+        --muted: #9b958a;
+        --line: #2b2925;
+        --accent: #e58a5e;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 17px/1.65 'Literata', Georgia, serif;
+    }
+
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 4rem 1rem 5rem;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 0.25rem; }
+    h2, footer, .handle { font-family: 'Inter', system-ui, sans-serif; }
+    h2 { font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 2.5rem 0 0.75rem; }
+
+    .handle { color: var(--muted); margin: 0 0 1.5rem; }
+
+    ul { padding-left: 1.2rem; }
+    li { padding: 0.25rem 0; }
+
+    footer { margin-top: 4rem; font-size: 0.8rem; color: var(--muted); }
+    footer a { color: inherit; text-decoration: underline; }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Pagecast privacy policy</h1>
+    <p class="handle">last updated 8 November 2026 · applies to the Pagecast browser extension</p>
+
+    <p>Pagecast is a command palette for the page you are on. It has no server of its own, no
+      account and no analytics: nothing you search for, click or type in Pagecast is sent to us or
+      to any third party.</p>
+
+    <h2>What Pagecast reads, and why</h2>
+    <ul>
+      <li><strong>Page content.</strong> When you open the palette, Pagecast reads the current page's
+        controls — their accessible names, roles, values and positions — so it can list them and
+        click or focus the one you pick. This happens locally, on the page you are already looking
+        at, and the result is discarded when the palette closes.</li>
+      <li><strong>Open tabs.</strong> Pagecast asks the browser for the title, URL and favicon of your
+        open tabs so it can list them and switch to the one you pick. This is held in memory while
+        the palette is open and is never stored.</li>
+      <li><strong>Clipboard.</strong> Only the <em>Share current tab: copy URL</em> command writes to
+        the clipboard, and only when you run it.</li>
+      <li><strong>Site commands.</strong> Some plugins offer commands specific to a site. Most read
+        only what that site's own page already shows you. The Azure DevOps plugin additionally asks
+        that organization for its repository list, with your existing browser session, so it can
+        offer <em>Open repository…</em>: that request goes to the site you are on, never to us, and
+        the list is used only to build the command menu.</li>
+    </ul>
+
+    <h2>What Pagecast does not do</h2>
+    <ul>
+      <li>It does not collect, store or send to us — or to any third party — personal data, browsing
+        history, page content, form data, credentials, cookies or usage statistics. The only requests
+        it ever makes go to the site you are already using, on your behalf, with your existing
+        session.</li>
+      <li>It does not sell or share data with anyone, and it does not use data for advertising,
+        profiling, creditworthiness or any purpose unrelated to the palette.</li>
+      <li>It does not load or execute remote code: all the code ships inside the extension package.</li>
+      <li>It has no third-party services, no telemetry endpoints and no user accounts.</li>
+    </ul>
+
+    <h2>Permissions</h2>
+    <ul>
+      <li><strong>tabs</strong> — list open tabs so the palette can switch to them.</li>
+      <li><strong>scripting</strong> — inject the palette into tabs that were already open when the
+        extension was installed.</li>
+      <li><strong>clipboardWrite</strong> — the copy-URL command.</li>
+      <li><strong>Access to all sites</strong> — the palette must work on whatever page you are on,
+        and cannot know that address in advance.</li>
+    </ul>
+
+    <h2>Data retention and removal</h2>
+    <p>Pagecast keeps no data, so there is nothing to retain or delete. To remove the extension,
+      uninstall it from your browser; nothing is left behind.</p>
+
+    <h2>Changes</h2>
+    <p>If a future version ever sends data anywhere, this policy will say so, and the extension will
+      ask for your consent first. The current text always lives at this address.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: <a href="mailto:hello@nilleb.com">hello@nilleb.com</a>.
+      Pagecast is written and published by Ivo Bellin Salarin.</p>
+
+    <footer>
+      <a href="/pagecast/">Pagecast</a> · <a href="https://nilleb.io/">nilleb.io</a>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pagecast — a command palette for the page you're on</title>
+  <meta name="description" content="Pagecast is a browser extension: press ⌥. and fuzzy-search every button, link and field on the current page, your open tabs, and site-specific commands.">
+  <link rel="canonical" href="https://nilleb.io/pagecast/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fbfaf7;
+      --text: #1f1d1a;
+      --muted: #6b665e;
+      --line: #e7e3da;
+      --accent: #b4532a;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #161513;
+        --text: #e9e5dc;
+        --muted: #9b958a;
+        --line: #2b2925;
+        --accent: #e58a5e;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 17px/1.65 'Literata', Georgia, serif;
+    }
+
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 4rem 1rem 5rem;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    h1 { font-size: 2.2rem; line-height: 1.2; margin: 0 0 0.25rem; }
+    h2, nav, footer, .handle { font-family: 'Inter', system-ui, sans-serif; }
+    h2 { font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 3rem 0 1rem; }
+
+    .handle { color: var(--muted); margin: 0 0 1.5rem; }
+
+    nav { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; font-size: 0.95rem; }
+
+    ul { padding-left: 1.2rem; }
+    li { padding: 0.25rem 0; }
+    kbd {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.85em;
+      border: 1px solid var(--line);
+      border-bottom-width: 2px;
+      border-radius: 4px;
+      padding: 0.05em 0.35em;
+    }
+
+    footer { margin-top: 4rem; font-size: 0.8rem; color: var(--muted); }
+    footer a { color: inherit; text-decoration: underline; }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Pagecast</h1>
+    <p class="handle">a command palette for the page you're on</p>
+
+    <p>Press <kbd>⌥.</kbd> (Alt+Period) on any page and start typing: Pagecast fuzzy-searches
+      everything you can act on, and runs it without the mouse.</p>
+
+    <h2>What it searches</h2>
+    <ul>
+      <li><strong>Page</strong> — every button, link, input and ARIA widget, named the way a screen
+        reader names it, including the custom controls that link-hint extensions miss and elements
+        inside open shadow roots.</li>
+      <li><strong>Tabs</strong> — your open tabs, most recently used first.</li>
+      <li><strong>Site commands</strong> — extra commands for the sites you use (Proton Mail,
+        Microsoft Teams, Azure DevOps), plus a few everywhere: copy the current URL, open a preview
+        as a full tab.</li>
+    </ul>
+    <p>Prefixes narrow the search: <code>&gt;</code> site commands, <code>#</code> page elements,
+      <code>@</code> tabs.</p>
+
+    <h2>Install</h2>
+    <nav>
+      <a href="https://addons.mozilla.org/en-US/firefox/addon/98ecd77d880f4642899a/">Firefox / Zen — addons.mozilla.org</a>
+    </nav>
+    <p>Chrome, Edge, Brave and Arc: not yet in the Chrome Web Store (submitted, in review).
+      Firefox and Zen users can install it today.</p>
+
+    <h2>Privacy</h2>
+    <p>No server, no account, no analytics. Page content and tab titles are read locally when the
+      palette opens and never leave the browser. Details in the
+      <a href="/pagecast/privacy/">privacy policy</a>.</p>
+
+    <footer>
+      Part of <a href="https://nilleb.io/">nilleb.io</a> · MIT · issues and ideas:
+      <a href="mailto:hello@nilleb.com">hello@nilleb.com</a>
+    </footer>
+  </main>
+</body>
+</html>

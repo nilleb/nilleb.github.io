@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iris — privacy policy</title>
+  <meta name="description" content="Iris is a test build of a voice assistant client. It records only when you tap Talk, sends the recording to a server you are given, and has no analytics.">
+  <link rel="canonical" href="https://nilleb.io/iris/privacy/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fbfaf7;
+      --text: #1f1d1a;
+      --muted: #6b665e;
+      --line: #e7e3da;
+      --accent: #b4532a;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #161513;
+        --text: #e9e5dc;
+        --muted: #9b958a;
+        --line: #2b2925;
+        --accent: #e58a5e;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 17px/1.65 'Literata', Georgia, serif;
+    }
+
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 4rem 1rem 5rem;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 0.25rem; }
+    h2, footer, .handle { font-family: 'Inter', system-ui, sans-serif; }
+    h2 { font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 2.5rem 0 0.75rem; }
+
+    .handle { color: var(--muted); margin: 0 0 1.5rem; }
+
+    ul { padding-left: 1.2rem; }
+    li { padding: 0.25rem 0; }
+
+    footer { margin-top: 4rem; font-size: 0.8rem; color: var(--muted); }
+    footer a { color: inherit; text-decoration: underline; }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Iris privacy policy</h1>
+    <p class="handle">last updated 12 November 2026 · applies to the Iris iPhone test build</p>
+
+    <p>Iris is a test build of a voice assistant for the private beta of a small, self-hosted
+      assistant. It is not a public product. This build has no account, no analytics, no advertising
+      and no tracking of any kind.</p>
+
+    <h2>What Iris records, and where it goes</h2>
+    <ul>
+      <li><strong>Your voice.</strong> Iris records only while you have pressed <em>Talk</em> and
+        stops when you release or press <em>Stop</em>. The recording, in WAV format, is sent over
+        HTTPS to the assistant server you were given when you joined the beta. Nothing is recorded
+        in the background, and there is no always-listening mode.</li>
+      <li><strong>What the server does with it.</strong> The server transcribes the recording, sends
+        the transcript to a language model, and returns a spoken reply. Those steps use third-party
+        services — currently OpenAI for transcription and the language model, and ElevenLabs for
+        speech synthesis — so your voice recording and its transcript leave the server to be
+        processed by them. They are not used to train models for us, and the server keeps the
+        resulting exchange in a log so it can debug the beta.</li>
+      <li><strong>A device identifier.</strong> Iris generates a random identifier and stores it on
+        your phone. It is sent with each request so the server can keep your conversations separate
+        and revoke access if needed. It is not your phone's hardware ID and it is not shared with
+        anyone else.</li>
+      <li><strong>Approximate location — only if you allow it.</strong> If you grant location access,
+        Iris sends your approximate location (accuracy to about a kilometre) with a request, so the
+        assistant can answer questions about local weather. You can decline or revoke this in iOS
+        Settings and everything else still works.</li>
+      <li><strong>Your settings.</strong> The server address, access token and device name you enter
+        are stored locally on your phone.</li>
+    </ul>
+
+    <h2>What Iris does not do</h2>
+    <ul>
+      <li>It does not collect usage statistics, crash reports, device model, OS version or advertising
+        identifiers.</li>
+      <li>It does not contain third-party analytics or advertising SDKs.</li>
+      <li>It does not access your contacts, calendars, photos, files, Health data or other apps.</li>
+      <li>It does not sell or share data with anyone, and does not use your voice or transcripts for
+        advertising, profiling or creditworthiness.</li>
+      <li>It does not track you across other apps or websites.</li>
+    </ul>
+
+    <h2>Data retention and removal</h2>
+    <p>Audio files, transcripts and exchange logs are kept on the beta server for debugging and are
+      deleted when the beta ends. To have your data deleted, or to leave the beta, email
+      <a href="mailto:hello@nilleb.com">hello@nilleb.com</a>: your recordings and logs are removed
+      and your access token is revoked. Deleting the app removes the settings and identifier stored
+      on your phone.</p>
+
+    <h2>Children</h2>
+    <p>Iris is not directed at children and the beta is limited to adults who were invited.</p>
+
+    <h2>Changes</h2>
+    <p>If this build ever collects something new, this policy will say so before you are asked to
+      install the update. The current text always lives at this address.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: <a href="mailto:hello@nilleb.com">hello@nilleb.com</a>.
+      Iris is written and operated by Ivo Bellin Salarin.</p>
+
+    <footer>
+      <a href="https://nilleb.io/">nilleb.io</a>
+    </footer>
+  </main>
+</body>
+</html>
